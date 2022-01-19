@@ -27,6 +27,9 @@ module.exports = function(config) {
   config.addTransform('htmlmin', htmlMinTransform);
   config.addTransform('parse', parseTransform);
 
+  // watch sass
+  config.addWatchTarget('src/scss');
+
   // Passthrough copy
   config.addPassthroughCopy('src/fonts');
   config.addPassthroughCopy('src/images');
