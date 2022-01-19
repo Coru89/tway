@@ -1,0 +1,13 @@
+{
+  "showThemeCredit": false,
+  "name": "Tway",
+  "shortDesc": "Cashing cheques and taking names",
+  "url": "",
+  "authorEmail": "corey.james.keller@gmai.com",
+  "authorHandle": "@applcor",
+  "authorName": "Corey keller",
+  "enableThirdPartyComments": false,
+  "maxPostsPerPage": 5,
+  "paymentPointer": "$ilp.uphold.com/MggmnFEyQqhk",
+  "faviconPath": "/images/favicon.png"
+}

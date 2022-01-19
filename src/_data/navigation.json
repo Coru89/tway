@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "text": "Our Work",
+      "url": "/work",
+      "external": false
+    },
+    {
+      "text": "Services",
+      "url": "/services",
+      "external": false
+    },
+    {
+      "text": "About",
+      "url": "/about",
+      "external": true
+    },
+    {
+      "text": "Contact",
+      "url": "/contact",
+      "external": false
+    }
+  ]
+}
