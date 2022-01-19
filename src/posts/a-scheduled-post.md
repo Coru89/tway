@@ -1,5 +1,5 @@
 ---
-title: A scheduled post - prod edit
+title: A scheduled post
 date: 2022-06-18
 tags:
 - demo-content
