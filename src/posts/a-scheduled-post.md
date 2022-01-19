@@ -1,5 +1,5 @@
 ---
-title: A scheduled post
+title: A scheduled post - dev edit
 date: 2022-06-18
 tags:
 - demo-content
@@ -7,7 +7,6 @@ tags:
 - blog
 
 ---
-
 This post is scheduled for the future, specifically mid-2022. Hopefully you're
 still blogging by then too. Once that date ticks by, this post will
 automatically become published and visible.
