@@ -57,7 +57,7 @@ fields:
     label: highlight
     config:
       color_format: Hex
-    default: "#ccf2ff"
+    default: "#B8E986"
   - type: color
     name: light
     label: light
