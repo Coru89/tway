@@ -5,3 +5,144 @@
     color: var(--color-text);
   }
 }
+
+//TO DO Organize styles
+
+button.button-dark-mode {
+  border-radius: 50%;
+  background: transparent;
+  content: '';
+  display: block;
+  line-height: 0;
+  margin: 0;
+	padding: 0;
+  position: relative;
+	cursor: pointer;
+	outline: none;
+  border: none;
+  outline: none;
+
+  svg {
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+  }
+  
+  &:active {
+    &:before {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+      transition: all .1s ease-in-out;
+    }
+  }
+
+  &:hover {
+    border-radius: 50%;
+
+    &:before {
+      opacity: 1;
+      transition: opacity .2s ease-in-out;
+    }
+
+    svg {
+      opacity: 0;
+      transition: opacity .2s ease-in-out;
+      transition-delay: .05s;
+    }
+  }
+  
+  &:before {
+      display: block;
+      filter: brightness(1);
+      opacity: 0;
+      content: '';
+      position: absolute;
+      transition: opacity .5s ease-in-out;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      box-shadow: var(--color-theme-toggle-shadow);
+      background: var(--color-theme-icon);
+      border-radius: 50%;
+      left: 0;
+  }
+
+  &:after {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 12px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    z-index: 1;
+}
+
+  ~ .js-tooltip-text {
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+}
+
+.tooltip {
+  position: relative;
+}
+
+/* Tooltip text */
+.tooltip .js-tooltip-text {
+  visibility: hidden;
+  top: 100%;
+  left: 50%;
+  background-color: var(--color-selection-bg);
+  color: var(--color-selection-text);
+  text-align: center;
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 10px;
+  position: absolute;
+  left: calc(50% + 1.95rem/2);
+  transform: translateX(-50%) translateY(0);
+  min-width: 70px;
+  top: 32px;
+  opacity: 0;
+
+  &:hover {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.tooltip .js-tooltip-text::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--color-selection-bg) transparent;
+}
+
+
+button.button-dark-mode:hover ~ .js-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+button.button-dark-mode::before:hover ~ .js-tooltip-text {
+  transition: opacity .3s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+}
+
+button.button-dark-mode:active ~ .js-tooltip-text {
+  visibility: hidden;
+}
+button.button-dark-mode:focus ~ .js-tooltip-text {
+  visibility: hidden;
+}
+
+
+
+

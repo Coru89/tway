@@ -1,19 +1,41 @@
 {
   "items": [
     {
-      "text": "Our Work",
-      "url": "/work",
-      "external": false
-    },
-    {
       "text": "Services",
       "url": "/services",
-      "external": false
+      "external": false,
+      "child": [
+        {
+          "text": "child 1",
+          "url": "/services",
+          "external": false
+        },
+        {
+          "text": "child 2",
+          "url": "/about",
+          "external": true
+        },
+        {
+          "text": "child 3",
+          "url": "/insights",
+          "external": false
+        },
+        {
+          "text": "child 4",
+          "url": "/contact",
+          "external": false
+        }
+      ]
     },
     {
       "text": "About",
       "url": "/about",
       "external": true
+    },
+    {
+      "text": "Insights",
+      "url": "/insights",
+      "external": false
     },
     {
       "text": "Contact",
