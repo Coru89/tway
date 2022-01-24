@@ -1,6 +1,6 @@
 ---
-title: Our Work
-permalink: "/work/index.html"
+title: Insights
+permalink: "/insights/index.html"
 layout: layouts/archive.njk
 
 ---

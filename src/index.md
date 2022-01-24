@@ -1,8 +1,8 @@
 ---
 layout: home
 title: Hello World
-postsHeading: Latest posts
-archiveButtonText: See all posts
+postsHeading: Latest insights
+archiveButtonText: See all insights
 metaDesc: 'Tway is a digital agnecy that specializes .'
 socialImage: ''
 summary: 'helloooo'

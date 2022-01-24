@@ -1,6 +1,6 @@
 .nav {
   margin-left: auto;
-  
+
   &__list {
     overflow-x: auto;
 
@@ -19,9 +19,21 @@
     }
   }
 
+  &__sublist {
+    display: none;
+    position: absolute;
+    background: var(--color-selection-bg);
+    color: var(--color-selection-text);
+    padding: 0 24px;
+  }
+
   &__item {
     padding: get-size(300) 0;
     flex-shrink: 0;
+
+    &:hover .nav__sublist {
+      display: block;
+    }
 
     a {
       color: currentColor;
