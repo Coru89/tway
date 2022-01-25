@@ -7,10 +7,10 @@
   }
 
   &__heading {
-    font-size: get-size(700);
+    font-size: get-font-size(700);
 
     @include media-query(md) {
-      font-size: get-size(800);
+      font-size: get-font-size(800);
     }
   }
 
@@ -31,12 +31,12 @@
 
     h3 {
       font-family: get-font(base);
-      font-size: get-size(600);
+      font-size: get-font-size(600);
       font-weight: 600;
       line-height: 1.2;
 
       + p {
-        font-size: get-size(500);
+        font-size: get-font-size(500);
         font-weight: 600;
         margin-top: get-size(300);
       }

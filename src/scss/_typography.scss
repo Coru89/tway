@@ -23,27 +23,27 @@ body {
 }
 
 h1 {
-  font-size: get-size(700);
+  font-size: get-font-size(700);
 }
 
 h2 {
-  font-size: get-size(600);
+  font-size: get-font-size(600);
 }
 
 h3 {
-  font-size: get-size(500);
+  font-size: get-font-size(500);
 }
 
 @include media-query('md') {
    h1 {
-     font-size: get-size(900);
+     font-size: get-font-size(900);
    }
 
   h2 {
-     font-size: get-size(800);
+     font-size: get-font-size(800);
    }
 
    h3 {
-    font-size: get-size(700);
+    font-size: get-font-size(700);
    }
 }

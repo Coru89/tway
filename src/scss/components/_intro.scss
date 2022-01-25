@@ -8,7 +8,7 @@
 
   &__summary {
     --flow-space: #{get-size(500)};
-    font-size: get-size(500);
+    font-size: get-font-size(500);
     margin-top: 1em;
     margin-top: var(--flow-space);
     line-height: 1.5;
