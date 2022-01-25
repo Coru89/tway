@@ -99,7 +99,7 @@ class ThemeToggle extends HTMLElement {
       <div class="theme-toggle tooltip">
         <div role="status" class="visually-hidden js-mode-status"></div>
         <div class="js-mode-toggle">
-          <button class="button-dark-mode js-tooltip-icon">
+          <button aria-label="toggle dark and light theme" class="button-dark-mode js-tooltip-icon">
           Dark theme
           </button>
           <span class="js-tooltip-text"></span>

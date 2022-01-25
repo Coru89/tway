@@ -16,9 +16,21 @@ module.exports = {
   sizes() {
     let response = [];
 
-    Object.keys(tokens['size-scale']).forEach(key => {
+    Object.keys(tokens['font-size-scale']).forEach(key => {
       response.push({
-        value: tokens['size-scale'][key],
+        value: tokens['font-size-scale'][key],
+        key
+      });
+    });
+
+    return response;
+  },
+  fonts() {
+    let response = [];
+
+    Object.keys(tokens['fonts']).forEach(key => {
+      response.push({
+        value: tokens['fonts'][key].replace(/["]+/g, ''),
         key
       });
     });

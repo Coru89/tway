@@ -20,11 +20,8 @@
   --color-theme-highlight: #{get-color('highlight')};
   --color-theme-highlight-block: #{get-color('highlight')};
   --color-theme-toggle-shadow: 0 0 5px 1.66px lightyellow, 0 0 8.33px 5px #f0f, 0 0 11.66px 7.5px #0ff, 0 0 23.33px 10px #2121;
-
   --color-theme-icon: rbg(105, 105, 105); //fallback
   --color-theme-icon: radial-gradient(circle, rgba(105,105,105,0.9684049684542587) 64%, rgba(162,168,174,1) 79%, rgba(110,110,105,1) 95%);
-
-
 }
 
 @include dark-mode() {

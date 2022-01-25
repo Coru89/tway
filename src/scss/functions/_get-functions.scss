@@ -22,8 +22,20 @@
   @return null;
 }
 
+@function get-font-size($key) {
+  $response: map-get($font-size-scale, $key);
+
+  @if ($response) {
+    @return #{ $response };
+  }
+
+  @warn #{'Font "' + $key + '" not found in $config-fonts'};
+
+  @return null;
+}
+
 @function get-size($ratio-key) {
-  $response: map-get($size-scale, $ratio-key);
+  $response: map-get($spacing-size-scale, $ratio-key);
 
   @if ($response) {
     @return $response;

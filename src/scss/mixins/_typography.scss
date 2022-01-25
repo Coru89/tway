@@ -1,0 +1,31 @@
+@mixin text-300 {
+    font-size: get-font-size(300);
+}
+
+@mixin text-base {
+    font-size: get-font-size(base);
+}
+
+@mixin text-500 {
+    font-size: get-font-size(500);
+}
+
+@mixin text-600 {
+    font-size: get-font-size(600);
+}
+
+@mixin text-700 {
+    font-size: get-font-size(700);
+}
+
+@mixin text-800 {
+    font-size: get-font-size(800);
+}
+
+@mixin text-900 {
+    font-size: get-font-size(900);
+}
+
+@mixin text-max {
+    font-size: get-font-size(max);
+}
