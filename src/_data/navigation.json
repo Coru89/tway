@@ -6,23 +6,8 @@
       "external": false,
       "child": [
         {
-          "text": "child 1",
-          "url": "/services",
-          "external": false
-        },
-        {
-          "text": "child 2",
-          "url": "/about",
-          "external": true
-        },
-        {
-          "text": "child 3",
-          "url": "/insights",
-          "external": false
-        },
-        {
-          "text": "child 4",
-          "url": "/contact",
+          "text": "Interior Page",
+          "url": "/interior",
           "external": false
         }
       ]

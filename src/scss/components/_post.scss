@@ -1,6 +1,10 @@
 .post {
   &__body {
     --flow-space: #{get-size(800)};
+    @include inner-wrapper;
+    font-size: get-size(500);
+    line-height: 1.7;
+    padding: get-size(900) get-size(500) get-size(900) get-size(500);
 
     /**
      * Generic HTML styles 
@@ -10,24 +14,26 @@
       --flow-space: #{get-size(500)};
     }
 
+    > * + * {
+      margin-top: 2.44rem;
+    }
+
     h2,
     h3 {
       position: relative;
-      /*display: flex;*/
 
-      @include apply-utility('leading', 'tight');
+      line-height: 1.2;
     }
 
     a:not([class]) {
-      color: var(--color-dark);
-      position: relative;
-      display: inline-block;
       background: var(--color-theme-highlight);
+      color: var(--color-dark);
+      display: inline-block;
+      line-height: 1.2;
       padding: 0.2rem 0.4rem 0.3rem 0.4rem;
+      position: relative;
       text-decoration: none;
       word-break: break-word;
-
-      @include apply-utility('leading', 'tight');
     }
 
     a:not([class]):hover {
@@ -35,26 +41,26 @@
     }
 
     code {
-      font-size: 1.2em;
       color: var(--color-theme-primary);
+      font-size: 1.2em;
       font-weight: 600;
       margin-left: 0.01ch;
       margin-right: 0.01ch;
     }
 
     pre > code {
-      margin-right: 0;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin-right: 0;
+      overflow-x: auto;
     }
 
     blockquote {
       border-left: 0.4rem solid var(--color-theme-primary-glare);
+      font-size: get-size(600);
+      font-style: italic;
       margin-left: 0;
       padding-left: get-size(500);
-      font-style: italic;
-      font-size: get-size(600);
 
       p {
         opacity: 0.85;
@@ -84,13 +90,14 @@
     pre > code,
     .video-player,
     video {
-      width: 100vw;
       max-width: map-get($metrics, 'wrap-max-width');
       margin-left: 50%; /*changing this value to 47% removes the horizontal scrollbar once the viewport is < 930px */
+      position: relative;
       transform: translateX(
         -50%
       ); /* changing this value to 49% allows for the suggestion above to also eliminate the horizontal scroll. */
-      position: relative;
+
+      width: 100vw;
     }
 
     figure img,
@@ -107,26 +114,39 @@
     figcaption {
       font-size: 0.8em;
       font-style: italic;
-      max-width: map-get($metrics, 'wrap-inner-max-width');
       margin: 0.5rem auto 0 auto;
+      max-width: map-get($metrics, 'wrap-inner-max-width');
       padding: 0 get-size(500);
     }
 
     pre > code {
-      display: block;
       background: var(--color-dark);
-      padding: get-size(700);
+      display: block;
       font-size: get-size(500);
+      padding: get-size(700);
     }
   }
 
   &__footer {
     background: var(--color-theme-highlight);
+    padding: get-size(500) 0;
+
+    &-wrapper {
+      @include inner-wrapper;
+    }
+
+    .nav {
+      align-items: center;
+      display: flex;
+    }
 
     h2 {
-      flex-shrink: 0;
-      margin-right: get-size('base');
       color: var(--color-dark);
+      flex-shrink: 0;
+      font-family: get-font(base);
+      font-size: get-size(600);
+      font-weight: 600;
+      margin-right: get-size('base');
     }
 
     h2 a {

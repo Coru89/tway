@@ -1,8 +1,38 @@
 .site-foot {
   // Reverse whatever the theme colors are
   background: var(--color-bg-glare);
-  color: var(--color-text);
   border-top: 1px solid var(--color-stroke);
+  color: var(--color-text);
+  padding: get-size(700) 0 get-size(900) 0;
+
+  &__wrapper {
+    @include wrapper;
+  }
+
+  &__inner {
+    align-items: flex-start;
+    //align-start: flex-start;
+    justify-content: space-between;
+
+    @include media-query(md) {
+      display: flex;
+    }
+  }
+
+  &__details {
+    --flow-space: 1em;
+    max-width: 40ch;
+
+    > * + * {
+      margin-top: 1em;
+      margin-top: var(--flow-space);
+    }
+
+    h2 {
+      font-family: get-font(base);
+      font-size: get-size(600);
+    }
+  }
 
   a {
     color: currentColor;

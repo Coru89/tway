@@ -1,15 +1,18 @@
 .button {
-  display: inline-block;
-  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   background-color: var(--color-action-bg);
+  border: none;
   color: var(--color-action-text);
-  padding: get-size(300) get-size('base');
+  cursor: pointer;
+  display: inline-block;
+  font-family: get-font(base);
+  font-size: get-size(base);
+  font-weight: 700;
   line-height: 1;
   margin: 0;
+  padding: get-size(300) get-size('base');
   text-decoration: none;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 
 .button:hover,
@@ -22,8 +25,8 @@
 }
 
 .button:focus:not(:hover) {
-  outline: 1px solid var(--color-action-text);
   outline-offset: -4px;
+  outline: 1px solid var(--color-action-text);
 }
 
 .button:active {
