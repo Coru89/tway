@@ -6,8 +6,8 @@
       "external": false,
       "child": [
         {
-          "text": "Interior Page",
-          "url": "/interior",
+          "text": "Style Guide",
+          "url": "/styleguide",
           "external": false
         }
       ]
