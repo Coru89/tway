@@ -2,13 +2,15 @@
   margin-left: auto;
 
   &__list {
+    align-items: center;
+    display: flex;
     overflow-x: auto;
-
     // Add padding and neg margin to allow focus style visibility
-    padding: 0.5rem;
-    margin: -0.5rem;
-    -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    list-style: none;
+    margin: -0.5rem;
+    padding: 0.5rem;
 
     &::-webkit-scrollbar {
       display: none;
@@ -17,19 +19,23 @@
     > * + * {
       margin-left: get-size(500);
     }
+
+    @include media-query(md) {
+      justify-content: flex-end;
+    }
   }
 
   &__sublist {
-    display: none;
-    position: absolute;
     background: var(--color-selection-bg);
     color: var(--color-selection-text);
+    display: none;
     padding: 0 24px;
+    position: absolute;
   }
 
   &__item {
-    padding: get-size(300) 0;
     flex-shrink: 0;
+    padding: get-size(300) 0;
 
     &:hover .nav__sublist {
       display: block;
@@ -37,14 +43,11 @@
 
     a {
       color: currentColor;
-
-      @include apply-utility('weight', 'mid');
+      font-weight: 600;
 
       &:not(:hover) {
         text-decoration: none;
       }
     }
   }
-
-
 }

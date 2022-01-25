@@ -1,9 +1,17 @@
 .intro {
   background: var(--color-theme-highlight-block);
+  padding: get-size(900) 0 get-size(max) 0;
+
+  &__wrapper {
+    @include inner-wrapper;
+  }
 
   &__summary {
     --flow-space: #{get-size(500)};
     font-size: get-size(500);
+    margin-top: 1em;
+    margin-top: var(--flow-space);
+    line-height: 1.5;
 
     a {
       color: currentColor;
@@ -15,8 +23,9 @@
   }
 
   &__heading {
-    max-width: 40ex;
     color: var(--color-theme-feature-text);
+    line-height: 1.2;
+    max-width: 40ex;
 
     &--compact {
       max-width: 20ex;

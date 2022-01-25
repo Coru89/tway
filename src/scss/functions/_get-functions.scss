@@ -1,0 +1,35 @@
+@function get-color($key) {
+  $response: map-get($colors, $key);
+
+  @if ($response) {
+    @return $response;
+  }
+
+  @warn #{'Color "' + $key + '" not found in $config-colors'};
+
+  @return null;
+}
+
+@function get-font($key) {
+  $response: map-get($fonts, $key);
+
+  @if ($response) {
+    @return #{ $response };
+  }
+
+  @warn #{'Font "' + $key + '" not found in $config-fonts'};
+
+  @return null;
+}
+
+@function get-size($ratio-key) {
+  $response: map-get($size-scale, $ratio-key);
+
+  @if ($response) {
+    @return $response;
+  }
+
+  @warn #{'Size "' + $ratio-key + '" not found in $stalfos-size-scale'};
+
+  @return null;
+}

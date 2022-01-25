@@ -1,11 +1,9 @@
 @import 'config';
 
-// Pull in the stalfos lib
-@import '../../node_modules/stalfos/stalfos.scss';
-
 // Local mixins
-@import 'mixins/dark-mode';
+@import 'mixins/reference';
 
+@import 'functions/get-functions';
 @import 'theme';
 
 // Local dependencies
@@ -14,16 +12,55 @@
 /**
  * GLOBAL STYLES
  */
+ * {
+  box-sizing: border-box
+}
+
+:after,:before {
+  box-sizing: inherit
+}
+
+body,dd,dl,dt,figcaption,figure,h1,h2,h3,h4,li,ol,p,ul {
+  margin: 0;
+  padding: 0
+}
+
 html,
 body {
   height: 100%;
 }
 
 body {
-  scroll-behavior: smooth;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
   display: flex;
   flex-direction: column;
+  font-size: 1rem;
+  min-height: 100vh;
+  scroll-behavior: smooth;
 }
+
+ol[class],ul[class] {
+  list-style: none
+}
+
+a:not([class]) {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  cursor: pointer
+}
+
+input::-webkit-input-placeholder,select::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+  line-height: normal
+}
+
+ @media(prefers-reduced-motion:reduce) {
+   * {
+       -webkit-animation: none!important;
+       animation: none!important;
+       scroll-behavior: auto!important;
+       transition: none!important;
+   }
+ }
 
 main {
   flex: 1 0 auto;
@@ -33,17 +70,18 @@ main {
 }
 
 hr {
-  display: block;
-  height: 1px;
-  max-width: 500px;
   background: var(--color-stroke);
   border: none;
+  display: block;
+  height: 1px;
   margin: get-size(900) auto;
+  max-width: 500px;
 }
 
 // For when metric attributes are added to img elements
 img {
   height: auto;
+  max-width: 100%
 }
 
 :focus {
@@ -56,9 +94,7 @@ img {
  */
 
 // Utils
-@import 'utilities/inner-wrapper';
 @import 'utilities/visually-hidden';
-@import 'utilities/wrapper';
 
 // Components
 @import 'components/button';
@@ -67,10 +103,12 @@ img {
 @import 'components/intro';
 @import 'components/nav';
 @import 'components/pagination';
-@import 'components/post';
 @import 'components/post-list';
-@import 'components/site-head';
+@import 'components/post';
 @import 'components/site-foot';
+@import 'components/site-head';
 @import 'components/skip-link';
 @import 'components/syntax-highlighting';
+@import 'components/theme-toggle';
+@import 'components/tooltips';
 @import 'components/video-player';
