@@ -35,7 +35,7 @@ use_front_matter_path:
 file_template: ":filename:"
 build:
   preview_env:
-  - ELEVENTY_ENV=dev
+  - ELEVENTY_ENV=staging
   preview_output_directory: src/dist
   install_dependencies_command: npm install
   preview_docker_image: node:10
