@@ -5,7 +5,6 @@ postsHeading: Latest Insights
 archiveButtonText: See all insights
 metaDesc: 'Tway is a web development agency that builds exceptional business websites.'
 socialImage: ''
-summary: ''
 ---
 <!-- do not delete -->
 {% import "macros/macros.njk" as macro with context %}
