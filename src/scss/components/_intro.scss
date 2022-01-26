@@ -9,11 +9,18 @@
   &__summary {
     --flow-space: #{get-size(500)};
     font-size: get-font-size(500);
+    line-height: 1.5;
     margin-top: 1em;
     margin-top: var(--flow-space);
-    line-height: 1.5;
+    max-width: 60ch;
 
-    a {
+    .button,
+    button {
+      margin-top: 1em;
+      margin-top: var(--flow-space);
+    }
+
+    a:not(.button) {
       color: currentColor;
 
       &:hover {

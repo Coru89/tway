@@ -177,5 +177,9 @@
 {% endmacro %}
 
 {% macro button( text ) %}
-  <button type="submit" class="[ button ] [ font-base text-base weight-bold ]">{{ text }}</button>
+  <button type="submit" class="button">{{ text }}</button>
+{% endmacro %}
+
+{% macro button_link( text, link ) %}
+  <a class="button" href="{{ link }}">{{ text }}</a>
 {% endmacro %}

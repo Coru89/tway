@@ -7,14 +7,14 @@ sections:
 - type: heading
   label: Content
 - type: directory
-  path: src/posts
+  path: src/content/posts
   label: Posts
   create: documents
   match: "*.md"
   templates:
   - post
 - type: directory
-  path: src/pages
+  path: src/content/pages
   label: Pages
   create: documents
   match: "*.md"
@@ -35,7 +35,7 @@ use_front_matter_path:
 file_template: ":filename:"
 build:
   preview_env:
-  - ELEVENTY_ENV=staging
+  - ELEVENTY_ENV=dev
   preview_output_directory: src/dist
   install_dependencies_command: npm install
   preview_docker_image: node:10

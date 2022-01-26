@@ -24,7 +24,7 @@ collections:
           - {label: "Body", name: "body", widget: "markdown"}
   - name: "generic_pages"
     label: "Generic Pages"
-    folder: "src/pages"
+    folder: "src/content/pages"
     slug: "{{slug}}"
     preview_path: "pages/{{slug}}"
     create: true
@@ -38,7 +38,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "posts"
     label: "Posts"
-    folder: "src/posts"
+    folder: "src/content/posts"
     slug: "{{slug}}"
     preview_path: "posts/{{slug}}"
     create: true

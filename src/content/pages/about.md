@@ -4,4 +4,4 @@ permalink: '/about/index.html'
 layout: 'layouts/page.njk'
 ---
 
-ABOUT HERE
+Meet the Tway team

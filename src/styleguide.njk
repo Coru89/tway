@@ -75,14 +75,14 @@ permalink: /styleguide/
 {% block content %}
   <main id="main-content" tabindex="-1">
     {% include "partials/components/intro.njk" %}
-    <article class="[ inner-wrapper ] [ post ]">
-      <section class="[ post__body ] [ sf-flow ] [ pad-top-900 pad-bottom-900 ]">
+    <article class="inner-wrapper post">
+      <section class="post__body">
         <h2>Colours</h2>
         <p class="visually-hidden">Colour swatches with various values that you can copy.</p>
         <ul class="swatches">
           {% for color in styleguide.colors() %}
             <li class="sf-flow">
-              <div class="[ color ] [ pad-top-900 pad-bottom-900 ]" style="background: {{ color.value }}"></div>
+              <div class="color" style="background: {{ color.value }}"></div>
               <h3 class="font-base text-500">{{ color.key }}</h3>
               <dl class="props">
                 <dt>Value</dt>
@@ -118,19 +118,18 @@ permalink: /styleguide/
         {% for size in styleguide.sizes() %}
           <p class="text-{{ size.key }}" style="--flow-space: 1.5rem; font-size: {{ size.value }}">{{ size.value }} - <code>@include text-{{ size.key }};</code></p>
         {% endfor %}
-        <h2>Spacing</h2>
+        {# <h2>Spacing</h2>
         
-        <h3>Padding</h3>
-        
+        <h3>Padding</h3> #}
         <h2>Forms</h2>
-        {% from "macros/form.njk" import label, field, textarea, confirm, select, radios, checkboxes, hidden_field, button %}
+        {% from "macros/macros.njk" import label, field, textarea, confirm, select, radios, checkboxes, hidden_field, button %}
         <form>
-          <ol class="[ field-list ]">
-            <li class="[ field-list__field-group ]">
+          <ol class="field-list">
+            <li class="field-list__field-group">
               {{ label("Text Label", "field-text-name") }}
               {{ field( "text", "field-text-name", { required: true, placeholder: "Katherine Johnson", autocomplete: "name", autocorrect: "off", autocapitalize: "off", description: "Optional description. Note: This field type can take any valid input type." } ) }}
             </li>
-            <li class="[ field-list__field-group ]">
+            <li class="field-list__field-group">
               {{ label("Email Label", "field-email-name") }}
               {{ field( "email", "field-email-name", { required: true, placeholder: "katherine@johnson.tld", autocomplete: "email" } ) }}
             </li>
@@ -138,20 +137,20 @@ permalink: /styleguide/
               {{ label("Textarea Label", "field-textarea-name") }}
               {{ textarea( "field-textarea-name", { required: true, autocapitalize: "sentences", spellcheck: "true" } ) }}
             </li>
-            <li class="[ field-list__field-group ]">
+            <li class="field-list__field-group">
               {{ label("Select Label", "field-select-name") }}
               {{ select( "select", [ "option 1", {label: "Option II", value: "option 2"} ], { required: true, options_before: ["prepended option"], options_after: ["appended option"], description: "Optional description." } ) }}
             </li>
-            <li class="[ field-list__field-group field-list__field-group--confirm ]">
+            <li class="field-list__field-group field-list__field-group--confirm">
               {{ confirm("Confirm this statement", "confirm") }}
             </li>
-            <li class="[ field-list__field-group ]">
+            <li class="field-list__field-group">
               {{ radios("Radio Legend", "field-radio-name", [ "Yes", { label: "Not really", value: "No", note: "Note about choice." } ], { description: "Optional description." } ) }}
             </li>
-            <li class="[ field-list__field-group ]">
+            <li class="field-list__field-group">
               {{ checkboxes("Checkbox Legend", "field-checkbox-name", [ "Choice 1", { label: "Choice 2", value: "Choice 2", note: "Note about choice." }, "Choice 3" ], { description: "Optional description." } ) }}
             </li>
-            <li class="[ field-list__field-group ]">
+            <li class="field-list__field-group">
               There is a hidden field here…
               {{ hidden_field("hidden-name", "hidden-value") }}
             </li>

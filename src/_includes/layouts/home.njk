@@ -2,10 +2,9 @@
 
 {# Intro content #}
 {% set introHeading = title %}
-{% set introSummary = summary %}
-{# {% set introSummary %}
-  {{ introSummary | safe }}
-{% endset %} #}
+{% set introSummary %}
+  {{ content | safe }}
+{% endset %}
 
 {# Post list content #}
 {% set postListHeading = postsHeading %}
@@ -20,11 +19,6 @@
 {% block content %}
   <main id="main-content" tabindex="-1">
     {% include "partials/components/intro.njk" %}
-
-    <div class="post__body">
-      {{ content | safe }}
-    </div>
-    
     {% include "partials/components/post-list.njk" %}
     {% include "partials/components/pagination.njk" %}
   </main>

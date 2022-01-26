@@ -45,26 +45,40 @@ module.exports = function(config) {
   const livePosts = post => post.date <= now && !post.data.draft;
   config.addCollection('posts', collection => {
     return [
-      ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
+      ...collection.getFilteredByGlob('./src/content/posts/*.md').filter(livePosts)
     ].reverse();
   });
 
   config.addCollection('postFeed', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)]
+    return [...collection.getFilteredByGlob('./src/content/posts/*.md').filter(livePosts)]
       .reverse()
       .slice(0, site.maxPostsPerPage);
   });
+
+
+    // import all macros into posts / pages (minus index) so that end user doesn not need to for each page
+  config.addCollection('content', (collectionApi) => {
+    // Note: Update the path to point to your macro file
+    const macroImport = `{% import "macros/macros.njk" as macro with context %}`;
+    // Note: Update the pattern below to include all files that need macros imported
+    // Note: Collections don’t include layouts or includes, which still require importing macros manually
+    let collection = collectionApi.getFilteredByGlob('src/content/**/*.md');
+    collection.forEach((item) => {
+      item.template.frontMatter.content = `${macroImport}\n${item.template.frontMatter.content}`
+    })
+    return collection;
+  })
 
   // Plugins
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
   
-  /* Forestry instant previews 
-  if( process.env.ELEVENTY_ENV == "staging" ) {
+  // Forestry instant previews 
+  if( process.env.ELEVENTY_ENV == "dev" ) {
     eleventyConfig.setBrowserSyncConfig({
       host: "0.0.0.0"
     });
-  }*/
+  }
 
   // 404
   config.setBrowserSyncConfig({
@@ -84,8 +98,9 @@ module.exports = function(config) {
   return {
     dir: {
       input: 'src',
-      output: 'dist'
+      output: 'dist',
     },
+    markdownTemplateEngine: "njk",
     passthroughFileCopy: true
   };
 };
