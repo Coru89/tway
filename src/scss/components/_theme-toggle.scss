@@ -1,5 +1,12 @@
-.theme-toggle {
+theme-toggle {
   padding: 0 0 0 get-size(700);
+  position: absolute;
+  right: 0;
+  top: 20px;
+
+  @include media-query(md) {
+    position: static;
+  }
 
   .button-dark-mode {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -15,7 +22,6 @@
     outline: none;
     outline: none;
     padding: 0;
-    position: relative;
 
     svg {
       opacity: 1;
