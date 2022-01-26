@@ -2,7 +2,7 @@
   &__body {
     --flow-space: #{get-size(800)};
     @include inner-wrapper;
-    font-size: get-font-size(500);
+    font-size: get-font-size(base);
     line-height: 1.7;
     padding: get-size(900) get-size(500) get-size(900) get-size(500);
 
