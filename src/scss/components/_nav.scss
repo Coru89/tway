@@ -2,12 +2,12 @@
   margin-left: auto;
 
   &__list {
-    align-items: center;
-    display: flex;
-    overflow-x: auto;
-    // Add padding and neg margin to allow focus style visibility
     -ms-overflow-style: none;
     -webkit-overflow-scrolling: touch;
+    // Add padding and neg margin to allow focus style visibility
+    //overflow-x: auto;
+    align-items: center;
+    display: flex;
     list-style: none;
     margin: -0.5rem;
     padding: 0.5rem;
@@ -26,28 +26,85 @@
   }
 
   &__sublist {
-    background: var(--color-selection-bg);
-    color: var(--color-selection-text);
+    background: var(--color-nav-menu-bg);
+    box-shadow: var(--theme-box-shadow);
+    color: var(--color-nav-menu-text);
     display: none;
+    margin-top: get-size(base);
     padding: 0 24px;
     position: absolute;
   }
 
   &__item {
-    flex-shrink: 0;
-    padding: get-size(300) 0;
+    padding: .5rem 0;
+    position: relative;
+    white-space: nowrap;
 
-    &:hover .nav__sublist {
+    &::after {
+      background-color: var(--color-nav-active-accent);
+      border-radius: 5px;
+      bottom: 8px;
+      content: '';
       display: block;
+      height: 2px;
+      left: 0;
+      margin: auto;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      transform: scaleX(0);
+      transition: .25s linear;
+      width: 100%;
+    }
+
+    &--active,
+    &:hover {
+      &::after {
+        opacity: 1;
+        transform: scaleX(1);
+        transition: all .1s ease;
+        width: 100%;
+      }
+    }
+
+    .arrow {
+      margin-left: get-size(300);
+      transform: rotate(90deg);
+      transition: transform 0.15s ease-in-out;
+    }
+
+    &::before {
+      bottom: -#{get-size(base)};
+      content: '';
+      display: block;
+      height: 30px;
+      position: absolute;
+      width: 100px;
+
+      &:hover {
+        .nav__sublist {
+          display: block;
+        }
+      }
+    }
+
+    &:hover {
+      .arrow {
+        transform: rotate(-90deg);
+      }
+
+      .nav__sublist {
+        display: block;
+      }
     }
 
     a {
+      align-items: center;
       color: currentColor;
+      display: flex;
       font-weight: 600;
-
-      &:not(:hover) {
-        text-decoration: none;
-      }
+      justify-content: center;
+      text-decoration: none;
     }
   }
 }

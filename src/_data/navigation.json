@@ -4,10 +4,15 @@
       "text": "Services",
       "url": "/services",
       "external": false,
-      "child": [
+      "items": [
         {
           "text": "Style Guide",
           "url": "/styleguide",
+          "external": false
+        },
+        {
+          "text": "404",
+          "url": "/404",
           "external": false
         }
       ]

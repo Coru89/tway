@@ -4,6 +4,10 @@
      #{'--color-' + nth($color, 1)}: #{nth($color, 2)};
   }
 
+  // global variables
+  --theme-box-shadow: #{0 16px 24px 2px rgba(29,17,51,.04),0 6px 32px 4px rgba(9,32,77,.12),0 8px 12px -5px rgba(29,17,51,.12)};
+
+
   // Set theme aliases
   --color-mode: 'light';
   --color-bg: #{get-color('light')};
@@ -19,9 +23,17 @@
   --color-theme-primary-glare: #{get-color('primary-glare')};
   --color-theme-highlight: #{get-color('highlight')};
   --color-theme-highlight-block: #{get-color('highlight')};
+
+  //for dark mode toggle button
   --color-theme-toggle-shadow: 0 0 5px 1.66px lightyellow, 0 0 8.33px 5px #f0f, 0 0 11.66px 7.5px #0ff, 0 0 23.33px 10px #2121;
   --color-theme-icon: rbg(105, 105, 105); //fallback
   --color-theme-icon: radial-gradient(circle, rgba(105,105,105,0.9684049684542587) 64%, rgba(162,168,174,1) 79%, rgba(110,110,105,1) 95%);
+
+    // nav
+  --color-nav-menu-text: #{get-color('dark')};
+  --color-nav-menu-bg: #{get-color('light')};
+  --color-nav-active-accent: #{get-color('primary')};
+  
 }
 
 @include dark-mode() {
@@ -38,9 +50,19 @@
   --color-theme-highlight: #{get-color('highlight')};
   --color-theme-highlight-block: #{get-color('slate')};
   --color-theme-feature-text: #{get-color('highlight')};
+
+  // for light mode toggle button
   --color-theme-toggle-shadow: 0 0 5px 1.66px #FFDE0100, 0 0 8.33px #FFDE0060, 0 0 11.66px 7.5px #FFDE00, 0 0 23.33px 10px #87CEEB;
   --color-theme-icon: #FFDE00;
+
+    // nav
+    --color-nav-menu-text: #{get-color('dark')};
+    --color-nav-menu-bg: #{get-color('light')};
+    --color-nav-active-accent: #{get-color('light')};
+    
 }
+
+
 
 body {
   color: var(--color-text);
@@ -55,3 +77,4 @@ main {
   color: var(--color-selection-text);
   background-color: var(--color-selection-bg);
 }
+
