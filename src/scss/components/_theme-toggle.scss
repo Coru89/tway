@@ -2,7 +2,7 @@ theme-toggle {
   padding: 0 0 0 get-size(700);
   position: absolute;
   right: 0;
-  top: 20px;
+  top: 12px;
 
   @include media-query(md) {
     position: static;

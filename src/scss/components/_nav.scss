@@ -5,14 +5,20 @@
     -ms-overflow-style: none;
     -webkit-overflow-scrolling: touch;
     // Add padding and neg margin to allow focus style visibility
-    overflow-x: hidden;
+    //overflow-x: hidden;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: -0.5rem;
     padding: 0.5rem;
 
   & > .nav__item {
+
+    &:not(:last-child){
+      margin-right: get-size(500);
+    }
+
     &::after {
       background-color: var(--color-nav-active-accent);
       border-radius: 5px;
@@ -45,10 +51,6 @@
       display: none;
     }
 
-    > * + * {
-      margin-left: get-size(500);
-    }
-
     @include media-query(md) {
       justify-content: flex-end;
     }
@@ -68,8 +70,6 @@
     padding: .5rem 0;
     position: relative;
     white-space: nowrap;
-
-
 
     .arrow {
       margin-left: get-size(300);
