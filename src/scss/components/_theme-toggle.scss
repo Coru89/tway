@@ -11,8 +11,8 @@ theme-toggle {
   .button-dark-mode {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
-    background: transparent;
-    border-radius: 50%;
+    background: var(--color-theme-toggle-bg);
+    border-radius: 5px;
     border: none;
     content: '';
     cursor: pointer;
@@ -21,11 +21,15 @@ theme-toggle {
     margin: 0;
     outline: none;
     outline: none;
-    padding: 0;
+    padding: .5rem;
 
     svg {
-      opacity: 1;
+      display: inline-block;
+      height: 1em;
+      line-height: 1em;
+      stroke: var(--color-theme-toggle-icon);
       transition: opacity 0.3s ease-in-out;
+      width: 1em;
     }
 
     ~ .js-tooltip-text {
@@ -34,33 +38,8 @@ theme-toggle {
     }
 
     &:hover {
-      border-radius: 50%;
-
-      &:before {
-        opacity: 1;
-        transition: opacity 0.2s ease-in-out;
-      }
-
-      svg {
-        opacity: 0;
-        transition-delay: 0.05s;
-        transition: opacity 0.2s ease-in-out;
-      }
-    }
-
-    &::before {
-      background: var(--color-theme-icon);
-      border-radius: 50%;
-      box-shadow: var(--color-theme-toggle-shadow);
-      content: '';
-      display: block;
-      filter: brightness(1);
-      height: 20px;
-      left: 0;
-      opacity: 0;
-      position: absolute;
-      transition: opacity 0.5s ease-in-out;
-      width: 20px;
+      filter: brightness(1.2);
+      transition: filter 0.3s ease-in-out;
     }
 
     &::after {

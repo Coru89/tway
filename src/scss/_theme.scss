@@ -25,9 +25,8 @@
   --color-theme-highlight-block: #{get-color('highlight')};
 
   //for dark mode toggle button
-  --color-theme-toggle-shadow: 0 0 5px 1.66px lightyellow, 0 0 8.33px 5px #f0f, 0 0 11.66px 7.5px #0ff, 0 0 23.33px 10px #2121;
-  --color-theme-icon: rbg(105, 105, 105); //fallback
-  --color-theme-icon: radial-gradient(circle, rgba(105,105,105,0.9684049684542587) 64%, rgba(162,168,174,1) 79%, rgba(110,110,105,1) 95%);
+  --color-theme-toggle-icon: #{get-color('light')};
+  --color-theme-toggle-bg: var(--color-action-bg);
 
     // nav
   --color-nav-menu-text: #{get-color('dark')};
@@ -51,18 +50,16 @@
   --color-theme-highlight-block: #{get-color('slate')};
   --color-theme-feature-text: #{get-color('highlight')};
 
-  // for light mode toggle button
-  --color-theme-toggle-shadow: 0 0 5px 1.66px #FFDE0100, 0 0 8.33px #FFDE0060, 0 0 11.66px 7.5px #FFDE00, 0 0 23.33px 10px #87CEEB;
-  --color-theme-icon: #FFDE00;
+  // for dark mode toggle button
+  --color-theme-toggle-icon: #{get-color('dark')};
+  --color-theme-toggle-bg: #{get-color('highlight')};
 
     // nav
     --color-nav-menu-text: #{get-color('dark')};
     --color-nav-menu-bg: #{get-color('light')};
-    --color-nav-active-accent: #{get-color('light')};
+    --color-nav-active-accent: #{get-color('highlight')};
     
 }
-
-
 
 body {
   color: var(--color-text);

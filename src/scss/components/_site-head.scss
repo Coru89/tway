@@ -1,5 +1,5 @@
 .site-head {
-  padding: get-size(700);
+  padding: get-size(base);
 
   &__wrapper {
     @include wrapper;
