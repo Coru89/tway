@@ -6,13 +6,23 @@
       "external": false,
       "items": [
         {
-          "text": "Style Guide",
-          "url": "/styleguide",
+          "text": "Websites",
+          "url": "/services/websites",
           "external": false
         },
         {
-          "text": "404",
-          "url": "/404",
+          "text": "E-Commerce",
+          "url": "/services/ecommerce",
+          "external": false
+        },
+        {
+          "text": "Jamstack",
+          "url": "/services/jamstack",
+          "external": false
+        },
+        {
+          "text": "SharePoint",
+          "url": "/services/sharepoint",
           "external": false
         }
       ]

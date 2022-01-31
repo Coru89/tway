@@ -1,0 +1,47 @@
+{% extends 'layouts/base.njk' %}
+
+{# Intro content #}
+{% set introHeading = title %}
+{% set introSummary %}
+<p class="intro__meta">
+  {% if date %}
+    <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
+  {% endif %}
+  <span>— {{ helpers.getReadingTime(content) }} minute read</span>
+</p>
+{% endset %}
+
+{% block content %}
+  <main id="main-content" tabindex="-1">
+    <article class="post">
+      {% include "partials/components/intro.njk" %}
+      <div class="post__body">
+        {{ content | safe }}
+      </div>
+      {% if site.enableThirdPartyComments %}
+        <hr />
+        <aside class="post__body">
+          {% include "partials/global/third-party-comments.njk" %}
+        </aside>
+      {% endif %}
+      {% if tags %}
+        <footer class="post__footer">
+          <div class="post__footer-wrapper">
+            <div class="nav">
+              <h2>Filed under</h2>
+              <ul class="nav__list">
+                {% for item in tags %}
+                  <li class="nav__item">
+                    <a href="/tags/{{ item }}">{{ item }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </footer>
+      {% endif %}
+    </article>
+  </main>
+{% endblock %}
+
+{{ content | safe }}

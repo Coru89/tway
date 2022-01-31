@@ -55,6 +55,20 @@ module.exports = function(config) {
       .slice(0, site.maxPostsPerPage);
   });
 
+    // Custom collections
+    const livePostsPortfolio = portfolio => portfolio.date <= now && !portfolio.data.draft;
+    config.addCollection('porfolio', collection => {
+      return [
+        ...collection.getFilteredByGlob('./src/content/portfolio/*.md').filter(livePostsPortfolio)
+      ].reverse();
+    });
+  
+    config.addCollection('portfolioFeed', collection => {
+      return [...collection.getFilteredByGlob('./src/content/portfolio/*.md').filter(livePostsPortfolio)]
+        .reverse()
+        .slice(0, site.maxPostsPerPage);
+    });
+
 
     // import all macros into posts / pages (minus index) so that end user doesn not need to for each page
   config.addCollection('content', (collectionApi) => {
