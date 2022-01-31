@@ -14,6 +14,12 @@ sections:
   templates:
   - post
 - type: directory
+  path: src/content/portfolio
+  label: Portfolio
+  create: documents
+  match: "**/*"
+  new_doc_ext: ".md"
+- type: directory
   path: src/content/pages
   label: Pages
   create: documents
