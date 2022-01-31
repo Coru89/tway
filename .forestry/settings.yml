@@ -18,7 +18,7 @@ sections:
   label: Portfolio
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: directory
   path: src/content/pages
   label: Pages
@@ -26,6 +26,10 @@ sections:
   match: "*.md"
   templates:
   - page
+- type: document
+  path: src/index.md
+  label: Home Page
+  match: "**/*"
 - type: heading
   label: Globals
 - type: document
