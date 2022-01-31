@@ -1,4 +1,14 @@
 ---
 label: Home
 hide_body: true
-fields: []
+fields:
+- name: portfolioImage
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
