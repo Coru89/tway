@@ -29,7 +29,6 @@ sections:
 - type: document
   path: src/index.md
   label: Home Page
-  match: "**/*"
 - type: heading
   label: Globals
 - type: document
