@@ -3,6 +3,13 @@ layout: home
 title: Websites to power small business
 postsHeading: Latest Insights
 archiveButtonText: See all insights
+
+
+portfolioHeading: Recent Work
+portfolioImage:
+
+servicesHeading: Our Expertise
+
 metaDesc: 'Tway is a web development agency that builds exceptional business websites.'
 socialImage: ''
 ---
