@@ -42,7 +42,7 @@ sections:
 - type: document
   path: src/_data/tokens.json
   label: Theme settings
-upload_dir: media
+upload_dir: src/images
 public_path: "/src/images"
 front_matter_path: ''
 use_front_matter_path: 
