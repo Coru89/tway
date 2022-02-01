@@ -28,6 +28,7 @@ sections:
   create: all
   match: "**/*"
   exclude: json
+  new_doc_ext: md
   templates:
   - page
 - type: document
