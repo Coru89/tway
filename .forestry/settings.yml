@@ -18,7 +18,10 @@ sections:
   label: Portfolio
   create: documents
   match: "**/*"
-  new_doc_ext: md
+  exclude: ".json"
+  new_doc_ext: ".md"
+  templates:
+  - porfolio
 - type: directory
   path: src/content/pages
   label: Pages
