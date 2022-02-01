@@ -4,6 +4,6 @@ tags:
 - e-Commerce
 - Shopify
 cardImage:
-- "/placeholder-image.jpg"
+- https://tway-dev.netlify.app/images/placeholder-image.jpg
 
 ---
