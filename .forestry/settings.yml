@@ -7,6 +7,15 @@ sections:
 - type: heading
   label: Content
 - type: directory
+  path: src/content/pages
+  label: Pages
+  create: all
+  match: "**/*"
+  exclude: "**/*.json"
+  new_doc_ext: md
+  templates:
+  - page
+- type: directory
   path: src/content/posts
   label: Posts
   create: documents
@@ -18,19 +27,10 @@ sections:
   label: Portfolio
   create: documents
   match: "**/*"
-  exclude: json
-  new_doc_ext: md
-  templates:
-  - porfolio
-- type: directory
-  path: src/content/pages
-  label: Pages
-  create: all
-  match: "**/*"
   exclude: "**/*.json"
   new_doc_ext: md
   templates:
-  - page
+  - porfolio
 - type: document
   path: src/index.md
   label: Home Page
