@@ -5,6 +5,6 @@ tags:
 - Shopify
 cardImage:
 - https://tway-dev.netlify.app/images/tobias-tullius-9cjdq3xkxje-unsplash2.jpg
-- https://tway-dev.netlify.app/images/placeholder-image.jpg
 
 ---
+{{ macro.button_link("BUTTON TEXT", "/PATH-TO-URL") }}
