@@ -18,8 +18,8 @@ sections:
   label: Portfolio
   create: documents
   match: "**/*"
-  exclude: ".json"
-  new_doc_ext: ".md"
+  exclude: json
+  new_doc_ext: md
   templates:
   - porfolio
 - type: directory
