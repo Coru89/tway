@@ -40,8 +40,8 @@ sections:
 - type: document
   path: src/_data/tokens.json
   label: Theme settings
-upload_dir: ''
-public_path: ''
+upload_dir: media
+public_path: "/src/images"
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
