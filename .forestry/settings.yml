@@ -27,6 +27,7 @@ sections:
   label: Pages
   create: all
   match: "**/*"
+  exclude: json
   templates:
   - page
 - type: document
