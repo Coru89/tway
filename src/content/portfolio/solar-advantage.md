@@ -1,6 +1,7 @@
 ---
 title: Solar Advantage
-tags: []
+tags:
+- Shopify
 cardImage:
 - "/src/images/placeholder-image.jpg"
 
