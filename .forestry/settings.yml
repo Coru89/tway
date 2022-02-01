@@ -25,7 +25,7 @@ sections:
 - type: directory
   path: src/content/pages
   label: Pages
-  create: documents
+  create: all
   match: "*.md"
   templates:
   - page
