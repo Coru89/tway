@@ -3,6 +3,7 @@ title: Solar Advantage
 tags:
 - e-Commerce
 - Shopify
-cardImage: []
+cardImage:
+- https://tway-dev.netlify.app/images/placeholder-image.jpg
 
 ---
