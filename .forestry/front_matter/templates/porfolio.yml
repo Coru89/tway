@@ -1,0 +1,13 @@
+---
+label: Porfolio
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: list
+  name: tags
+  label: tags
+- type: image_gallery
+  name: cardImage
+  label: cardImage
