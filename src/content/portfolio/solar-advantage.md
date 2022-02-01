@@ -3,6 +3,7 @@ title: Solar Advantage
 tags:
 - e-Commerce
 - Shopify
-cardImage: []
+cardImage:
+- "/placeholder-image.jpg"
 
 ---
