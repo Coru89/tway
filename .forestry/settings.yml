@@ -14,12 +14,21 @@ sections:
   templates:
   - post
 - type: directory
+  path: src/content/portfolio
+  label: Portfolio
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+- type: directory
   path: src/content/pages
   label: Pages
   create: documents
   match: "*.md"
   templates:
   - page
+- type: document
+  path: src/index.md
+  label: Home Page
 - type: heading
   label: Globals
 - type: document
