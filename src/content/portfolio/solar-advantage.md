@@ -4,4 +4,6 @@ tags:
 - e-Commerce
 - Shopify
 cardImage:
+- "/placeholder-image.jpg"
+
 ---
