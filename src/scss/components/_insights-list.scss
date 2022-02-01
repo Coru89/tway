@@ -1,18 +1,6 @@
-.post-list {
+.insights-list {
   margin-bottom: get-size(900);
   padding-top: get-size(700);
-
-  &__wrapper {
-    @include inner-wrapper;
-  }
-
-  &__heading {
-    font-size: get-font-size(700);
-
-    @include media-query(md) {
-      font-size: get-font-size(800);
-    }
-  }
 
   &__items {
     --flow-space: #{get-size(base)};

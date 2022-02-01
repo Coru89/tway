@@ -1,7 +1,7 @@
 .post {
   &__body {
     --flow-space: #{get-size(800)};
-    @include inner-wrapper;
+    @include panel-container;
     font-size: get-font-size(base);
     line-height: 1.7;
     padding: get-size(900) get-size(500) get-size(900) get-size(500);
@@ -132,7 +132,7 @@
     padding: get-size(500) 0;
 
     &-wrapper {
-      @include inner-wrapper;
+      @include panel-container;
     }
 
     .nav {

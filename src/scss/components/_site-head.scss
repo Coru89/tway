@@ -2,7 +2,7 @@
   padding: get-size(base);
 
   &__wrapper {
-    @include wrapper;
+    @include panel-container;
   }
 
   &__site-name {

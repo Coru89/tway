@@ -6,12 +6,11 @@
   padding: get-size(700) 0 get-size(900) 0;
 
   &__wrapper {
-    @include wrapper;
+    @include panel-container;
   }
 
   &__inner {
     align-items: flex-start;
-    //align-start: flex-start;
     justify-content: space-between;
 
     @include media-query(md) {

@@ -1,0 +1,14 @@
+.panel {
+  &__container {
+    @include panel-container;
+  }
+
+  &__heading {
+    font-size: get-font-size(700);
+    margin-bottom: get-size(max);
+
+    @include media-query(md) {
+      font-size: get-font-size(800);
+    }
+  }
+}

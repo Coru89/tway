@@ -3,7 +3,7 @@
   padding: get-size(900) 0 get-size(max) 0;
 
   &__wrapper {
-    @include inner-wrapper;
+    @include panel-container;
   }
 
   &__summary {

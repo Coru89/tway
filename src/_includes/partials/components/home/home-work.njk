@@ -1,0 +1,26 @@
+{% if portfolioListItems.length %}
+  <section class="work-list">
+    <div class="panel__container">
+      <h2 class="work-list__heading panel__heading">{{ portfolioListHeading }}</h2>
+        <div class="work-list__cards">
+          {% for item in portfolioListItems %}
+            {% if item.date.getTime() <= global.now %}
+              <div class="work-list__card">
+                <a href="{{ item.url }}">
+                    <img src="{{ item.data.cardImage }}" />
+                    <h3 class="work-list__link">
+                      {{ item.data.title }}
+                    </h3>
+                    <span>
+                      {{ item.data.tags }}
+                    </span>
+                  </a>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+    </div>
+  </section>
+{% endif %}
+

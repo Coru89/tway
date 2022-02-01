@@ -1,14 +1,12 @@
 ---
 layout: home
 title: Websites to power small business
-postsHeading: Latest Insights
+postsHeading: Insights
 archiveButtonText: See all insights
 
-
 portfolioHeading: Recent Work
-portfolioImage:
 
-servicesHeading: Our Expertise
+servicesHeading: Expertise
 
 metaDesc: 'Tway is a web development agency that builds exceptional business websites.'
 socialImage: ''
@@ -17,6 +15,6 @@ socialImage: ''
 {% import "macros/macros.njk" as macro with context %}
 <!-- do not delete --> 
 
-Tway is a web development agency in Western Canada. Our team of UX Designers and Developers build sites and solutions to help realize your business goals.
+A Canadian web-development all-star team. We use cutting-edge technology to create blazing-fast websites.
 
 {{ macro.button_link("Hire Us", "/contact") }}

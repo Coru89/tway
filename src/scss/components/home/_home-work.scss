@@ -3,32 +3,24 @@
   padding-top: get-size(700);
 
   &__wrapper {
-    @include inner-wrapper;
+    @include panel-container;
   }
 
-  &__heading {
-    font-size: get-font-size(700);
-    text-align: center;
-
+  &__cards {
     @include media-query(md) {
-      font-size: get-font-size(800);
-    }
-  }
-
-  &__items {
-    --flow-space: #{get-size(base)};
-    margin-top: 1em;
-    margin-top: var(--flow-space);
-    padding-top: get-size(300);
-
-    > * + * {
-      margin-top: 1em;
-      margin-top: var(--flow-space);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);   
+      gap: get-size(max);
     }
   }
 
   &__card {
     --flow-space: #{get-size(700)};
+
+    img {
+      border-radius: 25px 25px 12px 12px;
+      box-shadow: var(--theme-box-shadow);
+    }
 
     h3 {
       font-family: get-font(base);

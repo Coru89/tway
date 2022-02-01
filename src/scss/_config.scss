@@ -13,8 +13,7 @@ $breakpoints-config: (
 //  * Various misc metrics to use around the site
 //  */
 $metrics: (
-   'wrap-max-width': 58rem,
-   'wrap-inner-max-width': 52rem
+   'panel-container': 82rem
 );
 $colors: map-get($tokens, 'colors');
 $font-size-scale: map-get($tokens, 'font-size-scale');

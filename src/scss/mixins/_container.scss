@@ -1,7 +1,7 @@
-@mixin inner-wrapper() {
+@mixin panel-container() {
   margin-left: auto;
   margin-right: auto;
-  max-width: map-get($metrics, 'wrap-inner-max-width');
+  max-width: map-get($metrics, 'panel-container');
   padding-left: get-size(500);
   padding-right: get-size(500);
 }

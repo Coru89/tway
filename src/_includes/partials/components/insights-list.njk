@@ -1,13 +1,13 @@
 {% if postListItems.length %}
-  <section class="post-list">
-    <div class="post-list__wrapper">
-      <h2 class="post-list__heading">{{ postListHeading }}</h2>
-      <ol class="post-list__items" reversed>
+  <section class="insights-list">
+    <div class="panel__container">
+      <h2 class="panel__heading">{{ postListHeading }}</h2>
+      <ol class="insights-list__items" reversed>
         {% for item in postListItems %}
           {% if item.date.getTime() <= global.now %}
-            <li class="post-list__item">
+            <li class="insights-list__item">
               <h3>
-                <a href="{{ item.url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
+                <a href="{{ item.url }}" class="insights-list__link" rel="bookmark">{{ item.data.title }}</a>
               </h3>
               <p>
                 <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
