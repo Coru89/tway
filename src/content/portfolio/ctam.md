@@ -4,8 +4,5 @@ description:
 tags:
   - Craft CMS
   - Multilingual
-cardImage:
-- /images/ctam-desktop.png
+cardImage: 
 ---
-
-<img src="/images/ctam-desktop.png">
