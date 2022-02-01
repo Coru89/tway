@@ -22,6 +22,7 @@
     "chokidar-cli": "^2.1.0",
     "cross-env": "^5.2.1",
     "make-dir-cli": "^2.0.0",
+    "netlify-cli": "^8.15.2",
     "prettier": "^1.19.1",
     "rollup": "^1.32.1",
     "rollup-plugin-commonjs": "^10.1.0",
