@@ -11,3 +11,5 @@ fields:
 - type: image_gallery
   name: cardImage
   label: cardImage
+pages:
+- src/content/portfolio/solar-advantage.md
