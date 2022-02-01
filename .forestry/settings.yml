@@ -27,7 +27,7 @@ sections:
   label: Pages
   create: all
   match: "**/*"
-  exclude: json
+  exclude: "**/*.json"
   new_doc_ext: md
   templates:
   - page
