@@ -1,3 +1,12 @@
 [build]
   command = "npm run production"
   publish = "dist"
+
+[[plugins]]
+    package = "netlify-plugin-11ty"
+        [plugins.inputs]
+        cache_img = './images'
+        cache_img_httpHeader = false
+
+        cache_assets = './cache'
+        cache_other = []
