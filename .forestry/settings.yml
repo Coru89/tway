@@ -43,7 +43,7 @@ sections:
   path: src/_data/tokens.json
   label: Theme settings
 upload_dir: src/images
-public_path: images
+public_path: https://tway-dev.netlify.app/images
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
