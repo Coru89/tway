@@ -20,7 +20,6 @@ function generateImages(src, widths){
 
 exports.imageCssBackground = (src, selector, widths) =>{
   const metadata = generateImages(src, widths);
-  console.log(metadata);
 
   let markup = [`${selector} { background-image: url(${metadata.jpeg[0].url});} `];
 
