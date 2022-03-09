@@ -1,0 +1,25 @@
+.full-bleed  {
+  width: 100vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        max-width: unset;
+    * > img {
+        width: 100vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        max-width: unset;
+    }
+}
+
+  blockquote {
+    border-left: 0.4rem solid var(--color-theme-primary-light);
+    font-size: get-font-size(600);
+    font-style: italic;
+    margin-left: 0;
+    padding-left: get-size(500);
+
+    p {
+      opacity: 0.85;
+      padding: get-size(500) 0;
+    }
+  }

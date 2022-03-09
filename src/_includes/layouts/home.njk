@@ -1,3 +1,5 @@
+{% from "macros/macros.njk" import component with context%}
+
 {% extends 'layouts/base.njk' %}
 
 {# Intro content #}
@@ -23,7 +25,14 @@
 
 {% block content %}
   <main id="main-content" tabindex="-1">
-    {% include "partials/components/intro.njk" %}
+    {# {% include "partials/components/intro.njk" %} #}
+      {{ component('hero', {
+        heroHeading: title,
+        heroSummary: bannerSummary,
+        heroImage: bannerImage
+      }) }}
+
+    {% include 'partials/components/page-sections.njk' %}
     {% include "partials/components/home/home-services.njk" %}
     {% include "partials/components/home/home-work.njk" %}
     {% include "partials/components/home/home-insights.njk" %} 

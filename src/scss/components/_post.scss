@@ -1,28 +1,13 @@
 .post {
   &__body {
-    --flow-space: #{get-size(800)};
     @include panel-container;
+    max-width: 52rem;
     font-size: get-font-size(base);
     line-height: 1.7;
-    padding: get-size(900) get-size(500) get-size(900) get-size(500);
-
-    /**
-     * Generic HTML styles 
-     */
-    h2 + *,
-    h3 + * {
-      --flow-space: #{get-size(500)};
-    }
+    padding: 0 get-size(500) get-size(900) get-size(500);
 
     > * + * {
-      margin-top: 2.44rem;
-    }
-
-    h2,
-    h3 {
-      position: relative;
-
-      line-height: 1.2;
+      margin-bottom: 2.44rem;
     }
 
     a:not([class]) {
@@ -39,123 +24,6 @@
     a:not([class]):hover {
       text-decoration: underline;
     }
-
-    code {
-      color: var(--color-theme-primary);
-      font-size: 1.2em;
-      font-weight: 600;
-      margin-left: 0.01ch;
-      margin-right: 0.01ch;
-    }
-
-    pre > code {
-      -webkit-overflow-scrolling: touch;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      margin-right: 0;
-      overflow-x: auto;
-    }
-
-    blockquote {
-      border-left: 0.4rem solid var(--color-theme-primary-glare);
-      font-size: get-font-size(600);
-      font-style: italic;
-      margin-left: 0;
-      padding-left: get-size(500);
-
-      p {
-        opacity: 0.85;
-        padding: get-size(500) 0;
-      }
-    }
-
-    ol:not([class]),
-    ul:not([class]) {
-      margin-left: get-size(800);
-
-      li + li {
-        margin-top: get-size(300);
-      }
-    }
-
-    figure,
-    figure + *,
-    pre > code,
-    .video-player,
-    .video-player + *,
-    video {
-      --flow-space: #{get-size('max')};
-    }
-
-    figure,
-    pre > code,
-    .video-player,
-    video {
-      max-width: map-get($metrics, 'wrap-max-width');
-      margin-left: 50%; /*changing this value to 47% removes the horizontal scrollbar once the viewport is < 930px */
-      position: relative;
-      transform: translateX(
-        -50%
-      ); /* changing this value to 49% allows for the suggestion above to also eliminate the horizontal scroll. */
-
-      width: 100vw;
-    }
-
-    figure img,
-    pre > code,
-    .video-player {
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    }
-
-    figure img {
-      position: relative;
-      z-index: 1;
-    }
-
-    figcaption {
-      font-size: 0.8em;
-      font-style: italic;
-      margin: 0.5rem auto 0 auto;
-      max-width: map-get($metrics, 'wrap-inner-max-width');
-      padding: 0 get-size(500);
-    }
-
-    pre > code {
-      background: var(--color-dark);
-      display: block;
-      font-size: get-font-size(500);
-      padding: get-size(700);
-    }
-  }
-
-  &__footer {
-    background: var(--color-theme-highlight);
-    padding: get-size(500) 0;
-
-    &-wrapper {
-      @include panel-container;
-    }
-
-    .nav {
-      align-items: center;
-      display: flex;
-    }
-
-    h2 {
-      color: var(--color-dark);
-      flex-shrink: 0;
-      font-family: get-font(base);
-      font-size: get-font-size(600);
-      font-weight: 600;
-      margin-right: get-size('base');
-    }
-
-    h2 a {
-      @extend %visually-hidden;
-    }
-
-    a {
-      background: var(--color-bg);
-      padding: 0.4rem 0.6rem;
-    }
   }
 }
+

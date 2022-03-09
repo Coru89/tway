@@ -1,0 +1,93 @@
+.contact {
+  &__body {
+    @include panel-container;
+    font-size: get-font-size(base);
+    line-height: 1.7;
+    padding: 0 get-size(500) get-size(900) get-size(500);
+
+    @include media-query(md) {
+      display: flex;
+      justify-content: center;
+    }
+
+    address {
+      padding-bottom: 2rem;
+      padding-top: .25rem;
+    }
+
+    h3 {
+      padding-bottom: 1rem;
+    }
+
+    form {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__email {
+    padding-bottom: 1.5rem;
+  }
+
+  &__phone,
+  &__email,
+  &__fax {
+    a,
+    span {
+      color: var(--color-text);
+      font-weight: 400;
+    }
+  }
+
+  &__column {
+    @include media-query(md) {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--bleed {
+      @include media-query(md) {
+        max-width: 82rem;
+        padding: 1.5rem;
+        transform: translateX(-50%);
+        width: calc(100vw - 1.5rem);
+      }
+
+      @include media-query(xl) {
+        transform: none;
+        width: unset;
+        padding: 0;
+      }
+    }
+  }
+
+  &__row {
+    @include media-query(md) {
+      width: 50%;
+
+      &:first-of-type {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &__hours {
+    @include media-query(md) {
+      width: 50%;
+    }
+    @include media-query(xl) {
+      width: 60%;
+    }
+  }
+
+  &__items {
+    @include media-query(md) {
+      width: 50%;
+      margin-right: 2rem;
+    }
+    @include media-query(xl) {
+      width: 40%;
+      margin-right: 2rem;
+    }
+  }
+}
+

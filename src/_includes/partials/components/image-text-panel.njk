@@ -1,0 +1,35 @@
+{% from "macros/macros.njk" import button_link %}
+
+{% if props.backgroundColor === 'white' %}
+  {% set colorHexPanel = 'var(--color-white)' %}
+    {% set colorHexCard = 'transparent' %}
+{% elseif props.backgroundColor === 'grey' %}
+    {% set colorHexPanel = 'var(--color-grey-light)' %}
+    {% set colorHexCard = 'transparent' %}
+{% elseif props.backgroundColor === 'green' %}
+  {% set colorHexPanel = 'var(--color-theme-primary)' %}
+  {% set colorHexCard = 'var(--color-white)' %}
+{% elseif props.backgroundColor === 'light green' %}
+  {% set colorHexPanel = 'var(--color-bg-light);' %}
+  {% set colorHexCard = 'transparent' %}
+{% else %}
+    {% set colorHexPanel = 'var(--color-white)' %}
+    {% set colorHexCard = 'transparent' %}
+{% endif %}
+
+<section class="image-text-panel" style="background-color: {{colorHexPanel}};">
+  <div class="image-text-panel__inner" style="background-color: {{colorHexCard}};">
+      <div class="image-text-panel__image{% if props.imagePosition === 'right' %} image-text-panel__image--reverse{% endif %}">
+      {% if props.imageURL.length %}
+        {% image props.imageURL, props.imageAlt, null, "lazy", "100vw", ['300', '400', '576', '600', '730'] %}
+      {% endif %}
+    </div>
+    <div class="image-text-panel__text{% if props.imagePosition === 'right' %} image-text-panel__text--reverse{% endif %}">
+      <h2 class="image-text-panel__text-title">{{ props.title }}</h2>
+      <div class="image-text-panel__text-summary">{{props.summary | safe }}</div>
+        {% if props.buttonText.length and props.buttonPath.length %}
+          {{ button_link(props.buttonText, props.buttonPath, true) }} 
+        {% endif %}
+    </div>
+  </div>
+</section>

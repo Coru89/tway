@@ -1,14 +1,20 @@
 <footer role="contentinfo" class="site-foot">
   <div class="site-foot__wrapper">
-    <div class="site-foot__inner">
-      {% if site.shortDesc %}
-        <div>
-          <article class="site-foot__details">
-            <h2 class="font-base text-600">{{ site.name }}</h2>
-            {{ site.shortDesc | markdownFilter | safe }}
-          </article>
-        </div>
-      {% endif %}
+
+    <div class="site-foot__row">
+      {% include "partials/components/social-icons.njk" %}
     </div>
+
+    <div class="site-foot__row">
+      <div class="copyright rte">
+        <p>Copyright ©<span id="copyright-year"></span> Tway. All rights reserved.</p>
+        <script>
+          document
+            .getElementById('copyright-year')
+            .innerText = new Date().getFullYear();
+        </script>
+      </div>
+    </div>
+
   </div>
 </footer>

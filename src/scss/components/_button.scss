@@ -2,33 +2,64 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   background-color: var(--color-action-bg);
-  border: none;
+  border: 1px solid var(--color-grey);
   color: var(--color-action-text);
   cursor: pointer;
   display: inline-block;
-  font-family: get-font(base);
   font-size: get-font-size(base);
   font-weight: 700;
   line-height: 1;
   margin: 0;
-  padding: 0.8rem get-size('base');
+  padding: 0.7rem calc(get-size('base') - 0.1rem);
   text-decoration: none;
+  transition: background-color .1s ease-in, border-color .1s ease-in, color .1s ease-in;
 }
 
 .button:hover,
 .button:focus {
-  filter: brightness(1.2);
+  background-color: var(--color-theme-primary);
+  border-color: var(--color-theme-primary);
+  color: var(--color-white);
+
+  svg {
+    stroke: var(--color-white);
+  }
 }
 
 .button:focus:hover {
   outline: none;
 }
 
-.button:focus:not(:hover) {
-  outline-offset: -4px;
-  outline: 1px solid var(--color-action-text);
-}
-
 .button:active {
   transform: scale(0.99);
+}
+
+.button--arrow {
+  font-size: get-font-size(300);
+  text-transform: uppercase;
+
+  &:hover {
+    filter: none;
+
+    svg {
+      animation: arrow-animation .3s;
+    }
+  }
+
+  svg {
+    stroke: var(--color-theme-primary);
+    margin-left: .5rem;
+  }
+}
+
+.button--reverse {
+  background-color: var(--color-theme-primary);
+  color: var(--color-white);
+}
+
+
+@keyframes arrow-animation {
+  0%   { transform: translateX(0); }
+  50%   { transform: translateX(3px); }
+  100%  { transform: translateX(0); }
 }

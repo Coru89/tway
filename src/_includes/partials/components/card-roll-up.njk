@@ -1,0 +1,31 @@
+{% if props.collection | length %}
+  <section class="card-roll-up">
+    <div class="card-roll-up__inner">
+      <div class="card-roll-up__items" reversed>
+        {% for item in props.collection %}
+          <a href="{{ item.url }}" class="card-roll-up__link" rel="bookmark">
+            <div class="card-roll-up__item">
+              {% if item.data.rollupImage.length %}
+                <div class="card-roll-up__image-wrapper">
+                  {% image item.data.rollupImage, item.data.rollupImageAlt, null, "lazy", "(min-width: 36rem) 100vw, 50vw", ['400', '450', '500'] %}
+                </div>
+              {% endif %}
+              <div class="card-roll-up__lower">
+                <div class="card-roll-up__item-title">
+                  {{item.data.title}}
+                </div>
+                <div class="card-roll-up__button-wrapper">
+                  <div class="button button--reverse button--arrow">
+                    Learn more
+                    {% svg "arrow-white" %}
+                  </div>
+                  {% svg "double-logo-small" %}
+                </div>
+              </div>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}

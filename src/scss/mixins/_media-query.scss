@@ -3,7 +3,7 @@
   $matched-breakpoint: map-get($breakpoints-config, $key);
 
   @if not $matched-breakpoint {
-    @warn #{ 'Breakpoint, ‘' + $key + '’ not found in `$stalfos-config`. Make sure it’s set in the ‘breakpoints’ section.' };
+    @warn #{ 'Breakpoint, ‘' + $key + '’ not found in config. Make sure it’s set in the ‘breakpoints’ section.' };
   } @else {
     @media #{ $matched-breakpoint } {
       @content;

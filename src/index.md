@@ -10,11 +10,10 @@ servicesHeading: Expertise
 
 metaDesc: 'Tway is a web development agency that builds exceptional business websites.'
 socialImage: ''
+bannerSummary: A Canadian web-development all-star team. We use cutting-edge technology to create blazing-fast websites.
+bannerImage: "/images/banner.jpg"
 ---
 <!-- do not delete -->
 {% import "macros/macros.njk" as macro with context %}
-<!-- do not delete --> 
+<!-- do not delete -->
 
-A Canadian web-development all-star team. We use cutting-edge technology to create blazing-fast websites.
-
-{{ macro.button_link("Hire Us", "/contact") }}

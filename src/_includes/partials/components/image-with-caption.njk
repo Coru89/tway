@@ -1,0 +1,4 @@
+<figure{% if props.fullBleed === true %} class="full-bleed"{% endif %}>
+  {% image props.image, props.imageAlt, null, "lazy", "100vw", ['300', '400', '576', '600', '768', '992', '1280', '1312'] %}
+  <figcaption>{{ props.imageCaption }}</figcaption>
+</figure>

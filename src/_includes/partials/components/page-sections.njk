@@ -1,0 +1,41 @@
+{% for block in page_sections %}
+    {% if block.template === 'image-text-panel' %}
+    {{ component('image-text-panel', {
+        title: block.title,
+        summary: block.summary,
+        buttonText: block.buttonText,
+        buttonPath: block.buttonPath,
+        imageURL: block.imageURL,
+        imageAlt: block.imagealt,
+        imagePosition: block.imagePosition,
+        backgroundColor: block.backgroundColor
+    }) }}
+    
+    {% elseif block.template === 'text-area' %}
+        {{ block.text | safe }}
+
+    {% elseif block.template === 'image-with-caption' %}
+        {{ component('image-with-caption', {
+            image: block.image,
+            imageAlt: block.imageAlt,
+            imageCaption: block.imageCaption,
+            fullBleed: block.fullBleed
+        }) }}
+
+    {% elseif block.template === 'cards-with-icon' %}
+        {{ component('cards-icon-panel', {
+            cards: block.cards,
+            heading: block.heading,
+            buttonText: block.buttonText,
+            buttonPath: block.buttonPath,
+            backgroundColor: block.backgroundColor
+        }) }}
+
+    {% elseif block.template === 'blockquote' %}
+        <blockquote>
+            <p>
+                {{ block.text }}
+            </p>
+        </blockquote>
+    {% endif %}
+{% endfor %}

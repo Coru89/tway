@@ -1,0 +1,13 @@
+.page {
+  &__body {
+    @include panel-container;
+    font-size: get-font-size(base);
+    line-height: 1.7;
+    padding: 0 get-size(500) get-size(900) get-size(500);
+
+    > * + * {
+      margin-bottom: 2.44rem;
+    }
+  }
+}
+

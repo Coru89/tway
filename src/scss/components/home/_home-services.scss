@@ -1,4 +1,6 @@
 .services {
+  @include panel-container;
+  
   margin-bottom: get-size(900);
   padding-top: get-size(700);
 

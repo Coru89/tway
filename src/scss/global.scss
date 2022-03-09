@@ -12,7 +12,7 @@
 /**
  * GLOBAL STYLES
  */
- * {
+* {
   box-sizing: border-box
 }
 
@@ -41,6 +41,15 @@ body {
 
 ol[class],ul[class] {
   list-style: none
+}
+
+ol:not([class]),
+ul:not([class]) {
+  margin-left: get-size(800);
+
+  li + li {
+    margin-top: get-size(300);
+  }
 }
 
 a:not([class]) {
@@ -84,9 +93,77 @@ img {
   max-width: 100%
 }
 
-:focus {
-  outline: 1px solid var(--color-theme-primary-glare);
-  outline-offset: 0.25rem;
+picture {
+  display: flex;
+}
+
+/**
+* Generic HTML styles 
+*/
+
+//  code {
+//    color: var(--color-theme-primary);
+//    font-size: 1.2em;
+//    font-weight: 600;
+//    margin-left: 0.01ch;
+//    margin-right: 0.01ch;
+//  }
+
+//  pre > code {
+//    -webkit-overflow-scrolling: touch;
+//    border: 1px solid rgba(255, 255, 255, 0.1);
+//    margin-right: 0;
+//    overflow-x: auto;
+//  }
+
+//  pre > code {
+//   background: var(--color-dark);
+//   display: block;
+//   font-size: get-font-size(500);
+//   padding: get-size(700);
+// }
+
+figure,
+figure + *,
+pre > code,
+.video-player,
+.video-player + *,
+video {
+  --flow-space: #{get-size('max')};
+}
+
+figure,
+pre > code,
+.video-player,
+video {
+  max-width: 58rem;
+  margin-left: 50%; /*changing this value to 47% removes the horizontal scrollbar once the viewport is < 930px */
+  position: relative;
+  transform: translateX(
+    -50%
+  ); /* changing this value to 49% allows for the suggestion above to also eliminate the horizontal scroll. */
+
+  width: 100vw;
+}
+
+figure img,
+pre > code,
+.video-player {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+figure img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+figcaption {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 0.5rem auto 0 auto;
+  max-width: 58rem;
+  padding: 0 get-size(500);
 }
 
 /**
@@ -94,7 +171,7 @@ img {
  */
 
 // Utils
-@import 'utilities/visually-hidden';
+@import 'utilities/reference';
 
 // Components
 @import 'components/reference';

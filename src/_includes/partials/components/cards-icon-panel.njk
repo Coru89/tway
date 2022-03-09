@@ -1,0 +1,36 @@
+{% if props.backgroundColor === 'white' %}
+  {% set colorHexPanel = 'var(--color-white)' %}
+{% elseif props.backgroundColor === 'grey' %}
+    {% set colorHexPanel = 'var(--color-grey-light)' %}
+{% elseif props.backgroundColor === 'light green' %}
+  {% set colorHexPanel = 'var(--color-bg-light);' %}
+{% else %}
+    {% set colorHexPanel = 'var(--color-white)' %}
+{% endif %}
+
+{% if props.cards.length %}
+  <section class="cards-icon-roll-up" style="background-color: {{colorHexPanel}};">
+    <div class="cards-icon-roll-up__inner">
+      <h2 class="cards-icon-roll-up__heading">{{ props.heading }}</h2>
+      <div class="cards-icon-roll-up__items" reversed>
+        {% for item in props.cards %}
+          <a href="{{ item.linkPath }}" class="cards-icon-roll-up__link" rel="bookmark">
+            <div class="cards-icon-roll-up__item">
+              {% if item.icon %}
+                {% svg item.icon %}
+              {% endif %}
+              <div class="cards-icon-roll-up__item-title">
+                {{ item.title }}
+              </div>
+                <div class="cards-icon-roll-up__summary">{{ item.summary }}</div>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+      {% from "macros/macros.njk" import button_link %}
+      {% if props.buttonText and props.buttonPath %}
+        {{ button_link(props.buttonText, props.buttonPath, true) }}
+      {% endif %}
+    </div>
+  </section>
+{% endif %}

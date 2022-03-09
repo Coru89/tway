@@ -1,0 +1,23 @@
+.social-icons {
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: get-size(700);
+  }
+
+  &__item {
+    border-radius: 50%;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+
+    &:not(:first-child) {
+      margin-left: 0.75rem;
+    }
+
+    &:hover {
+      box-shadow: var(--theme-box-shadow-bottom);      
+      transform: translateY(-0.1rem);
+    }
+  }
+}

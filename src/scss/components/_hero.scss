@@ -1,0 +1,56 @@
+.hero {
+  &__banner {
+    &-img {
+      background-position: 75%;
+      background-size: cover;
+      height: 250px;
+      width: 100%;
+
+      @include media-query(md) {
+        background-position: unset;
+        height: 400px;
+      }
+
+      @include media-query(xl) {
+         height: 650px;
+      }
+    }
+  }
+
+  &__heading {
+    color: var(--color-hero-heading);
+    margin-bottom: get-size(500);
+    padding: 0;
+
+    @include media-query(md) {
+      margin-bottom: get-size(600);
+    }
+  }
+
+  &__summary {
+    font-size: get-font-size(base);
+    
+    @include media-query(md) {
+      font-size: get-font-size(500);
+    }
+  }
+
+  &__wrapper {
+    background-color: var( --color-bg);
+    line-height: 2rem;
+    margin: 0 auto;
+    max-width: 71rem;
+    padding: 2.5rem 1.5rem 3rem 1.5rem;
+    position: relative;
+    text-align: center;
+
+    @include media-query(md) {
+      padding: 4.5rem 6rem 6rem 6rem;
+    }
+
+    @include media-query(xl) {
+      top: -64px;
+      margin: 0 auto -64px;
+    }
+  }
+}

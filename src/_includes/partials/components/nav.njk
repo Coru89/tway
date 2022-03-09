@@ -1,62 +1,63 @@
 {% if navigation.items %}
   <nav class="nav" aria-label="{{ariaLabel}}">
-    <ul class="nav__list">
-      {% for item in navigation.items %}
-        {% set relAttribute = '' %}
-        {% set currentAttribute = '' %}
-        {% set currentClass = '' %}
+    <button class="nav__button" id="nav" aria-label="toggle navigation menu">
+      {% svg "nav" %}
+      {% svg "close" %}
+    </button>
+    <div class="nav__wrapper">
+      <ul class="nav__list">
+        {% for item in navigation.items %}
+          {% set relAttribute = '' %}
+          {% set currentAttribute = '' %}
+          {% set currentClass = '' %}
 
-        {% if item.rel %}
-          {% set relAttribute = ' rel="' + item.rel + '"' %}
-        {% endif %}
+          {% if item.rel %}
+            {% set relAttribute = ' rel="' + item.rel + '"' %}
+          {% endif %}
 
-        {% if page.url == (item.url + '/') %}
-          {% set currentAttribute = ' aria-current="page"' %}
-          {% set currentClass = 'nav__item--active' %}
-        {% endif %}
-        <li class="nav__item {{ currentClass | safe }}">
-          <a href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}
-            {% if item.items %}
-              <svg
-                class="arrow"
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                viewBox="0 0 24 24"
-                focusable="false"
-                aria-hidden="true"
-                fill="currentColor"
-              >
-                <path
-                  d="M9.707 18.707l6-6a.999.999 0 0 0 0-1.414l-6-6a.999.999 0 1 0-1.414 1.414L13.586 12l-5.293 5.293a.999.999 0 1 0 1.414 1.414z"
-                />
-              </svg>
-            {% endif %}
-          </a>
+          {% if page.url == (item.url + '/') %}
+            {% set currentAttribute = ' aria-current="page"' %}
+            {% set currentClass = 'nav__item--active' %}
+          {% endif %}
+          <li class="nav__item{% if item.items %} nav__item--has-level-2{% endif %} {{ currentClass | safe }}">
+            <a class="nav__item-link" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}><span class="nav__item-link-text">{{ item.text }}</span>{% if item.items %}{% svg "chevron" %}{% endif %}</a>
             {% if item.items %}
               <ul class="nav__sublist">
                 {% for item in item.items %}
-                    {% set relAttribute = '' %}
-                    {% set currentAttribute = '' %}
-                    {% set currentClass = '' %}
+                  {% set relAttribute = '' %}
+                  {% set currentAttribute = '' %}
+                  {% set currentClass = '' %}
 
-                    {% if item.rel %}
-                      {% set relAttribute = ' rel="' + item.rel + '"' %}
-                    {% endif %}
+                  {% if item.rel %}
+                    {% set relAttribute = ' rel="' + item.rel + '"' %}
+                  {% endif %}
 
-                    {% if page.url == (item.url + '/') %}
-                      {% set currentAttribute = ' aria-current="page"' %}
-                      {% set currentClass = 'nav__item--active' %}
-                    {% endif %}
+                  {% if page.url == (item.url + '/') %}
+                    {% set currentAttribute = ' aria-current="page"' %}
+                    {% set currentClass = 'nav__item--active' %}
+                  {% endif %}
 
-                  <li class="nav__item nav__item-secondary {{ currentClass | safe }}">
-                    <a href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
+                  <li class="nav__item nav__item-level-2 {{ currentClass | safe }}">
+                    <a class="nav__item-link nav__item-link-level-2" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>
+                      <span class="nav__item-link-text">{{ item.text }}</span>
+                    </a>
                   </li>
                 {% endfor %}
               </ul>
-           {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+        {% from "macros/macros.njk" import button_link %}
+      </ul>
+        <div class="nav__secondary">
+          <div class="nav__contact">
+          {{ button_link("Contact", "/contact", true) }}
+          </div>
+          {# <div class="nav__theme">
+              <theme-toggle></theme-toggle>
+            </div> #}
+          {% include "partials/components/social-icons.njk" %}
+        </div>
+    </div>
   </nav>
 {% endif %}
