@@ -5,12 +5,14 @@
 
 {% block content %}
   <main id="main-content" tabindex="-1">
-    <article class="post">
-      {% include "partials/components/intro.njk" %}
-      <div class="post__body">
-        {{ content | safe }}
-      </div>
-    </article>
+
+    {% include "partials/components/intro.njk" %}
+
+    <div class="page__body">
+      {{ content | safe }}
+      {% include 'partials/components/page-sections.njk' %}
+    </div>
+
   </main>
 {% endblock %}
 
