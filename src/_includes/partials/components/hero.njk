@@ -1,7 +1,7 @@
 <header class="hero">
 	<div class="hero__banner">
-		<div class="hero__banner-img"></div>
-		{# {% image "/images/dog.png", "hi", null, "eager", "100vw", ['576', '600', '768', '992', '1280', '1920', '2560']%} #}
+		{# <div class="hero__banner-img"></div> #}
+		{% image "/images/banner4.jpg", "hi", null, "eager", "100vw", ['576', '600', '768', '992', '1280', '1920', '2560']%}
 	</div>
 	<div class="hero__wrapper">
 		<h1 class="hero__heading{{ ' hero__heading--compact' if page.url === '/' }}">{{ props.heroHeading | safe }}</h1>
@@ -11,8 +11,8 @@
 	</div>
 </header>
 
-{% if props.heroImage %}
+{# {% if props.heroImage.length %}
 	<style>
 		{% cssBackground props.heroImage, ".hero__banner-img", ['576', '600', '768', '992', '1280', '1920', '2560'] %}
 	</style>
-{% endif %}
+{% endif %} #}
