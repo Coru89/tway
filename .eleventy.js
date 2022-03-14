@@ -95,12 +95,12 @@ module.exports = function (eleventyConfig) {
     const livePostsPortfolio = portfolio => portfolio.date <= now && !portfolio.data.draft;
     eleventyConfig.addCollection('porfolio', collection => {
       return [
-        ...collection.getFilteredByGlob('./src/content/portfolio/*.md').filter(livePostsPortfolio)
+        ...collection.getFilteredByGlob('./src/content/pages/work/*.md').filter(livePostsPortfolio)
       ].reverse();
     });
   
     eleventyConfig.addCollection('portfolioFeed', collection => {
-      return [...collection.getFilteredByGlob('./src/content/portfolio/*.md').filter(livePostsPortfolio)]
+      return [...collection.getFilteredByGlob('./src/content/pages/work/*.md').filter(livePostsPortfolio)]
         .reverse()
         .slice(0, site.maxPostsPerPage);
     });

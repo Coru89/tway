@@ -1,5 +1,5 @@
 ---
-label: Porfolio
+label: Work
 hide_body: false
 fields:
 - type: text
@@ -12,4 +12,4 @@ fields:
   name: cardImage
   label: cardImage
 pages:
-- src/content/portfolio/solar-advantage.md
+- src/content/pages/work/solar-advantage.md

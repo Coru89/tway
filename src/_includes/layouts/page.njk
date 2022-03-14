@@ -13,6 +13,7 @@
     }) }}
     <article class="page{% if leftNavFilter.length %} page--left-nav{% endif %}">
       <div class="page__body">
+        {{ content | safe }}
         {% include 'partials/components/page-sections.njk' %}
           {% if leftNavFilter.length %}
             {{ component('left-nav', {

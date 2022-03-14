@@ -23,8 +23,8 @@ sections:
   templates:
   - post
 - type: directory
-  path: src/content/portfolio
-  label: Portfolio
+  path: src/content/work
+  label: Work
   create: documents
   match: "**/*"
   exclude: "**/*.json"

@@ -188,14 +188,20 @@
       }
 
       &-level-2 {
-        font-weight: 500;
+        font-weight: 600;
         padding: 1.75rem 0;
         position: static;
-        text-transform: capitalize;
+        text-decoration: underline;
+        // text-transform: capitalize;
 
         @include media-query(md) {
-          padding: 0;
+          padding: 0 0 1rem 0;
         }
+      }
+
+      &-level-3 {
+        color: var(--color-grey-dark);
+        text-transform: capitalize;
       }
     }
 
@@ -245,7 +251,7 @@
     color: var(--color-black);
     display: none;
     gap: 1rem 3rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 0 1.5rem;
 
     $triangle-size: 13px;

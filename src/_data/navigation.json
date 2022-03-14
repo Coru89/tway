@@ -2,30 +2,59 @@
   "items": [
     {
       "text": "Services",
-      "url": "/services",
+      "url": "",
       "external": false,
       "items": [
         {
           "text": "Websites",
           "url": "/services/websites",
-          "external": false
+          "external": false,
+          "items": [
+            {
+              "text": "Craft CMS",
+              "url": "/services/Craft",
+              "external": false
+            },
+            {
+              "text": "Wordpress",
+              "url": "/services/wordpress",
+              "external": false
+            },
+            {
+              "text": "Jamstack",
+              "url": "/services/jamstack",
+              "external": false
+            }
+          ]
         },
         {
           "text": "E-Commerce",
           "url": "/services/ecommerce",
-          "external": false
+          "external": false,
+          "items": [
+            {
+              "text": "Shopify",
+              "url": "/services/shopify",
+              "external": false
+            },
+            {
+              "text": "WooCommerce",
+              "url": "/services/woocommerce",
+              "external": false
+            }
+          ]
         },
         {
-          "text": "Jamstack",
-          "url": "/services/jamstack",
-          "external": false
-        },
-        {
-          "text": "SharePoint",
+          "text": "SharePoint & Office 365",
           "url": "/services/sharepoint",
           "external": false
         }
       ]
+    },
+    {
+      "text": "Work",
+      "url": "/work",
+      "external": true
     },
     {
       "text": "About",
@@ -35,11 +64,6 @@
     {
       "text": "Insights",
       "url": "/insights",
-      "external": false
-    },
-    {
-      "text": "Contact",
-      "url": "/contact",
       "external": false
     }
   ]
