@@ -1,18 +1,27 @@
 {% extends 'layouts/base.njk' %}
+{% from "macros/macros.njk" import component %}
 
 {# Intro content #}
 {% set introHeading = title %}
 
 {% block content %}
   <main id="main-content" tabindex="-1">
-
-    {% include "partials/components/intro.njk" %}
-
-    <div class="page__body">
-      {{ content | safe }}
-      {% include 'partials/components/page-sections.njk' %}
-    </div>
-
+    {{ component('hero', {
+      heroHeading: title,
+      heroSummary: bannerSummary,
+      heroImage: bannerImage
+    }) }}
+    <article class="page{% if leftNavFilter.length %} page--left-nav{% endif %}">
+      <div class="page__body">
+        {% include 'partials/components/page-sections.njk' %}
+          {% if leftNavFilter.length %}
+            {{ component('left-nav', {
+              navigationItems: navigation.items,
+              leftNavFilter: leftNavFilter
+            }) }}
+          {% endif %}
+      </div>
+    </article>
   </main>
 {% endblock %}
 

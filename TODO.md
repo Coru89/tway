@@ -1,0 +1,2 @@
+- create content for each service offered
+- descriptions of each project

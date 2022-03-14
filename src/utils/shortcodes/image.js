@@ -15,12 +15,14 @@ exports.imageShortCode = (src, alt, cls, loading, sizes, widths) => {
 
     let imageAttributes = {
       alt,
+      cls,
       sizes,
       loading,
       widths
     };
 
-    cls === '' || null ? '' : imageAttributes.class = cls;
+    !imageAttributes.alt ? imageAttributes.alt = '' : imageAttributes.alt;
+    !imageAttributes.cls ? imageAttributes.cls = '' : imageAttributes.cls;
 
 
     // get metadata even the images are not fully generated

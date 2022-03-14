@@ -12,6 +12,7 @@ const dateFilter = require('./src/filters/date-filter.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 const sortByOrder = require('./src/filters/sort-by-order.js');
+const subNav = require('./src/filters/subNav.js');
 
 
 // Import data files
@@ -60,6 +61,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('markdownFilter', markdownFilter);
   eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
   eleventyConfig.addFilter("sortByOrder", sortByOrder);
+  eleventyConfig.addFilter("subNav", subNav);
 
   // Layout aliases
   eleventyConfig.addLayoutAlias('home', 'layouts/home.njk');

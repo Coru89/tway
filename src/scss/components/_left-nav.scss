@@ -1,0 +1,74 @@
+.left-nav {
+  display: block;
+  margin: 0 auto 3rem auto;
+  order: 1;
+
+  @include media-query(xl) {
+    margin: 0 0 0 1.5rem;
+    order: 0;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    padding-left: 0.75rem;
+    text-align: center;
+
+    @include media-query(xl) {
+      font-size: get-font-size(500);
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: 0 2.5rem;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 0 0 .75rem;
+
+    @include media-query(xl) {
+      display: initial;
+      padding-top: 0.5rem;
+    }
+  }
+
+  &__item {
+    font-size: 18px;
+    margin: 0;
+    padding: 0.75rem;
+
+    &::before {
+      color: var(--color-primary);
+      content: '\2022';
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: -1em;
+      width: 1em;
+    }
+
+    @include media-query(xl) {
+      border-bottom: 1px solid var(--color-primary);
+
+      &:first-of-type {
+        border-top: 1px solid var(--color-primary);
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &-link {
+      color: var(--color-text);
+      text-decoration: none;
+    }
+
+    &--active {
+      .left-nav__item-link {
+        color: var(--color-primary);
+        font-weight: 700;
+      }
+    }
+  }
+}
