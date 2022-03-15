@@ -22,15 +22,6 @@ sections:
   match: "*.md"
   templates:
   - post
-- type: directory
-  path: src/content/work
-  label: Work
-  create: documents
-  match: "**/*"
-  exclude: "**/*.json"
-  new_doc_ext: md
-  templates:
-  - porfolio
 - type: document
   path: src/index.md
   label: Home Page
