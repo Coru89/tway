@@ -30,7 +30,7 @@ page_sections:
     summary: A snippet of text
     linkPath: "/services/websites"
     icon: ''
-  heading: ''
+  heading: Capabilties
   buttonText: ''
   buttonPath: ''
 bannerimage: ''
