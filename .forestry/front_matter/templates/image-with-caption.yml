@@ -1,0 +1,23 @@
+---
+label: Image with caption
+hide_body: true
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: imageAlt
+  type: text
+  config:
+    required: false
+  label: Image Alt
+- name: fullBleed
+  type: boolean
+  default: false
+  label: Full bleed
+- name: imageCaption
+  type: text
+  config:
+    required: false
+  label: Caption

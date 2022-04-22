@@ -1,0 +1,63 @@
+---
+label: Cards with icon
+hide_body: true
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Panel Heading
+- name: backgroundColor
+  type: select
+  default: white
+  config:
+    required: false
+    options:
+    - white
+    - grey
+    - light green
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Panel Background Color
+- name: buttonText
+  type: text
+  config:
+    required: false
+  label: Button Text
+- name: buttonPath
+  type: text
+  config:
+    required: false
+  label: Button Path
+- name: cards
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: title
+  - name: summary
+    type: text
+    config:
+      required: false
+    label: summary
+  - name: linkPath
+    type: text
+    config:
+      required: false
+    label: Link Path
+    description: e.g. "/contact"
+  - name: icon
+    type: text
+    config:
+      required: false
+    label: Icon
+  config:
+    min: 
+    max: 4
+    labelField: 
+  label: Cards

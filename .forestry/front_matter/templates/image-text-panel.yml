@@ -1,0 +1,64 @@
+---
+label: Image Text Panel
+hide_body: true
+fields:
+- name: imageAlt
+  type: text
+  config:
+    required: false
+  label: imageAlt
+- name: imagePosition
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - right
+    - left
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Image Position
+- name: buttonText
+  type: text
+  config:
+    required: false
+  label: buttonText
+- name: buttonPath
+  type: text
+  config:
+    required: false
+  label: buttonPath
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: summary
+  type: text
+  config:
+    required: false
+  label: summary
+- name: imageURL
+  type: file
+  config:
+    maxSize: 5
+  label: imageURL
+- name: backgroundColor
+  type: select
+  default: white
+  config:
+    required: false
+    options:
+    - white
+    - green
+    - grey
+    - light green
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Panel Background Color

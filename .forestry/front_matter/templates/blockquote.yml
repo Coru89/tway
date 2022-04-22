@@ -1,0 +1,9 @@
+---
+label: Blockquote
+hide_body: true
+fields:
+- name: text
+  type: text
+  config:
+    required: false
+  label: Text
