@@ -27,10 +27,10 @@ $tokens: (
     xxl: 87.5rem
   ),
   colors: (
-    primary: #173854,
-    primary-light: #102538,
-    primary-lighter: #22547c,
-    secondary: #a9cba5,
+    primary: #416755,
+    primary-light: #6CA289,
+    primary-lighter: #CDDFD7,
+    secondary: #E4572E,
     secondary-dark: #00394E,
     secondary-light: #007FAD,
     secondary-lighter: #E5F1F8,
@@ -38,13 +38,13 @@ $tokens: (
     tertiary-2: #FCB813,
     tertiary-3: #FEDF6F,
     black: #222222,
-    slate: #343537,
+    slate: #261C15,
     grey: #CDCDCD,
-    grey-light: #F4F4F4,
+    grey-light: #F5F5F5,
     white: #FFF
   ),
   fonts: (
-    base: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-    serif: "'Lora', serif"
+    base: "'Heebo', sans-serif",
+    serif: "'Oxygen', serif"
   )
 );

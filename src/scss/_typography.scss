@@ -1,70 +1,67 @@
-/* lora-700 - latin */
-@font-face {
-  font-family: 'Lora';
+ @font-face {
+   font-family: 'Heebo';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Heebo'),
+     url('/fonts/Heebo-Regular.woff2') format('woff2'), url('/fonts/Heebo-Regular.woff') format('woff');
+   font-display: swap;
+ }
+
+ @font-face {
+  font-family: 'Heebo';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
+  src: local('Heebo Light'),
+    url('/fonts/Heebo-Light.woff2') format('woff2'), url('/fonts/Heebo-Light.woff') format('woff');
   font-display: swap;
-  src: local('Lora Bold'), local('Lora-Bold'),
-    url('/fonts/lora-v13-latin-700.woff') format('woff');
 }
 
+ @font-face {
+   font-family: 'Heebo';
+   font-style: normal;
+   font-weight: 500;
 
-// @font-face {
-//   font-family: 'Quicksand';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-weight: 400;
-//   src: local('Quicksand'),
-//     url('/fonts/Quicksand-Regular.woff2') format('woff2');
-//   font-display: swap;
-// }
+   src: local('Heebo Medium'), local('Heebo-Medium'),
+     url('/fonts/Heebo-Medium.woff2') format('woff2'), url('/fonts/Heebo-Medium.woff') format('woff');;
+   font-display: swap;
+ }
 
-// @font-face {
-//   font-family: 'Quicksand';
-//   font-style: normal;
-//   font-weight: 500;
-//   font-weight: 500;
-//   src: local('Quicksand Medium'), local('Quicksand-Medium'),
-//     url('/fonts/Quicksand-Medium.woff2') format('woff2');
-//   font-display: swap;
-// }
+ @font-face {
+   font-family: 'Heebo';
+   font-style: normal;
+   font-weight: 700;
+   font-weight: 700;
+   src: local('Heebo Bold'), local('Heebo-Bold'),
+     url('/fonts/Heebo-Bold.woff2') format('woff2'), url('/fonts/Heebo-Bold.woff') format('woff');
+  font-display: swap;
+ }
 
-// @font-face {
-//   font-family: 'Quicksand';
-//   font-style: normal;
-//   font-weight: 700;
-//   font-weight: 700;
-//   src: local('Quicksand Bold'), local('Quicksand-Bold'),
-//     url('/fonts/Quicksand-Bold.woff2') format('woff2');
-//  font-display: swap;
-// }
+ @font-face {
+   font-family: 'Oxygen';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Oxygen'), local('Oxygen Regular'), local('Oxygen-Regular'),
+     url('/fonts/Oxygen-Regular.woff2') format('woff2'), url('/fonts/Oxygen-Regular.woff') format('woff');
+   font-display: swap;
+ }
 
-// @font-face {
-//   font-family: 'DM Sans';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: local('DM Sans'), local('DMSans'), local('DM Sans Regular'), local('DMSans Regular'), local('DMSans-Regular'),
-//     url('/fonts/DMSans-Regular.woff2') format('woff2'), url('/fonts/DMSans-Regular.woff') format('woff');
-//   font-display: swap;
-// }
+ @font-face {
+   font-family: 'Oxygen';
+   font-style: normal;
+   font-weight: 500;
+   src: local('Oxygen Medium'), local('Oxygen-Medium'),
+     url('/fonts/Oxygen-Medium.woff2') format('woff2'), url('/fonts/Oxygen-Medium.woff') format('woff');
+   font-display: swap;
+ }
 
-// @font-face {
-//   font-family: 'DM Sans';
-//   font-style: normal;
-//   font-weight: 500;
-//   src: local('DM Sans Medium'), local('DMSans Medium'), local('DMSans-Medium'), local('DM Sans-Medium'),
-//     url('/fonts/DMSans-Medium.woff2') format('woff2'), url('/fonts/DMSans-Medium.woff') format('woff');
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: 'DM Sans';
-//   font-style: normal;
-//   font-weight: 700;
-//   src: local('DM Sans Bold'), local('DMSans Bold'), local('DMSans-Bold'), local('DM Sans-Bold'),
-//     url('/fonts/DMSans-Bold.woff2') format('woff2'), url('/fonts/DMSans-Bold.woff') format('woff');
-//   font-display: swap;
-// }
+ @font-face {
+   font-family: 'Oxygen';
+   font-style: normal;
+   font-weight: 700;
+   src: local('Oxygen Bold'), local('Oxygen-Bold'),
+     url('/fonts/Oxygen-Bold.woff2') format('woff2'), url('/fonts/Oxygen-Bold.woff') format('woff');
+   font-display: swap;
+ }
 
 body {
   font-family: get-font(base);

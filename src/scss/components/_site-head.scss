@@ -8,10 +8,6 @@
   &__site-name {
     display: inline-block;
     line-height: 0;
-
-    @include media-query(md) {
-      padding: get-size(base) get-size(base) get-size(base) 0;
-    }
   }
 
   &__inner {
@@ -30,9 +26,9 @@
   }
 
   .site__logo {
-    height: 35px;
-    width: auto;
     display: none;
+    margin-left: -.5rem;
+    margin-right: 2rem;
 
     @include media-query(xl) {
       display: block;

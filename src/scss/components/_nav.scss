@@ -1,7 +1,5 @@
 .nav {
-  @include media-query(md) {
-    margin-left: auto;
-  }
+  width: 100%;
 
   &__button {
     @include button-reset;
@@ -69,6 +67,7 @@
     @include media-query(sm) {
       display: flex;
       justify-content: space-between;
+      margin-left: auto;
     }
   }
 
@@ -98,7 +97,7 @@
           bottom: 0;
           content: '';
           display: block;
-          height: 2px;
+          height: 1px;
           left: 0;
           margin: auto;
           opacity: 0;
