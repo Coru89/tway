@@ -7,7 +7,8 @@ portfolioHeading: Recent Work
 servicesHeading: Expertise
 metaDesc: Tway is a web development agency that builds modern and fast websites.
 socialImage: ''
-bannerSummary: A Canadian web-development all-star team. We use cutting-edge technology to create blazing-fast websites that google loves.
+bannerSummary: A Canadian web-development all-star team. We use cutting-edge technology
+  to create blazing-fast websites that google loves.
 bannerImage: "/images/banner.png"
 page_sections:
 - template: text-area
@@ -22,6 +23,17 @@ page_sections:
     <p>What good is a website that is hard to find? All of our websites are optimized to receive a perfect techincal SEO and accessibility score from Google.</p>
     <h3>Post Launch Support</h3>
     <p>After your site is live, we don't have to say goodbye. Want to make some changes? Need help to review your analytics? Tweak an SEO stratgey? We are here to help!</p>
+- template: cards-with-icon
+  backgroundColor: white
+  cards:
+  - title: Websites
+    summary: A snippet of text
+    linkPath: "/services/websites"
+    icon: ''
+  heading: Capabilties
+  buttonText: ''
+  buttonPath: ''
+bannerimage: ''
 
 ---
 <!-- do not delete -->
