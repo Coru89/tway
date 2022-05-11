@@ -38,7 +38,7 @@
   --color-nav-active-accent: #{get-color('primary')};
 
   // hero
-  --color-hero-heading: #{get-color('slate')};
+  --color-hero-heading: #{get-color(white)};
 }
 
 @include dark-mode() {

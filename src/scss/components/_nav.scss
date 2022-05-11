@@ -44,7 +44,6 @@
   }
 
   &__wrapper {
-    background-color: var(--color-bg);
     box-shadow: var(--theme-box-shadow-bottom);
     display: none;
     left: 0;
@@ -65,6 +64,7 @@
 
   &__secondary {
     @include media-query(sm) {
+      align-items: center;
       display: flex;
       justify-content: space-between;
       margin-left: auto;
@@ -181,6 +181,10 @@
       position: relative;
       text-decoration: none;
 
+      &--isHome {
+        color: var(--color-white);
+      }
+
       @include media-query(md) {
         display: inline-block;
         padding: initial;
@@ -191,7 +195,6 @@
         padding: 1.75rem 0;
         position: static;
         text-decoration: underline;
-        // text-transform: capitalize;
 
         @include media-query(md) {
           padding: 0 0 1rem 0;

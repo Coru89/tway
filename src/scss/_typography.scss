@@ -48,9 +48,9 @@
  @font-face {
    font-family: 'Oxygen';
    font-style: normal;
-   font-weight: 500;
-   src: local('Oxygen Medium'), local('Oxygen-Medium'),
-     url('/fonts/Oxygen-Medium.woff2') format('woff2'), url('/fonts/Oxygen-Medium.woff') format('woff');
+   font-weight: 300;
+   src: local('Oxygen Light'), local('Oxygen-Light'),
+     url('/fonts/Oxygen-Light.woff2') format('woff2'), url('/fonts/Oxygen-Light.woff') format('woff');
    font-display: swap;
  }
 

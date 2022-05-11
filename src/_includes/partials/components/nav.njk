@@ -15,13 +15,19 @@
             {% set relAttribute = ' rel="' + item.rel + '"' %}
           {% endif %}
 
+          {% if page.url == ('/') %}
+            {% set homeClass = 'isHome' %}
+          {% endif %}
+
           {% if page.url == (item.url + '/') %}
             {% set currentAttribute = ' aria-current="page"' %}
             {% set currentClass = 'nav__item--active' %}
           {% endif %}
-          <li class="nav__item{% if item.items %} nav__item--has-level-2{% endif %} {{ currentClass | safe }}">
-            <a class="nav__item-link" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}><span class="nav__item-link-text">{{ item.text }}</span>{% if item.items %}{% svg "chevron" %}{% endif %}</a>
-            {% if item.items %}
+          <li class="nav__item {{ currentClass | safe }}">
+          {# <li class="nav__item{% if item.items %} nav__item--has-level-2{% endif %} {{ currentClass | safe }}"> #}
+            <a class="nav__item-link nav__item-link--isHome" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}><span class="nav__item-link-text">{{ item.text }}</span></a>
+            {# <a class="nav__item-link nav__item-link--isHome" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}><span class="nav__item-link-text">{{ item.text }}</span>{% if item.items %}{% svg "chevron" %}{% endif %}</a> #}
+            {# {% if item.items %}
               <ul class="nav__sublist">
                 {% for item in item.items %}
                   {% set relAttribute = '' %}
@@ -55,7 +61,7 @@
                   </li>
                 {% endfor %}
               </ul>
-            {% endif %}
+            {% endif %} #}
           </li>
         {% endfor %}
         {% from "macros/macros.njk" import button_link %}

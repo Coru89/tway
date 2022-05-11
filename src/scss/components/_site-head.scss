@@ -1,6 +1,13 @@
 .site-head {
   padding: get-size(base) 0;
 
+  &--isHome {
+    background-color: var(--color-primary);
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+  }
+
   &__wrapper {
     @include panel-container;
   }

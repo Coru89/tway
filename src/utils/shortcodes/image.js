@@ -14,8 +14,8 @@ exports.imageShortCode = (src, alt, cls, loading, sizes, widths) => {
     Image(`./src/${src}`, options);
 
     let imageAttributes = {
+      class: cls,
       alt,
-      cls,
       sizes,
       loading,
       widths

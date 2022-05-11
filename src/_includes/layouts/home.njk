@@ -26,9 +26,11 @@
 {% block content %}
   <main id="main-content" tabindex="-1">
     {{ component('hero', {
-      heroHeading: title,
-      heroSummary: bannerSummary,
-      heroImage: bannerImage
+      heroHeading: heroHeading,
+      heroHeading2: heroHeading2,
+      heroHeading3: heroHeading3,
+      heroImage: heroImage,
+      heroContact: heroContact
     }) }}
 
     {% include 'partials/components/page-sections.njk' %}

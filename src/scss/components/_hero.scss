@@ -1,44 +1,100 @@
 .hero {
-  background-color: var(--color-grey-light);
+  background-color: var(--color-primary);
+  border-radius: 0 0 75px;
+  margin: 0 auto;
+  max-width: 1600px;
+  color: var(--color-hero-heading);
 
-  &__heading {
-    color: var(--color-hero-heading);
-    margin-bottom: get-size(500);
-    padding: 0;
-
-    @include media-query(md) {
-      margin-bottom: get-size(600);
-    }
+  @include media-query(xxl) {
+    height: calc(100vh - 5.125rem);
   }
 
-  &__summary {
-    font-size: get-font-size(base);
-    padding-bottom: 2rem;
-    
+  &__heading {
+    font-family: get-font(serif);
+    font-weight: 300;
+    padding: 0;
+
+    &:last-of-type {
+      margin-bottom: 4rem
+    }
+
     @include media-query(md) {
-      font-size: get-font-size(500);
+      line-height: 1.5;
     }
   }
 
   &__inner {
     @include panel-container;
-    align-items: center;
-    display: flex;
 
-    padding: 5.5rem 0 6rem 0;
+    align-items: flex-start;
+    display: flex;
+    position: relative;
+    padding: 6.5rem 2rem 7rem 2rem;
   }
 
   &__text-content {
-    width: 50%;
+    @include media-query(lg) {
+      max-width: 70%;
+    }
   }
+
+  &__services {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 550px;
+    padding-bottom: 3rem;
+
+    &-label {
+      font-size: get-font-size(600);
+      padding-right: 1rem;
+    }
+
+    &-all {
+      color: var(--color-white);
+      margin-top: .5rem;
+      text-decoration: none;
+
+      svg {
+        margin-left: .25rem;
+        stroke: var(--color-white);
+      }
+    }
+
+    .button {
+      margin: 0 0.5rem 0.75rem 0;
+    }
+  }
+
+  &__help {
+    align-items: center;
+    display: flex;
+
+    &-text {
+      display: inline-block;
+      font-size: get-font-size(600);
+      padding-right: 1rem;
+    }
+  }
+
   &__image-wrapper {
-    margin-left: 4rem;
-    width: 50%;
+    display: none;
+
+    @include media-query(lg) {
+      display: block;
+      margin-left: 2rem;
+      width: 30%;
+    }
+
+    @include media-query(xxl) {
+      margin-left: 0;
+      position: absolute;
+      right: -125px;
+      width: 38%;
+    }
   }
 
   &__image {
     height: auto;
-    max-width: 550px;
     width: 100%;
   }
 

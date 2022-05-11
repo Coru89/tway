@@ -13,7 +13,6 @@
   <button type="submit" class="button">{{ text }}</button>
 {% endmacro %}
 
-
 {% macro button_reverse( text ) %}
   <button type="submit" class="button button--reverse">{{ text }}</button>
 {% endmacro %}
@@ -33,6 +32,28 @@
     {% endif %}
   </a>
 {% endmacro %}
+
+{% macro button_link_alternate( text, link, arrow ) %}
+  <a class="button button__alternate{% if arrow === true %} button--arrow{% endif %}" href="{{ link }}">{{ text }}
+    {% if arrow === true %}
+      {% svg "arrow" %}
+    {% endif %}
+  </a>
+{% endmacro %}
+
+
+{% macro arrow_link( text, link ) %}
+  <a class="button button__arrow-link" href="{{ link }}">{{ text }}
+      {% svg "arrow" %}
+  </a>
+{% endmacro %}
+
+{% macro arrow_link_inverse( text, link ) %}
+  <a class="button button__arrow-link button__arrow-link--inverse" href="{{ link }}">{{ text }}
+      {% svg "arrow" %}
+  </a>
+{% endmacro %}
+
 
 
 {# ===================
