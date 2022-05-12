@@ -10,19 +10,16 @@
 			{% if props.heroHeading3 %}
 				<h1 class="hero__heading">{{ props.heroHeading3 | safe }}</h1>
 			{% endif %}
-			<span class="hero__services-label">Competencies:</span>
-			<div class="hero__services">
-				{{ button_link_alternate('Shopify Development', '/about', false) }}
-				{{ button_link_alternate('Craft CMS', '/about', false) }}
-				{{ button_link_alternate('SharePoint Development', '/about', false) }}
-				{{ button_link_alternate('Wordpress', '/about', false) }}
-				{{ button_link_alternate('Jamstack', '/about', false) }}
-				{# <a class="hero__services-all" href="">See the full list
-					{% svg "arrow" %}
-				</a> #}
-				{{ arrow_link('See the full list', '/services') }}
-			</div>
-			<div class="hero__help">
+			{% if props.heroServices %}
+				<span class="hero__services-label">Competencies:</span>
+				<div class="hero__services">
+					{% for service in props.heroServices %}
+						{{ button_link_alternate(service.heroServiceLinkText, service.heroServiceLinkUrl, false) }}
+					{% endfor %}
+					{{ arrow_link('See the full list', '/services') }}
+				</div>
+				<div class="hero__help">
+			{% endif %}
 				<div class="hero__help-text">
 					Need help on your next web project?
 				</div>

@@ -12,14 +12,17 @@
   &__heading {
     font-family: get-font(serif);
     font-weight: 300;
+    line-height: 1.5;
     padding: 0;
 
     &:last-of-type {
-      margin-bottom: 4rem
+      margin-bottom: 3rem
     }
 
     @include media-query(md) {
-      line-height: 1.5;
+      &:last-of-type {
+        margin-bottom: 4rem
+      }
     }
   }
 
@@ -29,7 +32,11 @@
     align-items: flex-start;
     display: flex;
     position: relative;
-    padding: 6.5rem 2rem 7rem 2rem;
+    padding: 3.5rem 2rem 7rem 2rem;
+
+    @include media-query(md) {
+      padding: 6.5rem 2rem 7rem 2rem;
+    }
   }
 
   &__text-content {
@@ -45,8 +52,15 @@
     padding-bottom: 3rem;
 
     &-label {
-      font-size: get-font-size(600);
-      padding-right: 1rem;
+      font-size: get-font-size(500);
+      padding-bottom: 1rem;
+      display: block;
+
+      @include media-query(md) {
+        display: inline-block;
+        font-size: get-font-size(600);
+        padding-right: 1rem;
+      }
     }
 
     &-all {
@@ -66,13 +80,20 @@
   }
 
   &__help {
-    align-items: center;
-    display: flex;
-
     &-text {
-      display: inline-block;
-      font-size: get-font-size(600);
-      padding-right: 1rem;
+      font-size: get-font-size(500);
+      padding-bottom: 1rem;
+    }
+
+    @include media-query(md) {
+      align-items: center;
+      display: flex;
+
+      &-text {
+        display: inline-block;
+        font-size: get-font-size(600);
+        padding: 0 1rem 0 0;
+      }
     }
   }
 

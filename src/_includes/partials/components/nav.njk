@@ -1,6 +1,8 @@
+{% if page.url == ('/') %}{% set homeClass = 'isHome' %}{% endif %}
+
 {% if navigation.items %}
   <nav class="nav" aria-label="{{ariaLabel}}">
-    <button class="nav__button" id="nav" aria-label="toggle navigation menu">
+    <button class="nav__button{% if page.url == ('/') %} nav__button--isHome{% endif %}" id="nav" aria-label="toggle navigation menu">
       {% svg "nav" %}
       {% svg "close" %}
     </button>
@@ -15,17 +17,13 @@
             {% set relAttribute = ' rel="' + item.rel + '"' %}
           {% endif %}
 
-          {% if page.url == ('/') %}
-            {% set homeClass = 'isHome' %}
-          {% endif %}
-
           {% if page.url == (item.url + '/') %}
             {% set currentAttribute = ' aria-current="page"' %}
             {% set currentClass = 'nav__item--active' %}
           {% endif %}
           <li class="nav__item {{ currentClass | safe }}">
           {# <li class="nav__item{% if item.items %} nav__item--has-level-2{% endif %} {{ currentClass | safe }}"> #}
-            <a class="nav__item-link nav__item-link--isHome" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}><span class="nav__item-link-text">{{ item.text }}</span></a>
+            <a class="nav__item-link{% if page.url == ('/') %} nav__item-link--isHome{% endif %}" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}><span class="nav__item-link-text">{{ item.text }}</span></a>
             {# <a class="nav__item-link nav__item-link--isHome" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}><span class="nav__item-link-text">{{ item.text }}</span>{% if item.items %}{% svg "chevron" %}{% endif %}</a> #}
             {# {% if item.items %}
               <ul class="nav__sublist">
@@ -68,7 +66,7 @@
       </ul>
         <div class="nav__secondary">
           <div class="nav__contact">
-          {{ button_link("Get and estimate", "/contact", true) }}
+          {{ button_link("Get an estimate", "/contact", true) }}
           </div>
           <div class="nav__theme">
             <theme-toggle></theme-toggle>

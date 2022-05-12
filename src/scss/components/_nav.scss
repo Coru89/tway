@@ -27,6 +27,7 @@
 
     &--active {
       + .nav__wrapper {
+        background-color: var(--color-nav-menu-bg);
         display: flex;
         flex-direction: column;
       }
@@ -39,6 +40,13 @@
         &--open {
           display: none;
         }
+      }
+    }
+
+    &--isHome {
+      svg {
+        fill: #fff;
+        stroke: #fff;
       }
     }
   }
@@ -133,8 +141,8 @@
     border-bottom: 1px solid var(--color-grey);
     color: var(--color-nav-menu-text);
     display: block;
-    font-size: get-font-size(300);
-    font-weight: 700;
+    font-size: get-font-size(400);
+    //font-weight: 500;
     position: relative;
     text-transform: uppercase;
     white-space: nowrap;
@@ -176,13 +184,15 @@
     &-link {
       color: currentColor;
       display: block;
-      font-weight: 600;
+      font-weight: 500;
       padding: 2rem 0;
       position: relative;
       text-decoration: none;
 
       &--isHome {
-        color: var(--color-white);
+        @include media-query(md) {
+          color: var(--color-white);
+        }
       }
 
       @include media-query(md) {
@@ -342,4 +352,5 @@
       margin-bottom: 0;
     }
   }
+
 }
