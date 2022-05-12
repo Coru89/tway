@@ -26,6 +26,8 @@ page_sections:
 bannerSummary: ''
 bannerimage: ''
 heroServices:
+- heroServiceLinkText: SharePoint Development
+  heroServiceLinkUrl: "/services/sharepoint"
 - heroServiceLinkText: Craft CMS
   heroServiceLinkUrl: "/services/craft"
 - heroServiceLinkText: Shopify Development
