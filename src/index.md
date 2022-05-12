@@ -26,6 +26,8 @@ page_sections:
 bannerSummary: ''
 bannerimage: ''
 heroServices:
+- heroServiceLinkText: Jamstack
+  heroServiceLinkUrl: "/services/jamstack"
 - heroServiceLinkText: WordPress
   heroServiceLinkUrl: "/services/wordpress"
 - heroServiceLinkText: SharePoint Development
