@@ -8,9 +8,10 @@ servicesHeading: Expertise
 metaDesc: Tway is a web development agency that builds modern and fast websites.
 socialImage: ''
 heroHeading: A Web Development, E-commerce
-heroHeading2: '& Intranet Agency.'
-heroHeading3: Looking for a blazing-fast website, e-commerce or Intranet solution? Look no further.
-heroImage: /images/night-sky-fancy.png
+heroHeading2: "& Intranet Agency."
+heroHeading3: Looking for a blazing-fast website, e-commerce or Intranet solution?
+  Look no further.
+heroImage: "/images/night-sky-fancy.png"
 page_sections:
 - template: cards-with-icon
   backgroundColor: white
@@ -21,6 +22,12 @@ page_sections:
     icon: ''
   heading: Capabilties
   buttonText: ''
+  buttonPath: ''
+bannerSummary: ''
+bannerimage: ''
+heroServices:
+- heroServiceLinkText: Shopify Development
+  heroServiceLinkUrl: "/services/shopify"
 
 ---
 <!-- do not delete -->
