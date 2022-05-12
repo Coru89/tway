@@ -73,6 +73,8 @@ input::-webkit-input-placeholder,select::-webkit-input-placeholder,textarea::-we
 
 main {
   flex: 1 0 auto;
+  margin-top: -1px; //used to fix issue with gap between top nav and hero banner
+
   &:focus {
     outline: none;
   }

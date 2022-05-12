@@ -33,21 +33,11 @@
   }
 
   .site__logo {
-    display: none;
     margin-left: -.5rem;
     margin-right: 2rem;
 
     @include media-query(md) {
       display: block;
-    }
-
-    &--stacked {
-      display: block;
-      height: 54px;
-
-      @include media-query(xl) {
-        display: none;
-      }
     }
 
     &--dark {

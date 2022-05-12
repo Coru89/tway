@@ -1,15 +1,20 @@
 <header class="hero">
 	<div class="hero__inner">
 		<div class="hero__text-content">
-			{% if props.heroHeading %}
-				<h1 class="hero__heading">{{ props.heroHeading | safe }}</h1>
-			{% endif %}
-			{% if props.heroHeading2 %}
-				<h1 class="hero__heading">{{ props.heroHeading2 | safe }}</h1>
-			{% endif %}
-			{% if props.heroHeading3 %}
-				<h1 class="hero__heading">{{ props.heroHeading3 | safe }}</h1>
-			{% endif %}
+			<div class="hero__heading-wrapper">
+				{% if props.heroHeading %}
+					<h1 class="hero__heading">{{ props.heroHeading | safe }}</h1>
+				{% endif %}
+				{% if props.heroHeading2 %}
+					<h1 class="hero__heading">{{ props.heroHeading2 | safe }}</h1>
+				{% endif %}
+				{% if props.heroHeading3 %}
+					<h1 class="hero__heading">{{ props.heroHeading3 | safe }}</h1>
+				{% endif %}
+				{% if props.heroHeading4 %}
+					<h1 class="hero__heading">{{ props.heroHeading4 | safe }}</h1>
+				{% endif %}
+			</div>
 			{% if props.heroServices %}
 				<span class="hero__services-label">Competencies:</span>
 				<div class="hero__services">
