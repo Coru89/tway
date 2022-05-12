@@ -34,5 +34,23 @@ fields:
   config:
     min: 
     max: 
+- name: heroServices
+  type: field_group_list
+  fields:
+  - name: heroServiceLinkText
+    type: text
+    config:
+      required: false
+    label: Hero Service Link Text
+  - name: heroServiceLinkUrl
+    type: text
+    config:
+      required: false
+    label: Hero Service Link Url
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Hero Services
 pages:
 - src/index.md
