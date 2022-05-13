@@ -18,12 +18,12 @@ page_sections:
   summary: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
     sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
     Neque porro quisquam est, qui dolorem.
-  buttonText: ''
-  buttonPath: ''
-  imageURL: ''
-  imageAlt: ''
-  imagePosition: ''
-  backgroundColor: ''
+  buttonText: Read More
+  buttonPath: "/work/vanmadegear"
+  imageURL: images/vmg-home.png
+  imageAlt: Vanmade Gear
+  imagePosition: right
+  backgroundColor: "#EE964B"
 - template: cards-with-icon
   backgroundColor: white
   cards:
