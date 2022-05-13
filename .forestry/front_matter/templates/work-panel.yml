@@ -1,4 +1,54 @@
 ---
 label: Work Panel
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: summary
+  type: text
+  config:
+    required: false
+  label: summary
+- name: buttonText
+  type: text
+  config:
+    required: false
+  label: buttonText
+- name: buttonPath
+  type: text
+  config:
+    required: false
+  label: buttonPath
+- name: imageURL
+  type: file
+  config:
+    maxSize: 64
+  label: imageURL
+- name: imageAlt
+  type: text
+  config:
+    required: false
+  label: imageAlt
+- name: imagePosition
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - left
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: imagePosition
+- name: backgroundColor
+  type: color
+  label: backgroundColor
+  config:
+    required: false
+    color_format: Hex
