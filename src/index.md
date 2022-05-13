@@ -35,14 +35,16 @@ page_sections:
   buttonText: ''
   buttonPath: ''
 - template: work-panel
-  imagePosition: []
-  title: ''
-  summary: ''
-  buttonText: ''
-  buttonPath: ''
-  imageURL: ''
-  imageAlt: ''
-  backgroundColor: ''
+  imagePosition: left
+  title: Colonia Treuhand
+  summary: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    Neque porro quisquam est, qui dolorem.
+  buttonText: Read More
+  buttonPath: "/work/colonia-truehand"
+  imageURL: images/ctam-home.png
+  imageAlt: Colonia Treuhand
+  backgroundColor: "#AA6373"
 bannerSummary: ''
 bannerimage: ''
 heroServices:
