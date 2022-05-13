@@ -8,9 +8,13 @@ fields:
     required: false
   label: Title
 - name: summary
-  type: text
+  type: textarea
+  default: ''
   config:
     required: false
+    wysiwyg: false
+    schema:
+      format: markdown
   label: summary
 - name: buttonText
   type: text
