@@ -20,9 +20,9 @@
     border-color: var(--white);
     color: var(--color-white);
 
-    svg {
-      stroke: var(--color-white);
-    }
+    // svg {
+    //   stroke: var(--color-white);
+    // }
   }
   
   &__alternate {
@@ -42,11 +42,15 @@
   }
 
   &__arrow-link {
-    background-color: transparent;
+    @include button-reset;
+    //background-color: transparent;
     border: 0;
-    color: var(--color-white);
+    //color: var(--color-white);
 
-    &:hover {
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: var(--color-black);
       filter: none;
   
       svg {
@@ -55,8 +59,20 @@
     }
   
     svg {
-      stroke: var(--color-white);
+      // stroke: var(--color-white);
       margin-left: .5rem;
+    }
+
+    &--large {
+      color: var(--color-black);
+      font-size: get-font-size(600);
+      font-weight: 700;
+
+      svg {
+        // stroke: var(--color-white);
+        position: relative;
+        top: 3px;
+      }
     }
   }
 }

@@ -1,0 +1,18 @@
+{% from "macros/macros.njk" import button_link %}
+
+<section class="work-panel">
+  <div class="work-panel__inner{% if props.imagePosition === 'right' %} work-panel__inner--reverse{% endif %}" style="background-color: {{colorHexCard}};">
+      <div class="work-panel__image{% if props.imagePosition === 'right' %} work-panel__image--reverse{% endif %}" style="background-color: {{props.backgroundColor}};">
+      {% if props.imageURL.length %}
+        {% image props.imageURL, props.imageAlt, null, "lazy", '100vw', ['300', '400', '576', '600', '730', '900', '1100'] %}
+      {% endif %}
+    </div>
+    <div class="work-panel__text{% if props.imagePosition === 'right' %} work-panel__text--reverse{% endif %}">
+      <h2 class="work-panel__text-title">{{ props.title }}</h2>
+      <div class="work-panel__text-summary">{{props.summary | safe }}</div>
+        {% if props.buttonText.length and props.buttonPath.length %}
+          {{ arrow_link_large(props.buttonText, props.buttonPath) }} 
+        {% endif %}
+    </div>
+  </div>
+</section>

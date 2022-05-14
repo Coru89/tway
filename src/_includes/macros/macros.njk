@@ -48,11 +48,17 @@
   </a>
 {% endmacro %}
 
-{% macro arrow_link_inverse( text, link ) %}
+{% macro arrow_link_large( text, link ) %}
+  <a class="button button__arrow-link button__arrow-link--large" href="{{ link }}">{{ text }}
+      {% svg "arrow-large" %}
+  </a>
+{% endmacro %}
+
+{# {% macro arrow_link_inverse( text, link ) %}
   <a class="button button__arrow-link button__arrow-link--inverse" href="{{ link }}">{{ text }}
       {% svg "arrow" %}
   </a>
-{% endmacro %}
+{% endmacro %} #}
 
 
 

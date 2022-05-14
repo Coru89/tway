@@ -1,16 +1,28 @@
 {% for block in page_sections %}
     {% if block.template === 'image-text-panel' %}
-    {{ component('image-text-panel', {
-        title: block.title,
-        summary: block.summary,
-        buttonText: block.buttonText,
-        buttonPath: block.buttonPath,
-        imageURL: block.imageURL,
-        imageAlt: block.imageAlt,
-        imagePosition: block.imagePosition,
-        backgroundColor: block.backgroundColor,
-        fullBleed: block.fullBleed
-    }) }}
+        {{ component('image-text-panel', {
+            title: block.title,
+            summary: block.summary,
+            buttonText: block.buttonText,
+            buttonPath: block.buttonPath,
+            imageURL: block.imageURL,
+            imageAlt: block.imageAlt,
+            imagePosition: block.imagePosition,
+            backgroundColor: block.backgroundColor,
+            fullBleed: block.fullBleed
+        }) }}
+
+    {% elseif block.template === 'work-panel' %}
+        {{ component('work-panel', {
+            title: block.title,
+            summary: block.summary,
+            buttonText: block.buttonText,
+            buttonPath: block.buttonPath,
+            imageURL: block.imageURL,
+            imageAlt: block.imageAlt,
+            imagePosition: block.imagePosition,
+            backgroundColor: block.backgroundColor
+        }) }}
     
     {% elseif block.template === 'text-area' %}
         {{ block.text | safe }}
