@@ -26,6 +26,12 @@
           "text": "Craft CMS",
           "url": "/services/craft",
           "external": false
+        },
+        {
+          "text": "JamStack",
+          "url": "/services/jamstack",
+          "external": "",
+          "items": ""
         }
       ]
     },
