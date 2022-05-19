@@ -38,6 +38,12 @@
           "url": "/services/wordpess",
           "external": "",
           "items": ""
+        },
+        {
+          "text": "Shopify",
+          "url": "/services/shopify",
+          "external": "",
+          "items": ""
         }
       ]
     },
