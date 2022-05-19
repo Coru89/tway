@@ -50,6 +50,12 @@
           "url": "/services/woocommerce",
           "external": "",
           "items": ""
+        },
+        {
+          "text": "CraftCommerce",
+          "url": "/services/CraftCommerce",
+          "external": "",
+          "items": ""
         }
       ]
     },
