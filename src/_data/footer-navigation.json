@@ -44,6 +44,12 @@
           "url": "/services/shopify",
           "external": "",
           "items": ""
+        },
+        {
+          "text": "WooCommerce",
+          "url": "/services/woocommerce",
+          "external": "",
+          "items": ""
         }
       ]
     },
