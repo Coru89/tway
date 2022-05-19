@@ -44,6 +44,13 @@
             backgroundColor: block.backgroundColor
         }) }}
 
+    {% elseif block.template === 'cta' %}
+        {{ component('cta', {
+            text: block.text,
+            buttonText: block.buttonText,
+            buttonPath: block.buttonPath
+        }) }}
+
     {% elseif block.template === 'blockquote' %}
         <blockquote>
             <p>
