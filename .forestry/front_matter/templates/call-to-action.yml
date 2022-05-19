@@ -1,0 +1,19 @@
+---
+label: Call to action
+hide_body: true
+fields:
+- name: text
+  type: text
+  config:
+    required: true
+  label: text
+- name: buttonText
+  type: text
+  config:
+    required: true
+  label: buttonText
+- name: buttonPath
+  type: text
+  config:
+    required: true
+  label: buttonPath

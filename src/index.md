@@ -45,6 +45,10 @@ page_sections:
   imageURL: images/ctam-home.png
   imageAlt: Colonia Treuhand
   backgroundColor: "#AA6373"
+- template: call-to-action
+  text: Interested in working together?
+  buttonPath: "/contact"
+  buttonText: Get in touch
 bannerSummary: ''
 bannerimage: ''
 heroServices:
