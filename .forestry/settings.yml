@@ -28,12 +28,11 @@ sections:
 - type: heading
   label: Globals
 - type: document
-  path: src/_data/navigation.json
-  label: Navigation
-- type: document
   path: src/_data/footer-navigation.json
   label: Footer
-  match: "**/*"
+- type: document
+  path: src/_data/navigation.json
+  label: Navigation
 - type: document
   path: src/_data/tokens.json
   label: Theme settings
