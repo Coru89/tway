@@ -79,6 +79,24 @@
           "text": "Services",
           "url": "/services",
           "external": false
+        },
+        {
+          "text": "Portfolio",
+          "url": "/portfolio",
+          "external": "",
+          "items": ""
+        },
+        {
+          "text": "About",
+          "url": "/about",
+          "external": "",
+          "items": ""
+        },
+        {
+          "text": "Insights",
+          "url": "/insights",
+          "external": "",
+          "items": ""
         }
       ]
     }
