@@ -9,6 +9,11 @@
           "text": "Contact Form",
           "url": "/contact",
           "external": false
+        },
+        {
+          "text": "hello@tway.com",
+          "external": "",
+          "items": ""
         }
       ]
     },
