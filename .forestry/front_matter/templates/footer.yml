@@ -1,4 +1,37 @@
 ---
 label: Footer
 hide_body: true
-fields: []
+fields:
+- name: linkList
+  type: field_group_list
+  fields:
+  - name: label
+    type: text
+    config:
+      required: false
+    label: Label
+  - name: labelPath
+    type: text
+    config:
+      required: false
+    label: labelPath
+  - name: links
+    type: field_group
+    config: {}
+    fields:
+    - name: linkText
+      type: text
+      config:
+        required: false
+      label: Link Text
+    - name: linkURL
+      type: text
+      config:
+        required: false
+      label: Link URL
+    label: links
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Link List
