@@ -1,5 +1,5 @@
 ---
-label: Footer
+label: site-foot
 hide_body: true
 fields:
 - name: linkList
