@@ -10,11 +10,11 @@ fields:
     config:
       required: false
     label: Label
-  - name: labelPath
+  - name: labelURL
     type: text
     config:
       required: false
-    label: labelPath
+    label: Label URL
   - name: links
     type: field_group
     config: {}
@@ -29,7 +29,7 @@ fields:
       config:
         required: false
       label: Link URL
-    label: links
+    label: Links
   config:
     min: 
     max: 
