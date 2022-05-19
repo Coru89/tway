@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "text": "Contact Us",
+      "url": "",
+      "external": false,
+      "items": [
+        {
+          "text": "Contact Form",
+          "url": "/contact",
+          "external": false
+        }
+      ]
+    },
+    {
+      "text": "Services",
+      "url": "",
+      "external": true,
+      "items": [
+        {
+          "text": "Craft CMS",
+          "url": "/services/craft",
+          "external": false
+        }
+      ]
+    },
+    {
+      "text": "Menu",
+      "url": "/",
+      "external": true,
+      "items": [
+        {
+          "text": "Services",
+          "url": "/services",
+          "external": false
+        }
+      ]
+    }
+  ]
+}
