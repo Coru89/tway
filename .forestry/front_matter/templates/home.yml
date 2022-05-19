@@ -2,27 +2,6 @@
 label: Home Page
 hide_body: true
 fields:
-- type: text
-  name: layout
-  label: layout
-  hidden: true
-- type: textarea
-  name: metaDesc
-  label: SEO Description
-- type: file
-  name: socialImage
-  label: SEO Image
-- type: text
-  name: title
-  label: Banner Title
-- type: textarea
-  name: bannerSummary
-  label: Banner Summary
-- name: bannerimage
-  type: file
-  config:
-    maxSize: 64
-  label: Banner Image
 - name: page_sections
   type: blocks
   label: Page Sections
@@ -53,5 +32,15 @@ fields:
     max: 
     labelField: 
   label: Hero Services
+- type: textarea
+  name: metaDesc
+  label: SEO Description
+- type: file
+  name: socialImage
+  label: SEO Image
+- type: text
+  name: layout
+  label: layout
+  hidden: true
 pages:
 - src/index.md
