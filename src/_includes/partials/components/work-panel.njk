@@ -11,7 +11,7 @@
       <h2 class="work-panel__text-title">{{ props.title }}</h2>
       <div class="work-panel__text-summary">{{props.summary | safe }}</div>
         {% if props.buttonText.length and props.buttonPath.length %}
-          {{ arrow_link_large(props.buttonText, props.buttonPath) }} 
+          {{ arrow_link_large(props.buttonText, props.buttonPath) }}
         {% endif %}
     </div>
   </div>

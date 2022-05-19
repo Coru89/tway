@@ -142,8 +142,7 @@
     border-bottom: 1px solid var(--color-grey);
     color: var(--color-nav-menu-text);
     display: block;
-    font-size: get-font-size(400);
-    //font-weight: 500;
+    font-size: get-font-size(base);
     position: relative;
     text-transform: uppercase;
     white-space: nowrap;
