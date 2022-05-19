@@ -32,6 +32,12 @@
           "url": "/services/jamstack",
           "external": "",
           "items": ""
+        },
+        {
+          "text": "Wordpress",
+          "url": "/services/wordpess",
+          "external": "",
+          "items": ""
         }
       ]
     },
