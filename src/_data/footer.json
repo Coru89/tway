@@ -1,0 +1,104 @@
+{
+  "items": [
+    {
+      "text": "Contact Us",
+      "url": "",
+      "external": false,
+      "items": [
+        {
+          "text": "Contact Form",
+          "url": "/contact",
+          "external": false
+        },
+        {
+          "text": "hello@tway.com",
+          "external": "",
+          "items": ""
+        }
+      ]
+    },
+    {
+      "text": "Services",
+      "url": "",
+      "external": true,
+      "items": [
+        {
+          "text": "Craft CMS",
+          "url": "/services/craft",
+          "external": false
+        },
+        {
+          "text": "JamStack",
+          "url": "/services/jamstack",
+          "external": "",
+          "items": ""
+        },
+        {
+          "text": "Wordpress",
+          "url": "/services/wordpess",
+          "external": "",
+          "items": ""
+        },
+        {
+          "text": "Shopify",
+          "url": "/services/shopify",
+          "external": "",
+          "items": ""
+        },
+        {
+          "text": "WooCommerce",
+          "url": "/services/woocommerce",
+          "external": "",
+          "items": ""
+        },
+        {
+          "text": "CraftCommerce",
+          "url": "/services/CraftCommerce",
+          "external": "",
+          "items": ""
+        },
+        {
+          "text": "Intranets & SharePoint",
+          "external": "",
+          "items": ""
+        },
+        {
+          "text": "Office 365",
+          "url": "/services/office-365",
+          "external": "",
+          "items": ""
+        }
+      ]
+    },
+    {
+      "text": "Menu",
+      "url": "/",
+      "external": true,
+      "items": [
+        {
+          "text": "Services",
+          "url": "/services",
+          "external": false
+        },
+        {
+          "text": "Portfolio",
+          "url": "/portfolio",
+          "external": "",
+          "items": ""
+        },
+        {
+          "text": "About",
+          "url": "/about",
+          "external": "",
+          "items": ""
+        },
+        {
+          "text": "Insights",
+          "url": "/insights",
+          "external": "",
+          "items": ""
+        }
+      ]
+    }
+  ]
+}
