@@ -1,0 +1,17 @@
+.cta {
+  background-color: var(--color-primary);
+
+  &__inner {
+    @include panel-container;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 3.75rem 0;
+  }
+
+  &__text {
+    color: var(--color-white);
+    font-size: get-font-size(700);
+  }
+}

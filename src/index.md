@@ -24,6 +24,7 @@ page_sections:
   imageAlt: Vanmade Gear
   imagePosition: right
   backgroundColor: "#EE964B"
+  isBottom: false
 - template: cards-with-icon
   backgroundColor: white
   cards:
@@ -45,6 +46,8 @@ page_sections:
   imageURL: images/ctam-home.png
   imageAlt: Colonia Treuhand
   backgroundColor: "#AA6373"
+  isBottom: true
+
 - template: call-to-action
   text: Interested in working together?
   buttonPath: "/contact"

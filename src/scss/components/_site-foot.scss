@@ -3,41 +3,32 @@
   background: var(--color-bg-glare);
   border-top: 1px solid var(--color-stroke);
   color: var(--color-text);
-  padding: get-size(700) 0 get-size(900) 0;
+  padding: 9rem 0 0 0;
 
   &__wrapper {
     @include panel-container;
   }
 
-  &__inner {
-    align-items: flex-start;
-    justify-content: space-between;
-
+  &__row {
     @include media-query(md) {
       display: flex;
+      justify-content: space-between;
     }
   }
 
-  &__details {
-    --flow-space: 1em;
-    max-width: 40ch;
+  &__link {
+    text-decoration: none;
 
-    > * + * {
-      margin-top: 1em;
-      margin-top: var(--flow-space);
-    }
+    &-list {
+      &-item {
+        line-height: 1;
+        padding-bottom: 1rem;
 
-    h2 {
-      font-family: get-font(base);
-      font-size: get-font-size(600);
-    }
-  }
-
-  a {
-    color: currentColor;
-
-    &:hover {
-      text-decoration: none;
+        &--header {
+          font-weight: 700;
+          text-decoration: underline;
+        }
+      }
     }
   }
 
