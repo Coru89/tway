@@ -20,7 +20,7 @@ page_sections:
     Neque porro quisquam est, qui dolorem.
   buttonText: Read More
   buttonPath: "/work/vanmadegear"
-  imageURL: images/vmg-home.png
+  imageURL: images/vmg-home-full.png
   imageAlt: Vanmade Gear
   imagePosition: right
   backgroundColor: "#EE964B"
@@ -43,7 +43,7 @@ page_sections:
     Neque porro quisquam est, qui dolorem.
   buttonText: Read More
   buttonPath: "/work/colonia-truehand"
-  imageURL: images/ctam-home.png
+  imageURL: "images/ctam-home-full.png"
   imageAlt: Colonia Treuhand
   backgroundColor: "#AA6373"
   isBottom: true
