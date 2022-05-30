@@ -14,4 +14,9 @@
     color: var(--color-white);
     font-size: get-font-size(700);
   }
+
+  &__button {
+    margin-left: 2rem;
+    min-width: 140px;
+  }
 }

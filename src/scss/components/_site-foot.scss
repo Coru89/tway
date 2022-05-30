@@ -3,7 +3,7 @@
   background: var(--color-bg-glare);
   border-top: 1px solid var(--color-stroke);
   color: var(--color-text);
-  padding: 4rem 0 0 0;
+  padding: 3rem 0 0 0;
 
   @include media-query(md) {
     padding: 9rem 0 0 0;
@@ -17,12 +17,12 @@
     text-align: center;
 
     &:last-of-type {
-      align-items: center;
       border-top: 1px solid var(--color-theme-primary);
       padding: 1rem 0;
     }
 
     @include media-query(md) {
+      align-items: flex-start;
       display: flex;
       justify-content: space-between;
       text-align: left;
@@ -35,8 +35,12 @@
 
   &__link {
     color: var(--color-black);
-    font-size: get-font-size(500);
+    font-size: get-font-size(base);
     text-decoration: none;
+
+    @include media-query(md) {
+      font-size: get-font-size(500);
+    }
 
     &-list {
       margin-bottom: 2rem;
@@ -50,9 +54,14 @@
         padding-bottom: 1rem;
 
         &--header {
-          font-size: 22px;
+          font-size: 18px;
           font-weight: 700;
           text-decoration: underline;
+
+          @include media-query(md) {
+            font-size: 22px
+          }
+      
         }
       }
     }
@@ -68,7 +77,7 @@
 
   &__logo {
     height: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     width: 200px;
 
     @include media-query(md) {
