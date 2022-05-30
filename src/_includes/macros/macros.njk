@@ -25,7 +25,7 @@
   </a>
 {% endmacro %}
 
-{% macro button_link_reverse( text, link, arrow ) %}
+{% macro button_link_inverse( text, link, arrow ) %}
   <a class="button button--reverse{% if arrow === true %} button--arrow{% endif %}" href="{{ link }}">{{ text }}
     {% if arrow === true %}
       {% svg "arrow" %}

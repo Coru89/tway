@@ -62,11 +62,11 @@
             {% endif %} #}
           </li>
         {% endfor %}
-        {% from "macros/macros.njk" import button_link %}
+        {% from "macros/macros.njk" import button_link_inverse %}
       </ul>
         <div class="nav__secondary">
           <div class="nav__contact">
-          {{ button_link("Get an estimate", "/contact", true) }}
+          {{ button_link_inverse("Get an estimate", "/contact", true) }}
           </div>
           <div class="nav__theme">
             <theme-toggle></theme-toggle>

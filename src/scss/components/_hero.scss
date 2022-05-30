@@ -50,6 +50,7 @@
   }
 
   &__services {
+    align-items: center;
     display: inline-flex;
     flex-wrap: wrap;
     max-width: 550px;
@@ -80,6 +81,16 @@
 
     .button {
       margin: 0 0.5rem 0.75rem 0;
+    }
+
+    .button__arrow-link {
+      &:hover {
+        color: var(--color-white);
+      }
+  
+      svg {
+        stroke: #fff;
+      }
     }
   }
 
@@ -123,10 +134,18 @@
     width: 100%;
   }
 
-  &__button-group {
-    .button {
-      margin-right: 1rem;
+  .button--arrow {
+    &:hover {
+      svg {
+        stroke: #fff;
+      }
     }
   }
+
+  // &__button-group {
+  //   .button {
+  //     margin-right: 1rem;
+  //   }
+  //}
 
 }

@@ -105,9 +105,13 @@
   }
 }
 
-.button--reverse {
+.button--inverse {
   background-color: var(--color-theme-primary);
   color: var(--color-white);
+
+  &:hover {
+    color: var(--color-white);
+  }
 }
 
 

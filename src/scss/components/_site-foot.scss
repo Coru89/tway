@@ -3,13 +3,19 @@
   background: var(--color-bg-glare);
   border-top: 1px solid var(--color-stroke);
   color: var(--color-text);
-  padding: 9rem 0 0 0;
+  padding: 4rem 0 0 0;
+
+  @include media-query(md) {
+    padding: 9rem 0 0 0;
+  }
 
   &__wrapper {
     @include panel-container;
   }
 
   &__row {
+    text-align: center;
+
     &:last-of-type {
       align-items: center;
       border-top: 1px solid var(--color-theme-primary);
@@ -19,6 +25,7 @@
     @include media-query(md) {
       display: flex;
       justify-content: space-between;
+      text-align: left;
 
       &:first-of-type {
         padding-bottom: 6rem;
@@ -32,6 +39,12 @@
     text-decoration: none;
 
     &-list {
+      margin-bottom: 2rem;
+
+      @include media-query(md) {
+        margin-bottom: 0;
+      }
+
       &-item {
         line-height: 1;
         padding-bottom: 1rem;
@@ -46,6 +59,22 @@
   }
 
   &__credit {
-    text-align: center;
+    padding-bottom: 1rem;
+    
+    @include media-query(md) {
+      padding: 0;
+    }
+  }
+
+  &__logo {
+    height: auto;
+    margin-bottom: 4rem;
+    width: 200px;
+
+    @include media-query(md) {
+      height: initial;
+      margin-bottom: 0;
+      width: initial;
+    }
   }
 }
