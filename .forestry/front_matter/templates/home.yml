@@ -12,6 +12,7 @@ fields:
   - text-area
   - image-with-caption
   - call-to-action
+  - service-panel
   config:
     min: 
     max: 
