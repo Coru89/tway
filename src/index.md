@@ -54,6 +54,8 @@ page_sections:
 - template: service-panel
   title: Websites
   links:
+  - linkText: WordPress
+    linkPath: "/wordpress"
   - linkText: Jamstack
     linkPath: "/jamstack"
   - linkText: Craft CMS
