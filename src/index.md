@@ -60,7 +60,7 @@ page_sections:
     linkPath: "/jamstack"
   - linkText: Craft CMS
     linkPath: "/craft"
-  image: ''
+  image: images/websites.png
 bannerSummary: ''
 bannerimage: ''
 heroServices:
