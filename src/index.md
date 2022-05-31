@@ -43,15 +43,20 @@ page_sections:
     Neque porro quisquam est, qui dolorem.
   buttonText: Read More
   buttonPath: "/work/colonia-truehand"
-  imageURL: "images/ctam-home-full.png"
+  imageURL: images/ctam-home-full.png
   imageAlt: Colonia Treuhand
   backgroundColor: "#AA6373"
   isBottom: true
-
 - template: call-to-action
   text: Interested in working together?
   buttonPath: "/contact"
   buttonText: Get in touch
+- template: service-panel
+  title: Websites
+  links:
+  - linkText: Craft CMS
+    linkPath: "/craft"
+  image: ''
 bannerSummary: ''
 bannerimage: ''
 heroServices:
