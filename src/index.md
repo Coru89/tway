@@ -25,6 +25,16 @@ page_sections:
   imagePosition: right
   backgroundColor: "#EE964B"
   isBottom: false
+- template: service-panel
+  title: Websites
+  links:
+  - linkText: WordPress
+    linkPath: "/wordpress"
+  - linkText: Jamstack
+    linkPath: "/jamstack"
+  - linkText: Craft CMS
+    linkPath: "/craft"
+  image: images/websites.png
 - template: work-panel
   imagePosition: left
   title: Colonia Treuhand
@@ -41,16 +51,6 @@ page_sections:
   text: Interested in working together?
   buttonPath: "/contact"
   buttonText: Get in touch
-- template: service-panel
-  title: Websites
-  links:
-  - linkText: WordPress
-    linkPath: "/wordpress"
-  - linkText: Jamstack
-    linkPath: "/jamstack"
-  - linkText: Craft CMS
-    linkPath: "/craft"
-  image: images/websites.png
 bannerSummary: ''
 bannerimage: ''
 heroServices:
