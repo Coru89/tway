@@ -25,16 +25,6 @@ page_sections:
   imagePosition: right
   backgroundColor: "#EE964B"
   isBottom: false
-- template: cards-with-icon
-  backgroundColor: white
-  cards:
-  - title: Websites
-    summary: A snippet of text
-    linkPath: "/services/websites"
-    icon: ''
-  heading: Capabilties
-  buttonText: ''
-  buttonPath: ''
 - template: work-panel
   imagePosition: left
   title: Colonia Treuhand
