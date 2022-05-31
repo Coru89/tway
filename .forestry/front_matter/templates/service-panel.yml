@@ -20,7 +20,7 @@ fields:
     config:
       required: false
     label: Link Text
-  - name: path
+  - name: linkPath
     type: text
     config:
       required: false
