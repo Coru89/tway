@@ -65,6 +65,8 @@ page_sections:
   title: Office 365
   image: ''
   links:
+  - linkText: MS Teams Apps
+    linkPath: "/services/teams"
   - linkText: SharePoint & Intranets
     linkPath: "/sharepoints-intranets"
 bannerSummary: ''
