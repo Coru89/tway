@@ -35,9 +35,10 @@ page_sections:
   - linkText: Craft CMS
     linkPath: "/craft"
   image: images/websites.png
+  imagePosition: Right
 - template: service-panel
   title: E-commerce
-  image: ''
+  image: images/group-36.png
   links:
   - linkText: WooCommerce
     linkPath: "/woocommerce"
@@ -45,6 +46,7 @@ page_sections:
     linkPath: CraftCommerce
   - linkText: Shopify
     linkPath: "/shopify"
+  imagePosition: Left
 - template: work-panel
   imagePosition: left
   title: Colonia Treuhand
@@ -63,12 +65,13 @@ page_sections:
   buttonText: Get in touch
 - template: service-panel
   title: Office 365
-  image: ''
+  image: images/office365.png
   links:
   - linkText: MS Teams Apps
     linkPath: "/services/teams"
   - linkText: SharePoint & Intranets
     linkPath: "/sharepoints-intranets"
+  imagePosition: Right
 bannerSummary: ''
 bannerimage: ''
 heroServices:
