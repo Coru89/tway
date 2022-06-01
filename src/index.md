@@ -55,6 +55,8 @@ page_sections:
   title: E-commerce
   image: ''
   links:
+  - linkText: WooCommerce
+    linkPath: "/woocommerce"
   - linkText: CraftCommerce
     linkPath: CraftCommerce
   - linkText: Shopify
