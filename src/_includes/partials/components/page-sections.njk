@@ -45,6 +45,13 @@
             backgroundColor: block.backgroundColor
         }) }}
 
+    {% elseif block.template === 'service-panel' %}
+        {{ component('service-panel', {
+            title: block.title,
+            links: block.links,
+            image: block.image
+        }) }}
+
     {% elseif block.template === 'call-to-action' %}
         {{ component('call-to-action', {
             text: block.text,

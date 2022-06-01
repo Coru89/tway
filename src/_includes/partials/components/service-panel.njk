@@ -1,0 +1,18 @@
+{% if props.links.length %}
+  <section class="service-panel">
+    <div class="service-panel__inner">
+      <h2 class="service-panel__heading">{{ props.title }}</h2>
+      <div class="service-panel__items" reversed>
+        {% for item in props.links %}
+          <a href="{{ item.linkPath }}" class="service-panel__link" rel="bookmark">
+            <div class="service-panel__item">
+              <div class="service-panel__item-title">
+                {{ item.linkText }}
+              </div>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}
