@@ -12,6 +12,20 @@ fields:
   config:
     maxSize: 64
   label: image
+- name: imagePosition
+  type: select
+  default: Right
+  config:
+    required: false
+    options:
+    - Right
+    - Left
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Image Position
 - name: links
   type: field_group_list
   fields:
