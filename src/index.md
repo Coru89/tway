@@ -35,6 +35,16 @@ page_sections:
   - linkText: Craft CMS
     linkPath: "/craft"
   image: images/websites.png
+- template: service-panel
+  title: E-commerce
+  image: ''
+  links:
+  - linkText: WooCommerce
+    linkPath: "/woocommerce"
+  - linkText: CraftCommerce
+    linkPath: CraftCommerce
+  - linkText: Shopify
+    linkPath: "/shopify"
 - template: work-panel
   imagePosition: left
   title: Colonia Treuhand
@@ -52,19 +62,11 @@ page_sections:
   buttonPath: "/contact"
   buttonText: Get in touch
 - template: service-panel
-  title: E-commerce
+  title: Office 365
   image: ''
   links:
-  - linkText: WooCommerce
-    linkPath: "/woocommerce"
-  - linkText: CraftCommerce
-    linkPath: CraftCommerce
-  - linkText: Shopify
-    linkPath: "/shopify"
-- template: service-panel
-  title: ''
-  image: ''
-  links: []
+  - linkText: SharePoint & Intranets
+    linkPath: ''
 bannerSummary: ''
 bannerimage: ''
 heroServices:
