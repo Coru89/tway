@@ -37,7 +37,7 @@ sections:
   path: src/_data/tokens.json
   label: Theme settings
 upload_dir: src/images
-public_path: images
+public_path: ''
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
