@@ -55,6 +55,8 @@ page_sections:
   title: E-commerce
   image: ''
   links:
+  - linkText: CraftCommerce
+    linkPath: CraftCommerce
   - linkText: Shopify
     linkPath: "/shopify"
 - template: service-panel
