@@ -66,7 +66,7 @@ page_sections:
   image: ''
   links:
   - linkText: SharePoint & Intranets
-    linkPath: ''
+    linkPath: "/sharepoints-intranets"
 bannerSummary: ''
 bannerimage: ''
 heroServices:
