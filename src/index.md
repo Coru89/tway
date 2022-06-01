@@ -51,6 +51,16 @@ page_sections:
   text: Interested in working together?
   buttonPath: "/contact"
   buttonText: Get in touch
+- template: service-panel
+  title: E-commerce
+  image: ''
+  links:
+  - linkText: Shopify
+    linkPath: "/shopify"
+- template: service-panel
+  title: ''
+  image: ''
+  links: []
 bannerSummary: ''
 bannerimage: ''
 heroServices:
