@@ -12,6 +12,11 @@ fields:
   config:
     maxSize: 64
   label: image
+- name: imageAlt
+  type: text
+  config:
+    required: false
+  label: Image Alt Text
 - name: imagePosition
   type: select
   default: Right
