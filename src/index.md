@@ -36,6 +36,7 @@ page_sections:
     linkPath: "/craft"
   image: images/websites.png
   imagePosition: Right
+  imageAlt: ''
 - template: service-panel
   title: E-commerce
   image: images/group-36.png
@@ -47,6 +48,17 @@ page_sections:
   - linkText: Shopify
     linkPath: "/shopify"
   imagePosition: Left
+  imageAlt: ''
+- template: service-panel
+  title: Office 365
+  image: images/office365.png
+  links:
+  - linkText: MS Teams Apps
+    linkPath: "/services/teams"
+  - linkText: SharePoint & Intranets
+    linkPath: "/sharepoints-intranets"
+  imagePosition: Right
+  imageAlt: ''
 - template: work-panel
   imagePosition: left
   title: Colonia Treuhand
@@ -63,15 +75,6 @@ page_sections:
   text: Interested in working together?
   buttonPath: "/contact"
   buttonText: Get in touch
-- template: service-panel
-  title: Office 365
-  image: images/office365.png
-  links:
-  - linkText: MS Teams Apps
-    linkPath: "/services/teams"
-  - linkText: SharePoint & Intranets
-    linkPath: "/sharepoints-intranets"
-  imagePosition: Right
 bannerSummary: ''
 bannerimage: ''
 heroServices:
