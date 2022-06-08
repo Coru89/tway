@@ -38,7 +38,7 @@ page_sections:
   imagePosition: Right
 - template: service-panel
   title: E-commerce
-  image: images/group-36.png
+  image: images/ecommerce.png
   links:
   - linkText: WooCommerce
     linkPath: "/woocommerce"
