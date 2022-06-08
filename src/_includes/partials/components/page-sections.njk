@@ -49,7 +49,9 @@
         {{ component('service-panel', {
             title: block.title,
             links: block.links,
-            image: block.image
+            image: block.image,
+            imageAlt: block.imageAlt,
+            imagePosition: block.imagePosition
         }) }}
 
     {% elseif block.template === 'call-to-action' %}

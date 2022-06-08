@@ -7,12 +7,21 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 3.75rem 1.5rem;
+    padding: 2rem 1.5rem;
+
+    @include media-query(md) {
+      padding: 3.75rem 1.5rem;
+    }
   }
 
   &__text {
     color: var(--color-white);
-    font-size: get-font-size(700);
+    font-size: get-font-size(600);
+    
+
+    @include media-query(md) {
+      font-size: get-font-size(700);
+    }
   }
 
   &__button {
