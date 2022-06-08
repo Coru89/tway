@@ -34,7 +34,7 @@ page_sections:
     linkPath: "/jamstack"
   - linkText: Craft CMS
     linkPath: "/craft"
-  image: images/websites.png
+  image: ''
   imagePosition: Right
   imageAlt: ''
 - template: service-panel
