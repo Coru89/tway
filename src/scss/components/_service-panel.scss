@@ -74,7 +74,7 @@
     width: 100%;
     
     @include media-query(md) {
-      margin-bottom: -1.5rem;
+      margin-bottom: -3rem;
       max-width: 400px;
       padding-right: 2rem;
       position: relative;
@@ -99,7 +99,7 @@
   &__heading {
     @include media-query(md) {
       position: relative;
-      top: -48px;
+      top: -3.5rem;
     }
   }
 }
