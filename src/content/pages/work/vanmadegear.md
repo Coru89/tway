@@ -25,7 +25,7 @@ page_sections_portfolio:
   layout: 2 Desktop
   backgroundColor: ''
 - template: portfolio-image-panel
-  layout: 4 Mobile
+  layout: 1 Mobile / 1 Desktop
   backgroundColor: ''
 - template: portfolio-content-panel
   title: About Vanmade Gear
