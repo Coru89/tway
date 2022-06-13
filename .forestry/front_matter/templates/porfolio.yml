@@ -8,9 +8,6 @@ fields:
 - type: list
   name: tags
   label: tags
-- type: image_gallery
-  name: cardImage
-  label: cardImage
 - name: page_sections_portfolio
   type: blocks
   label: Page Sections
@@ -18,5 +15,23 @@ fields:
   config:
     min: 
     max: 
+- name: client
+  type: text
+  config:
+    required: false
+  label: Client
+- name: year
+  type: text
+  config:
+    required: false
+  label: Year
+- name: category
+  type: tag_list
+  default: []
+  label: Category
+- name: expertise
+  type: tag_list
+  default: []
+  label: Expertise
 pages:
 - src/content/pages/work/solar-advantage.md
