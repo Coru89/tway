@@ -5,9 +5,8 @@ tags:
 - Jamstack
 - Forestry CMS
 - Netlify
-cardImage:
-- /images/ah-desktop.png
-siteLink: https://armstronghearing.ca
+layout: layouts/portfolio.njk
+permalink: "/work/armstrong-hearing/index.html"
 ---
 
 <p>In 2022, Tway carried out a complete re-design and relaunch of Armstrong Hearing's company website. The focus was creating a modern brochure site to bolster marketing efforts during a time of opportunity in the local hearing-aid market.

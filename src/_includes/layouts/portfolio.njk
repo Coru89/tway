@@ -1,0 +1,26 @@
+{% extends 'layouts/base.njk' %}
+{% from "macros/macros.njk" import component %}
+
+{# Intro content #}
+{% set introHeading = title %}
+
+{% block content %}
+  <main id="main-content" tabindex="-1">
+    <h3 class="portfolio__client">{{client}}</h3>
+    <h1 class="portfolio__title">{{title}}</h1>
+    <article class="page{% if leftNavFilter.length %} page--left-nav{% endif %}">
+      <div class="page__body">
+        {{ content | safe }}
+        {% include 'partials/components/page-sections.njk' %}
+          {% if leftNavFilter.length %}
+            {{ component('left-nav', {
+              navigationItems: navigation.items,
+              leftNavFilter: leftNavFilter
+            }) }}
+          {% endif %}
+      </div>
+    </article>
+  </main>
+{% endblock %}
+
+{{ content | safe }}

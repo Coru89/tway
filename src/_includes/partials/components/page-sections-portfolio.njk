@@ -1,0 +1,31 @@
+{% for block in page_sections_portfolio %}
+    {% if block.template === 'portfolio-image-panel' %}
+        {{ component('image-text-panel', {
+            layout: block.layout,
+            mobileImageURL1: block.mobileImageURL1,
+            mobileImageAlt1: block.mobileImageAlt1,
+            mobileImageURL2: block.mobileImageURL2,
+            mobileImageAlt2: block.mobileImageAlt2,
+            mobileImageURL3: block.mobileImageURL3,
+            mobileImageAlt3: block.mobileImageAlt3,
+            mobileImageURL4: block.mobileImageURL4,
+            mobileImageAlt4: block.mobileImageAlt4,
+            desktopImageURL1: block.desktopImageURL1,
+            desktopImageAlt1: block.desktopImageAlt1,
+            desktopImageURL2: block.desktopImageURL2,
+            desktopImageAlt2: block.desktopImageAlt2,
+            backgroundColor: block.backgroundColor,
+            isBottom: block.isBottom
+        }) }}
+
+    {% elseif block.template === 'portfolio-content-panel' %}
+        {{ component('portfolio-content-panel', {
+            title: block.title,
+            summary: block.summary,
+            showMeta: block.showMeta,
+            showButton: block.showButton,
+            buttonText: block.buttonText,
+            buttonPath: block.buttonPath
+        }) }}
+    {% endif %}
+{% endfor %}

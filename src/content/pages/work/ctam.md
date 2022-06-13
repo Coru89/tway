@@ -4,7 +4,6 @@ description:
 tags:
 - Craft CMS
 - Multilingual
-cardImage:
-- https://tway-dev.netlify.app/images/ctam-desktop.png
-
+layout: layouts/portfolio.njk
+permalink: "/work/colonia-treuhand/index.html"
 ---

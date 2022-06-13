@@ -3,6 +3,6 @@ title: Solar Advantage
 tags:
 - e-Commerce
 - Shopify
-cardImage:
-- /images/sa-desktop.png
+layout: layouts/portfolio.njk
+permalink: "/work/solar-advantage/index.html"
 ---
