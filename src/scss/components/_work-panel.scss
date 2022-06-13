@@ -1,9 +1,10 @@
 .work-panel {
   justify-content: center;
   overflow: hidden;
-  padding: 4rem 0;
+  padding: 1.5rem 0;
 
   @include media-query(lg) {
+    padding: 4rem 0;
     &--bottom {
       padding-bottom: 0;
 

@@ -1,5 +1,5 @@
 .service-panel {
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 
   @include media-query(md) {
     padding: calc(4.5rem + 3rem) 0;
@@ -15,6 +15,14 @@
     border-radius: 8px;
     padding: 2rem;
 
+    > .service-panel__heading {
+      padding-bottom: .5rem;
+      
+      @include media-query(md) {
+        display: none;
+      }
+    }
+
     @include media-query(md) {
       display: flex;
       justify-content: space-between;
@@ -27,6 +35,14 @@
   }
 
   &__items {
+    > .service-panel__heading {
+      display: none;
+
+      @include media-query(md) {
+        display: block;
+      }
+    }
+
     @include media-query(md) {
       width: 50%;
     }
@@ -63,8 +79,13 @@
     align-items: center;
     color: var(--color-black);
     display: flex;
+    font-size: 15px;
     text-decoration: none;
     width: 100%;
+
+    @include media-query(md) {
+      font-size: 16px;
+    }
   }
 
 
