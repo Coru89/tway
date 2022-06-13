@@ -27,7 +27,9 @@ fields:
 - name: page_sections_portfolio
   type: blocks
   label: Page Sections
-  template_types: []
+  template_types:
+  - portfolio-image-panel
+  - portfolio-content-panel
   config:
     min: 
     max: 
