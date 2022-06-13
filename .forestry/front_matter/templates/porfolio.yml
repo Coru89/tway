@@ -3,24 +3,14 @@ label: Portfolio
 hide_body: true
 display_field: title
 fields:
-- type: text
-  name: title
-  label: title
-- type: list
-  name: tags
-  label: tags
-- name: page_sections_portfolio
-  type: blocks
-  label: Page Sections
-  template_types: []
-  config:
-    min: 
-    max: 
 - name: client
   type: text
   config:
     required: false
   label: Client
+- type: text
+  name: title
+  label: Title
 - name: year
   type: text
   config:
@@ -34,5 +24,12 @@ fields:
   type: tag_list
   default: []
   label: Expertise
+- name: page_sections_portfolio
+  type: blocks
+  label: Page Sections
+  template_types: []
+  config:
+    min: 
+    max: 
 pages:
 - src/content/pages/work/solar-advantage.md
