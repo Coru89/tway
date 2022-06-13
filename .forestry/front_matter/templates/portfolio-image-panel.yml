@@ -59,3 +59,42 @@ fields:
   config:
     required: false
   label: Mobile Image Alt 4
+- name: desktopimageurl1
+  type: file
+  config:
+    maxSize: 64
+  label: Desktop Image 1
+- name: desktopImageURL2
+  type: file
+  config:
+    maxSize: 64
+  label: Desktop Image 2
+- name: desktopImageAlt1
+  type: file
+  config:
+    maxSize: 64
+  label: Desktop Image Alt 1
+- name: desktopImageAlt2
+  type: text
+  config:
+    required: false
+  label: Desktop Image Alt 2
+- name: backgroundColor
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Green Light
+    - Grey Light
+    - Red
+    - Green Dark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Color
+- name: isBottom
+  type: boolean
+  label: Is Bottom?
