@@ -4,5 +4,5 @@ tags:
 - e-Commerce
 - Shopify
 layout: layouts/portfolio.njk
-permalink: "/work/solar-advantage/index.html"
+permalink: "/portfolio/solar-advantage/index.html"
 ---

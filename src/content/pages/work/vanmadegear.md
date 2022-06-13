@@ -7,7 +7,7 @@ expertise:
 - Shopify
 - Ecommerce
 layout: layouts/portfolio.njk
-permalink: "/work/vanmadegear/index.html"
+permalink: "/portfolio/vanmadegear/index.html"
 
 ---
 In 2021, Vanmade Gear was seeking help re-branding and re-launching their existing eCommerce site that was built on wooCommerce. Tway was brought in to replace an under-performing development team, and to bring to life the new brand vision on the Shopify platform.
