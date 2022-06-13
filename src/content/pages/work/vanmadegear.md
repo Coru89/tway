@@ -22,8 +22,8 @@ page_sections_portfolio:
 
     The objective was to scale an already successful business through driving sales, increasing taffic and growing brand awareness.
 - template: portfolio-image-panel
-  layout: []
-  backgroundColor: []
+  layout: 2 Desktop
+  backgroundColor: ''
 - template: portfolio-image-panel
   layout: []
   backgroundColor: []
