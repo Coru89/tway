@@ -17,8 +17,25 @@ fields:
       file: 
       path: 
   label: Layout
-- name: mobileImage1
+- name: mobileImageURL1
   type: file
   config:
     maxSize: 64
   label: Mobile Image 1
+- name: mobileImageURL2
+  type: file
+  config:
+    maxSize: 64
+  showOnly:
+    field: layout
+  label: Mobile Image 2
+- name: mobileImageURL3
+  type: file
+  config:
+    maxSize: 64
+  label: Mobile Image 3
+- name: mobileImageURL4
+  type: file
+  config:
+    maxSize: 64
+  label: Mobile Image 4
