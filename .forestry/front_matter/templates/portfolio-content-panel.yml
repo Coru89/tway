@@ -1,4 +1,40 @@
 ---
 label: portfolio-content-panel
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: summary
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Summary
+- name: showMeta
+  type: boolean
+  label: Show Meta Data?
+- name: showButton
+  type: boolean
+  label: Show Button?
+- name: buttonText
+  type: text
+  config:
+    required: false
+  label: Button Text
+  showOnly:
+    field: showButton
+    value: true
+- name: buttonPath
+  type: text
+  config:
+    required: false
+  label: Button Path
+  showOnly:
+    field: showButton
+    value: true
