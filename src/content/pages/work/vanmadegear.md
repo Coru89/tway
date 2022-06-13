@@ -27,6 +27,13 @@ page_sections_portfolio:
 - template: portfolio-image-panel
   layout: []
   backgroundColor: []
+- template: portfolio-content-panel
+  title: About Vanmade Gear
+  summary: Vanmade gear is a company that specialises in premium window shades for
+    RV vans targetting vanlifers, digital nomads and retirees.
+  showButton: true
+  buttonText: Visit the site
+  buttonPath: https://vanmadegear.com
 
 ---
 In 2021, Vanmade Gear was seeking help re-branding and re-launching their existing eCommerce site that was built on wooCommerce. Tway was brought in to replace an under-performing development team, and to bring to life the new brand vision on the Shopify platform.
