@@ -1,6 +1,6 @@
 ---
-label: Work
-hide_body: false
+label: Porfolio
+hide_body: true
 fields:
 - type: text
   name: title
@@ -11,5 +11,12 @@ fields:
 - type: image_gallery
   name: cardImage
   label: cardImage
+- name: page_sections_portfolio
+  type: blocks
+  label: Page Sections
+  template_types: []
+  config:
+    min: 
+    max: 
 pages:
 - src/content/pages/work/solar-advantage.md
