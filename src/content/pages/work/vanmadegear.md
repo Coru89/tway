@@ -10,8 +10,8 @@ layout: layouts/portfolio.njk
 permalink: "/portfolio/vanmadegear/index.html"
 page_sections_portfolio:
 - template: portfolio-image-panel
-  layout: []
-  backgroundColor: []
+  layout: 1 Mobile / 1 Desktop
+  backgroundColor: ''
 - template: portfolio-content-panel
   showMeta: true
   showButton: true
