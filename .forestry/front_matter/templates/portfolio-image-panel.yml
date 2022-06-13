@@ -1,4 +1,24 @@
 ---
 label: Portfolio Image Panel
 hide_body: true
-fields: []
+fields:
+- name: layout
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - 1 Mobile / 1 Desktop
+    - 2 Desktop
+    - 4 Mobile
+    source:
+      type: simple
+      section: posts
+      file: 
+      path: 
+  label: Layout
+- name: mobileImage1
+  type: file
+  config:
+    maxSize: 64
+  label: Mobile Image 1
