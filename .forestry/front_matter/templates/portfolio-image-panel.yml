@@ -115,7 +115,7 @@ fields:
   showOnly:
     field: imageLayout
     value: 4 Mobile
-- name: desktopimageurl1
+- name: desktopImageUrl1
   type: file
   config:
     maxSize: 64
