@@ -119,3 +119,8 @@ fields:
 - name: isBottom
   type: boolean
   label: Is Bottom?
+- name: mobileImageURL5
+  type: file
+  config:
+    maxSize: 64
+  label: Mobile Image 5
