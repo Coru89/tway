@@ -12,7 +12,6 @@ page_sections_portfolio:
 - template: portfolio-image-panel
   imageLayout: 1 Mobile / 1 Desktop
   backgroundColor: ''
-  imageLayout: 1 Mobile / 1 Desktop
   mobileImageURL1: images/vmg-mobile-home.png
   desktopimageurl1: images/vmg-product.png
 - template: portfolio-content-panel
@@ -27,6 +26,8 @@ page_sections_portfolio:
 - template: portfolio-image-panel
   imageLayout: 2 Desktop
   backgroundColor: ''
+  desktopImageURL2: images/vmg-select-1.png
+  desktopImageURL3: images/vmg-select-2.png
 - template: portfolio-image-panel
   imageLayout: 4 Mobile
   backgroundColor: ''
@@ -37,4 +38,5 @@ page_sections_portfolio:
   showButton: true
   buttonText: Visit the site
   buttonPath: https://vanmadegear.com
+
 ---
