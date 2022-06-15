@@ -115,7 +115,7 @@ fields:
   label: Desktop Image 1
   showOnly:
     field: imageLayout
-    value: 1 Mobile / 1 Desktop
+    value: Full width image
 - name: desktopImageAlt1
   type: file
   config:
@@ -123,7 +123,7 @@ fields:
   label: Desktop Image Alt 1
   showOnly:
     field: imageLayout
-    value: 1 Mobile / 1 Desktop
+    value: Full width image
 - name: desktopImageURL2
   type: file
   config:
