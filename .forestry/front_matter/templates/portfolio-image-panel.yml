@@ -39,6 +39,9 @@ fields:
   config:
     required: false
   label: Mobile Image Alt 2
+  showOnly:
+    field: imageLayout
+    value: 4 Mobile
 - name: mobileImageURL3
   type: file
   config:
