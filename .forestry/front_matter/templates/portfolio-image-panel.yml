@@ -63,6 +63,9 @@ fields:
   config:
     maxSize: 64
   label: Mobile Image 4
+  showOnly:
+    field: imageLayout
+    value: 4 Mobile
 - name: mobileImageAlt4
   type: text
   config:
