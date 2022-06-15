@@ -30,6 +30,9 @@ fields:
   config:
     required: false
   label: Mobile Image Alt 1
+  showOnly:
+    field: imageLayout
+    value: 1 Mobile / 1 Desktop
 - name: mobileImageURL2
   type: file
   config:
