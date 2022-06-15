@@ -68,6 +68,9 @@ fields:
   config:
     required: false
   label: Mobile Image Alt 4
+  showOnly:
+    field: imageLayout
+    value: 4 Mobile
 - name: desktopimageurl1
   type: file
   config:
