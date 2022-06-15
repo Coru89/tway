@@ -1,7 +1,7 @@
 {% for block in page_sections_portfolio %}
     {% if block.template === 'portfolio-image-panel' %}
-        {{ component('image-text-panel', {
-            layout: block.layout,
+        {{ component('portfolio-image-panel', {
+            imageLayout: block.imageLayout,
             mobileImageURL1: block.mobileImageURL1,
             mobileImageAlt1: block.mobileImageAlt1,
             mobileImageURL2: block.mobileImageURL2,
@@ -10,10 +10,14 @@
             mobileImageAlt3: block.mobileImageAlt3,
             mobileImageURL4: block.mobileImageURL4,
             mobileImageAlt4: block.mobileImageAlt4,
+            mobileImageURL4: block.mobileImageURL5,
+            mobileImageAlt4: block.mobileImageAlt5,
             desktopImageURL1: block.desktopImageURL1,
             desktopImageAlt1: block.desktopImageAlt1,
             desktopImageURL2: block.desktopImageURL2,
             desktopImageAlt2: block.desktopImageAlt2,
+            desktopImageURL2: block.desktopImageURL3,
+            desktopImageAlt2: block.desktopImageAlt3,
             backgroundColor: block.backgroundColor,
             isBottom: block.isBottom
         }) }}
