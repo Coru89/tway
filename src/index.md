@@ -19,7 +19,7 @@ page_sections:
     sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
     Neque porro quisquam est, qui dolorem.
   buttonText: Read More
-  buttonPath: "/work/vanmadegear"
+  buttonPath: "/portfolio/vanmadegear"
   imageURL: images/vmg-home-full.png
   imageAlt: Vanmade Gear
   imagePosition: right
@@ -66,7 +66,7 @@ page_sections:
     sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
     Neque porro quisquam est, qui dolorem.
   buttonText: Read More
-  buttonPath: "/work/colonia-truehand"
+  buttonPath: "/portfolio/colonia-truehand"
   imageURL: images/ctam-home-full.png
   imageAlt: Colonia Treuhand
   backgroundColor: "#AA6373"

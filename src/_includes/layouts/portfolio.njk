@@ -8,18 +8,11 @@
   <main id="main-content" tabindex="-1">
     <h3 class="portfolio__client">{{client}}</h3>
     <h1 class="portfolio__title">{{title}}</h1>
-    <article class="page{% if leftNavFilter.length %} page--left-nav{% endif %}">
-      <div class="page__body">
-        {{ content | safe }}
-        {% include 'partials/components/page-sections.njk' %}
-          {% if leftNavFilter.length %}
-            {{ component('left-nav', {
-              navigationItems: navigation.items,
-              leftNavFilter: leftNavFilter
-            }) }}
-          {% endif %}
-      </div>
-    </article>
+
+    <div class="portfolio__body">
+      {{ content | safe }}
+      {% include 'partials/components/page-sections-portfolio.njk' %}
+    </div>
   </main>
 {% endblock %}
 

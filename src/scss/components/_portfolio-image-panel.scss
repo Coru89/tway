@@ -1,0 +1,6 @@
+.portfolio-image-panel {
+    &__inner {
+        @include panel-container;
+    }
+}
+

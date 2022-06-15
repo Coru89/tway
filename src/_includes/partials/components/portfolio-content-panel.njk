@@ -1,0 +1,31 @@
+{% from "macros/macros.njk" import button_link %}
+
+<section class="portfolio-content-panel">
+  <div class="portfolio-content-panel__inner">
+    {% if props.showMeta === true %}
+      <aside class="portfolio-content-panel__meta-container">
+        <div class="portfolio-content-panel__meta-label">Client</div>
+        <div class="portfolio-content-panel__meta-data">{{ props.client }}</div>
+
+        <div class="portfolio-content-panel__meta-label">Year</div>
+        <div class="portfolio-content-panel__meta-data">{{ props.year }}</div>
+
+        <div class="portfolio-content-panel__meta-label">Category</div>
+        <div class="portfolio-content-panel__meta-data">{{ props.category }}</div>
+
+        <div class="portfolio-content-panel__meta-label">Expertise</div>
+        <div class="portfolio-content-panel__meta-data">{{ props.expertise }}</div>
+      </aside>
+    {% endif %}
+
+    {% if props.title.length %}
+      <div class="portfolio-content-panel__title">{{ props.title }}</div>
+    {% endif %}
+    {% if props.summary.length %}
+      <div class="portfolio-content-panel__summary">{{ props.summary }}</div>
+    {% endif %}
+    {% if props.showButton === true %}
+      {{ button_link_inverse(props.buttonText, props.buttonPath) }}
+    {% endif %}
+  </div>
+</section>
