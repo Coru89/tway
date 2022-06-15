@@ -2,7 +2,7 @@
 label: Portfolio Image Panel
 hide_body: true
 fields:
-- name: layout
+- name: imageLayout
   type: select
   default: []
   config:
@@ -64,21 +64,27 @@ fields:
   config:
     maxSize: 64
   label: Desktop Image 1
-- name: desktopImageURL2
-  type: file
-  config:
-    maxSize: 64
-  label: Desktop Image 2
 - name: desktopImageAlt1
   type: file
   config:
     maxSize: 64
   label: Desktop Image Alt 1
+- name: desktopImageURL2
+  type: file
+  config:
+    maxSize: 64
+  label: Desktop Image 2
+  showOnly:
+    field: imageLayout
+    value: 2 Desktop
 - name: desktopImageAlt2
   type: text
   config:
     required: false
   label: Desktop Image Alt 2
+  showOnly:
+    field: imageLayout
+    value: 2 Desktop
 - name: backgroundColor
   type: select
   default: []
