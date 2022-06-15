@@ -133,11 +133,17 @@ fields:
   config:
     maxSize: 64
   label: Desktop Image 3
+  showOnly:
+    field: imageLayout
+    value: 2 Desktop
 - name: desktopImageAlt3
   type: text
   config:
     required: false
   label: Desktop Image Alt 3
+  showOnly:
+    field: imageLayout
+    value: 2 Desktop
 - name: backgroundColor
   type: select
   default: []
