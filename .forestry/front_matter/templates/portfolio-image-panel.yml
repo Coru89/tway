@@ -47,11 +47,17 @@ fields:
   config:
     maxSize: 64
   label: Mobile Image 3
+  showOnly:
+    field: imageLayout
+    value: 4 Mobile
 - name: mobileImageAlt3
   type: text
   config:
     required: false
   label: Mobile Image Alt 3
+  showOnly:
+    field: imageLayout
+    value: 4 Mobile
 - name: mobileImageURL4
   type: file
   config:
