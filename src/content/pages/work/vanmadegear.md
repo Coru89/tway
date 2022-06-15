@@ -28,9 +28,6 @@ page_sections_portfolio:
   backgroundColor: ''
   desktopImageURL2: images/vmg-select-1.png
   desktopImageURL3: images/vmg-select-2.png
-- template: portfolio-image-panel
-  imageLayout: 4 Mobile
-  backgroundColor: ''
 - template: portfolio-content-panel
   title: About Vanmade Gear
   summary: Vanmade gear is a company that specialises in premium window shades for
@@ -38,5 +35,13 @@ page_sections_portfolio:
   showButton: true
   buttonText: Visit the site
   buttonPath: https://vanmadegear.com
+- template: portfolio-image-panel
+  imageLayout: 4 Mobile
+  backgroundColor: ''
+  isBottom: true
+  mobileImageURL2: images/vmg-mobile-1.png
+  mobileImageURL3: images/vmg-mobile-2.png
+  mobileImageURL4: images/vmg-mobile-3.png
+  mobileImageURL5: images/vmg-mobile-4.png
 
 ---
