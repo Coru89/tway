@@ -74,6 +74,16 @@ fields:
   showOnly:
     field: imageLayout
     value: 4 Mobile
+- name: mobileImageURL5
+  type: file
+  config:
+    maxSize: 64
+  label: Mobile Image 5
+- name: mobileImageAlt5
+  type: text
+  config:
+    required: false
+  label: Mobile Image Alt 5
 - name: desktopimageurl1
   type: file
   config:
@@ -100,6 +110,16 @@ fields:
   showOnly:
     field: imageLayout
     value: 2 Desktop
+- name: desktopImageURL3
+  type: file
+  config:
+    maxSize: 64
+  label: Desktop Image 3
+- name: desktopImageAlt3
+  type: text
+  config:
+    required: false
+  label: Desktop Image Alt 3
 - name: backgroundColor
   type: select
   default: []
@@ -119,18 +139,3 @@ fields:
 - name: isBottom
   type: boolean
   label: Is Bottom?
-- name: mobileImageURL5
-  type: file
-  config:
-    maxSize: 64
-  label: Mobile Image 5
-- name: mobileImageAlt5
-  type: text
-  config:
-    required: false
-  label: Mobile Image Alt 5
-- name: desktopImageURL3
-  type: file
-  config:
-    maxSize: 64
-  label: Desktop Image 3
