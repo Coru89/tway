@@ -129,3 +129,8 @@ fields:
   config:
     required: false
   label: Mobile Image Alt 5
+- name: desktopImageURL3
+  type: file
+  config:
+    maxSize: 64
+  label: Desktop Image 3
