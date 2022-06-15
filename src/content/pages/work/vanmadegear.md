@@ -12,6 +12,9 @@ page_sections_portfolio:
 - template: portfolio-image-panel
   layout: 1 Mobile / 1 Desktop
   backgroundColor: ''
+  imageLayout: 1 Mobile / 1 Desktop
+  mobileImageURL1: images/vmg-mobile-home.png
+  desktopimageurl1: images/vmg-product.png
 - template: portfolio-content-panel
   showMeta: true
   showButton: true
