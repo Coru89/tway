@@ -52,13 +52,6 @@ fields:
   showOnly:
     field: imageLayout
     value: 1 Mobile / 1 Desktop
-- name: mobileImageURL2
-  type: file
-  config:
-    maxSize: 64
-  showOnly:
-    field: layout
-  label: Mobile Image 2
 - name: mobileImageAlt2
   type: text
   config:
@@ -163,3 +156,11 @@ fields:
   showOnly:
     field: imageLayout
     value: 2 Desktop
+- name: mobileImageURL2
+  type: file
+  config:
+    maxSize: 64
+  label: Mobile Image 2
+  showOnly:
+    field: imageLayout
+    value: 4 Mobile
