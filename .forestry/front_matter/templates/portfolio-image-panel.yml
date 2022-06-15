@@ -17,74 +17,6 @@ fields:
       file: 
       path: 
   label: Layout
-- name: mobileImageURL1
-  type: file
-  config:
-    maxSize: 64
-  label: Mobile Image 1
-- name: mobileImageAlt1
-  type: text
-  config:
-    required: false
-  label: Mobile Image Alt 1
-- name: mobileImageURL2
-  type: file
-  config:
-    maxSize: 64
-  showOnly:
-    field: layout
-  label: Mobile Image 2
-- name: mobileImageAlt2
-  type: text
-  config:
-    required: false
-  label: Mobile Image Alt 2
-- name: mobileImageURL3
-  type: file
-  config:
-    maxSize: 64
-  label: Mobile Image 3
-- name: mobileImageAlt3
-  type: text
-  config:
-    required: false
-  label: Mobile Image Alt 3
-- name: mobileImageURL4
-  type: file
-  config:
-    maxSize: 64
-  label: Mobile Image 4
-- name: mobileImageAlt4
-  type: text
-  config:
-    required: false
-  label: Mobile Image Alt 4
-- name: desktopimageurl1
-  type: file
-  config:
-    maxSize: 64
-  label: Desktop Image 1
-- name: desktopImageAlt1
-  type: file
-  config:
-    maxSize: 64
-  label: Desktop Image Alt 1
-- name: desktopImageURL2
-  type: file
-  config:
-    maxSize: 64
-  label: Desktop Image 2
-  showOnly:
-    field: imageLayout
-    value: 2 Desktop
-- name: desktopImageAlt2
-  type: text
-  config:
-    required: false
-  label: Desktop Image Alt 2
-  showOnly:
-    field: imageLayout
-    value: 2 Desktop
 - name: backgroundColor
   type: select
   default: []
@@ -104,3 +36,130 @@ fields:
 - name: isBottom
   type: boolean
   label: Is Bottom?
+- name: mobileImageURL1
+  type: file
+  config:
+    maxSize: 64
+  label: Mobile Image 1
+  showOnly:
+    field: imageLayout
+    value: 1 Mobile / 1 Desktop
+- name: mobileImageAlt1
+  type: text
+  config:
+    required: false
+  label: Mobile Image Alt 1
+  showOnly:
+    field: imageLayout
+    value: 1 Mobile / 1 Desktop
+- name: mobileImageURL2
+  type: file
+  config:
+    maxSize: 64
+  showOnly:
+    field: layout
+  label: Mobile Image 2
+- name: mobileImageAlt2
+  type: text
+  config:
+    required: false
+  label: Mobile Image Alt 2
+  showOnly:
+    field: imageLayout
+    value: 4 Mobile
+- name: mobileImageURL3
+  type: file
+  config:
+    maxSize: 64
+  label: Mobile Image 3
+  showOnly:
+    field: imageLayout
+    value: 4 Mobile
+- name: mobileImageAlt3
+  type: text
+  config:
+    required: false
+  label: Mobile Image Alt 3
+  showOnly:
+    field: imageLayout
+    value: 4 Mobile
+- name: mobileImageURL4
+  type: file
+  config:
+    maxSize: 64
+  label: Mobile Image 4
+  showOnly:
+    field: imageLayout
+    value: 4 Mobile
+- name: mobileImageAlt4
+  type: text
+  config:
+    required: false
+  label: Mobile Image Alt 4
+  showOnly:
+    field: imageLayout
+    value: 4 Mobile
+- name: mobileImageURL5
+  type: file
+  config:
+    maxSize: 64
+  label: Mobile Image 5
+  showOnly:
+    field: imageLayout
+    value: 4 Mobile
+- name: mobileImageAlt5
+  type: text
+  config:
+    required: false
+  label: Mobile Image Alt 5
+  showOnly:
+    field: imageLayout
+    value: 4 Mobile
+- name: desktopimageurl1
+  type: file
+  config:
+    maxSize: 64
+  label: Desktop Image 1
+  showOnly:
+    field: imageLayout
+    value: 1 Mobile / 1 Desktop
+- name: desktopImageAlt1
+  type: file
+  config:
+    maxSize: 64
+  label: Desktop Image Alt 1
+  showOnly:
+    field: imageLayout
+    value: 1 Mobile / 1 Desktop
+- name: desktopImageURL2
+  type: file
+  config:
+    maxSize: 64
+  label: Desktop Image 2
+  showOnly:
+    field: imageLayout
+    value: 2 Desktop
+- name: desktopImageAlt2
+  type: text
+  config:
+    required: false
+  label: Desktop Image Alt 2
+  showOnly:
+    field: imageLayout
+    value: 2 Desktop
+- name: desktopImageURL3
+  type: file
+  config:
+    maxSize: 64
+  label: Desktop Image 3
+  showOnly:
+    field: imageLayout
+    value: 2 Desktop
+- name: desktopImageAlt3
+  type: text
+  config:
+    required: false
+  label: Desktop Image Alt 3
+  showOnly:
+    field: imageLayout
+    value: 2 Desktop
