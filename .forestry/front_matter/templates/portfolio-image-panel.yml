@@ -17,6 +17,25 @@ fields:
       file: 
       path: 
   label: Layout
+- name: backgroundColor
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Green Light
+    - Grey Light
+    - Red
+    - Green Dark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Color
+- name: isBottom
+  type: boolean
+  label: Is Bottom?
 - name: mobileImageURL1
   type: file
   config:
@@ -144,22 +163,3 @@ fields:
   showOnly:
     field: imageLayout
     value: 2 Desktop
-- name: backgroundColor
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - Green Light
-    - Grey Light
-    - Red
-    - Green Dark
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Background Color
-- name: isBottom
-  type: boolean
-  label: Is Bottom?
