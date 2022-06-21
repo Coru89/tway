@@ -35,5 +35,11 @@
             category: category,
             expertise: expertise
         }) }}
+    {% elseif block.template === 'call-to-action' %}
+        {{ component('call-to-action', {
+            text: block.text,
+            buttonText: block.buttonText,
+            buttonPath: block.buttonPath
+        }) }}
     {% endif %}
 {% endfor %}
