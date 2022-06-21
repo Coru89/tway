@@ -7,13 +7,16 @@ fields:
   config:
     required: true
   label: text
+  default: Interested in working together?
 - name: buttonText
   type: text
   config:
     required: true
   label: buttonText
+  default: Get in touch
 - name: buttonPath
   type: text
   config:
     required: true
   label: buttonPath
+  default: "/contact"
