@@ -11,7 +11,7 @@ permalink: "/portfolio/vanmadegear/index.html"
 page_sections_portfolio:
 - template: portfolio-image-panel
   imageLayout: Full width image
-  backgroundColor: 'Red'
+  backgroundColor: Red
   mobileImageURL1: images/vmg-mobile-home.png
   desktopImageURL1: images/vmg-product.png
 - template: portfolio-content-panel
@@ -25,7 +25,7 @@ page_sections_portfolio:
     The objective was to scale an already successful business through driving sales, increasing taffic and growing brand awareness.
 - template: portfolio-image-panel
   imageLayout: 2 Desktop
-  backgroundColor: 'Green Dark'
+  backgroundColor: Green Dark
   desktopImageURL2: images/vmg-select-1.png
   desktopImageURL3: images/vmg-select-2.png
 - template: portfolio-content-panel
@@ -37,11 +37,15 @@ page_sections_portfolio:
   buttonPath: https://vanmadegear.com
 - template: portfolio-image-panel
   imageLayout: 4 Mobile
-  backgroundColor: 'Green Light'
+  backgroundColor: Green Light
   isBottom: true
   mobileImageURL2: images/vmg-mobile-1.png
   mobileImageURL3: images/vmg-mobile-2.png
   mobileImageURL4: images/vmg-mobile-3.png
   mobileImageURL5: images/vmg-mobile-4.png
+- template: call-to-action
+  text: Interested in working together?
+  buttonText: Get in touch
+  buttonPath: "/contact"
 
 ---
