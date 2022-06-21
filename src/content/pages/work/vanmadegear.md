@@ -19,10 +19,12 @@ page_sections_portfolio:
   showButton: true
   buttonText: Visit the site
   buttonPath: https://vanmadegear.com
-  summary: |-
-    In 2021, Vanmade Gear was seeking help re-branding and re-launching their existing eCommerce site that was built on wooCommerce. Tway was brought in to replace an under-performing development team, and to bring to life the new brand vision on the Shopify platform.
-
-    The objective was to scale an already successful business through driving sales, increasing taffic and growing brand awareness.
+  summary: "<p>In 2021, Vanmade Gear was seeking help re-branding and re-launching
+    their existing eCommerce site that was built on wooCommerce. Tway was brought
+    in to replace an under-performing development team, and to bring to life the new
+    brand vision on the Shopify platform. </p><p></p><p>The objective was to scale
+    an already successful business through driving sales, increasing taffic and growing
+    brand awareness.</p>"
 - template: portfolio-image-panel
   imageLayout: 2 Desktop
   backgroundColor: Green Dark
