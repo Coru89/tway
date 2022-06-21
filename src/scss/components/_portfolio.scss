@@ -116,6 +116,14 @@
         &__summary {
             line-height: 1.75;
             padding-bottom: 3rem;
+
+            p {
+                padding-bottom: 2rem;
+
+                &:last-of-type {
+                    padding-bottom: 0;
+                }
+            }
         }
     }
 }

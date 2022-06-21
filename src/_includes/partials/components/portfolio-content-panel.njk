@@ -22,7 +22,7 @@
         <div class="portfolio-content-panel__title">{{ props.title }}</div>
       {% endif %}
       {% if props.summary.length %}
-        <div class="portfolio-content-panel__summary">{{ props.summary }}</div>
+        <div class="portfolio-content-panel__summary">{{props.summary | safe }}</div>
       {% endif %}
       {% if props.showButton === true %}
         {{ button_link(props.buttonText, props.buttonPath, true) }}
