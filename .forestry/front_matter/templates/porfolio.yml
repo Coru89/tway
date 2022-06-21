@@ -30,6 +30,7 @@ fields:
   template_types:
   - portfolio-image-panel
   - portfolio-content-panel
+  - call-to-action
   config:
     min: 
     max: 
