@@ -19,10 +19,6 @@
     background-color: var(--color-theme-primary);
     border-color: var(--white);
     color: var(--color-white);
-
-    // svg {
-    //   stroke: var(--color-white);
-    // }
   }
   
   &__alternate {
@@ -59,7 +55,6 @@
     }
   
     svg {
-      // stroke: var(--color-white);
       margin-left: .5rem;
     }
 
@@ -69,7 +64,6 @@
       font-weight: 700;
 
       svg {
-        // stroke: var(--color-white);
         position: relative;
         top: 3px;
       }
@@ -88,8 +82,15 @@
 }
 
 .button--arrow {
+  background-color: var(--color-theme-primary);
+  color: var(--color-white);
   font-size: get-font-size(300);
   text-transform: uppercase;
+
+  svg {
+    margin-left: .5rem;
+    stroke: var(--color-white);
+  }
 
   &:hover {
     filter: none;
@@ -99,18 +100,35 @@
     }
   }
 
-  svg {
-    stroke: var(--color-theme-primary);
-    margin-left: .5rem;
+  &:hover,
+  &:focus {
+    background-color: var(--color-white);
+    color: var(--color-theme-primary);
+
+    svg {
+      stroke: var(--color-theme-primary);
+    }
   }
+
+
 }
 
 .button--inverse {
-  background-color: var(--color-theme-primary);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-theme-primary);
 
-  &:hover {
+  svg {
+    stroke: var(--color-theme-primary);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-theme-primary);
     color: var(--color-white);
+
+    svg {
+      stroke: var(--color-white);
+    }
   }
 }
 

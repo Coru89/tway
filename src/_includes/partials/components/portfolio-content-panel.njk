@@ -3,7 +3,7 @@
 <section class="portfolio-content-panel">
   <div class="portfolio-content-panel__inner">
     {% if props.showMeta === true %}
-      <aside class="portfolio-content-panel__meta-container">
+      <aside class="portfolio-content-panel__meta">
         <div class="portfolio-content-panel__meta-label">Client</div>
         <div class="portfolio-content-panel__meta-data">{{ props.client }}</div>
 
@@ -17,15 +17,16 @@
         <div class="portfolio-content-panel__meta-data">{{ props.expertise }}</div>
       </aside>
     {% endif %}
-
-    {% if props.title.length %}
-      <div class="portfolio-content-panel__title">{{ props.title }}</div>
-    {% endif %}
-    {% if props.summary.length %}
-      <div class="portfolio-content-panel__summary">{{ props.summary }}</div>
-    {% endif %}
-    {% if props.showButton === true %}
-      {{ button_link_inverse(props.buttonText, props.buttonPath) }}
-    {% endif %}
+    <div class="portfolio-content-panel__column">
+      {% if props.title.length %}
+        <div class="portfolio-content-panel__title">{{ props.title }}</div>
+      {% endif %}
+      {% if props.summary.length %}
+        <div class="portfolio-content-panel__summary">{{ props.summary }}</div>
+      {% endif %}
+      {% if props.showButton === true %}
+        {{ button_link(props.buttonText, props.buttonPath, true) }}
+      {% endif %}
+    </div>
   </div>
 </section>

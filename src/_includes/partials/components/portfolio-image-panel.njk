@@ -20,29 +20,29 @@
   {% set layoutClass = ' portfolio-image-panel--4-mobile' %}
 {% endif %}
 
-<section class="portfolio-image-panel{{layoutClass}}" style="background-color: {{colorHexPanel}};">
-  <div class="portfolio-image-panel__inner">
+<section class="portfolio-image-panel" style="background-color: {{colorHexPanel}};">
+  <div class="portfolio-image-panel__inner{{layoutClass}}">
     {% if props.imageLayout === 'Full width image' and props.desktopImageURL1.length %}
-      {% image props.desktopImageURL1, props.desktopImageAlt1, null, "lazy", "100vw", ['400', '500', '600', '700', '800', '900', '1000', '1100', '1200', '1300'] %}
+      {% image props.desktopImageURL1, props.desktopImageAlt1, null, "lazy", "100vw", ['400', '500', '600', '700', '800', '900', '1000', '1100', '1200', '1300', '2000'] %}
     {% elseif props.imageLayout === '2 Desktop' %}
       {% if props.desktopImageURL2.length %}
-        {% image props.desktopImageURL2, props.desktopImageAlt2, null, "lazy", "50vw", ['200', '300', '400', '500', '600'] %}
+        {% image props.desktopImageURL2, props.desktopImageAlt2, null, "lazy", "50vw", ['200', '300', '400', '500', '600', '1200'] %}
       {% endif %}
       {% if props.desktopImageURL3.length %}
-        {% image props.desktopImageURL3, props.desktopImageAlt3, null, "lazy", "50vw", ['200', '300', '400', '500', '600'] %}
+        {% image props.desktopImageURL3, props.desktopImageAlt3, null, "lazy", "50vw", ['200', '300', '400', '500', '600', '1200'] %}
       {% endif %}
     {% elseif props.imageLayout === '4 Mobile' %}
       {% if props.mobileImageURL2.length %}
-        {% image props.mobileImageURL2, props.mobileImageAlt2, null, "lazy", "25vw", ['100', '150', '200', '250', '300'] %}
+        {% image props.mobileImageURL2, props.mobileImageAlt2, null, "lazy", "100%", ['100', '150', '200', '250', '292', '400', '500', '600'] %}
       {% endif %}
       {% if props.mobileImageURL3.length %}
-        {% image props.mobileImageURL3, props.mobileImageAlt3, null, "lazy", "25vw", ['100', '150', '200', '250', '300'] %}
+        {% image props.mobileImageURL3, props.mobileImageAlt3, null, "lazy", "100%", ['100', '150', '200', '250', '292', '400', '500', '600'] %}
       {% endif %}
       {% if props.mobileImageURL4.length %}
-        {% image props.mobileImageURL4, props.mobileImageAlt4, null, "lazy", "25vw", ['100', '150', '200', '250', '300'] %}
+        {% image props.mobileImageURL4, props.mobileImageAlt4, null, "lazy", "100%", ['100', '150', '200', '250', '292', '400', '500', '600'] %}
       {% endif %}
       {% if props.mobileImageURL5.length %}
-        {% image props.mobileImageURL5, props.mobileImageAlt5, null, "lazy", "25vw", ['100', '150', '200', '250', '300'] %}
+        {% image props.mobileImageURL5, props.mobileImageAlt5, null, "lazy", "100%", ['100', '150', '200', '250', '292', '400', '500', '600'] %}
       {% endif %}
     {% endif %}
   </div>

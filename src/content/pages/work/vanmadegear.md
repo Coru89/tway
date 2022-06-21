@@ -37,7 +37,7 @@ page_sections_portfolio:
   buttonPath: https://vanmadegear.com
 - template: portfolio-image-panel
   imageLayout: 4 Mobile
-  backgroundColor: 'Red'
+  backgroundColor: 'Green Light'
   isBottom: true
   mobileImageURL2: images/vmg-mobile-1.png
   mobileImageURL3: images/vmg-mobile-2.png

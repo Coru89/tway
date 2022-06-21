@@ -19,7 +19,7 @@
 				<span class="hero__services-label">Competencies:</span>
 				<div class="hero__services">
 					{% for service in props.heroServices %}
-						{{ button_link_alternate(service.heroServiceLinkText, service.heroServiceLinkUrl, false) }}
+						{{ button_link_inverse(service.heroServiceLinkText, service.heroServiceLinkUrl, false) }}
 					{% endfor %}
 					{{ arrow_link('See the full list', '/services') }}
 				</div>
@@ -28,7 +28,7 @@
 				<div class="hero__help-text">
 					Need help on your next web project?
 				</div>
-				{{ button_link("Let's Chat", '/contact', true) }}
+				{{ button_link_inverse("Let's Chat", '/contact', true) }}
 			</div>
 		</div>
 		<div class="hero__image-wrapper">
