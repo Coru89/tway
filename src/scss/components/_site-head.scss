@@ -33,8 +33,10 @@
   }
 
   .site__logo {
+    height: auto;
     margin-left: -.5rem;
     margin-right: 2rem;
+    width: 105px;
 
     @include media-query(md) {
       display: block;
