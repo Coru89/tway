@@ -24,6 +24,17 @@ fields:
   type: tag_list
   default: []
   label: Expertise
+- name: rollupImage
+  type: file
+  config:
+    maxSize: 64
+  label: Rollup Image
+- name: rollupCardBackgroundColor
+  type: color
+  label: Rollup Card Background Color
+  config:
+    required: false
+    color_format: Hex
 - name: page_sections_portfolio
   type: blocks
   label: Page Sections
@@ -34,5 +45,10 @@ fields:
   config:
     min: 
     max: 
+- name: rollupBackgroundImage
+  type: file
+  config:
+    maxSize: 64
+  label: Rollup Background Image
 pages:
 - src/content/pages/work/solar-advantage.md
