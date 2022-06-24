@@ -27,7 +27,7 @@ page_sections_portfolio:
     brand awareness.</p>"
 - template: portfolio-image-panel
   imageLayout: 2 Desktop
-  backgroundColor: Green Dark
+  backgroundColor: Grey Light
   desktopImageURL2: images/vmg-select-1.png
   desktopImageURL3: images/vmg-select-2.png
 - template: portfolio-content-panel
