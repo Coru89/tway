@@ -29,6 +29,11 @@ fields:
   config:
     maxSize: 64
   label: Rollup Image
+- name: rollupBackgroundImage
+  type: file
+  config:
+    maxSize: 64
+  label: Rollup Background Image
 - name: rollupCardBackgroundColor
   type: color
   label: Rollup Card Background Color
@@ -45,10 +50,5 @@ fields:
   config:
     min: 
     max: 
-- name: rollupBackgroundImage
-  type: file
-  config:
-    maxSize: 64
-  label: Rollup Background Image
 pages:
 - src/content/pages/work/solar-advantage.md
