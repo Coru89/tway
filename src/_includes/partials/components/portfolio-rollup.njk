@@ -1,21 +1,39 @@
 {% if portfolioListItems.length %}
-  <section class="work-list">
+  <section class="portfolio-rollup">
     <div class="panel__container">
-      <h2 class="work-list__heading panel__heading">{{ portfolioListHeading }}</h2>
-        <div class="work-list__cards">
+      <h2 class="portfolio-rollup__heading panel__heading">{{ portfolioListHeading }}</h2>
+        <div class="portfolio-rollup__cards">
+          {% set count = 0 %}
           {% for item in portfolioListItems %}
+            {% set count = count + 1 %}
+            {% set bgClass = "portfolio-rollup__card--" + count %}
+            {% if item.data.rollupCardBackgroundColor %}
+                {% set colorHex = item.data.rollupCardBackgroundColor %}
+              {% else %}
+                {% set colorHex = 'transparent' %}
+            {% endif %}
             {% if item.date.getTime() <= global.now %}
-              <div class="work-list__card">
-                <a href="{{ item.url }}">
-                    <img src="{{ item.data.cardImage }}" />
-                    <h3 class="work-list__link">
-                      {{ item.data.title }}
-                    </h3>
-                    <span>
-                      {{ item.data.tags }}
-                    </span>
-                  </a>
+              {% if item.data.rollupBackgroundImage %}
+
+
+              {% endif %}
+              <div class="portfolio-rollup__card {{bgClass}}" style="background-color: {{colorHex}}">
+                <a class="portfolio-rollup__card-link" href="{{ item.url }}">
+                  {% if item.data.rollupImage %}
+                    {% image item.data.rollupImage, "hi", null, "lazy", "(min-width: 36rem) 100vw", ['400', '450', '500'] %}
+                  {% endif %}
+                  <h3 class="portfolio-rollup__link {% if item.data.useDarkTitle === true %} portfolio-rollup__link--dark{% endif %}">
+                    {{ item.data.client }}
+                  </h3>
+                </a>
+                <div class="portfolio-rollup__overlay"></div>
               </div>
+                {% if item.data.rollupBackgroundImage %}
+                  <style>
+                    {% cssBackground item.data.rollupBackgroundImage, '.' + bgClass, ['640'] %}
+                  </style>
+                {% endif %}
+
             {% endif %}
           {% endfor %}
         </div>

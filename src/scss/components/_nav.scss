@@ -65,6 +65,7 @@
     @include media-query(md) {
       box-shadow: none;
       display: flex;
+      margin-left: 2rem;
       margin: initial;
       padding: 0;
       position: static;

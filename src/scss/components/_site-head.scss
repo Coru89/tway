@@ -33,9 +33,9 @@
   }
 
   .site__logo {
-    height: auto;
+    height: 52px;
     margin-left: -.5rem;
-    margin-right: 2rem;
+    max-width: 105px;
     width: 105px;
 
     @include media-query(md) {

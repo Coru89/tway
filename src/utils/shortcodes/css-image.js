@@ -3,7 +3,7 @@ const Image = require("@11ty/eleventy-img");
 
 // .eleventy.js
 function generateImages(src, widths){
-  let source = `./src${src}`;
+  let source = `./src/${src}`;
 
   let options = {
     widths: widths,
@@ -13,7 +13,7 @@ function generateImages(src, widths){
     useCache: true
   };
   // genrate images, ! dont wait
-  Image(`./src${src}`, options);
+  Image(`./src/${src}`, options);
   // get metadata even the image are not fully generated
   return Image.statsSync(source, options);
 }
