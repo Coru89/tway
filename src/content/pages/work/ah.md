@@ -7,8 +7,9 @@ tags:
 - Netlify
 layout: layouts/portfolio.njk
 permalink: "/portfolio/armstrong-hearing/index.html"
----
+rollupCardBackgroundColor: "#148948"
 
+---
 <p>In 2022, Tway carried out a complete re-design and relaunch of Armstrong Hearing's company website. The focus was creating a modern brochure site to bolster marketing efforts during a time of opportunity in the local hearing-aid market.
 </p>
 
@@ -19,5 +20,3 @@ The new armstrong hearing website is <strong>blazing</strong> fast. Check out th
 <p>
 Armstrong Hearing is an Audiology and Hearing Aid Clinic in Ontatio Canada.
 </p>
-
-
