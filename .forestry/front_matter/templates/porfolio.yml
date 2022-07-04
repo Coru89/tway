@@ -8,6 +8,9 @@ fields:
   config:
     required: false
   label: Client
+- name: useDarkTitle
+  type: boolean
+  label: Use Dark Title
 - type: text
   name: title
   label: Title
@@ -50,8 +53,5 @@ fields:
   config:
     min: 
     max: 
-- name: useDarkTitle
-  type: boolean
-  label: Use Dark Title
 pages:
 - src/content/pages/work/solar-advantage.md
