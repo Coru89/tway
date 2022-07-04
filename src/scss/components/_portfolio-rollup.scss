@@ -28,6 +28,10 @@
       flex-direction: column;
       height: 100%;
       text-decoration: none;
+
+      &--dark {
+        color: var(--color-black);
+      }
     }
 
     picture {

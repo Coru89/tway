@@ -18,11 +18,14 @@
 
               {% endif %}
               <div class="portfolio-rollup__card {{bgClass}}" style="background-color: {{colorHex}}">
-                <a class="portfolio-rollup__card-link" href="{{ item.url }}">
+                <a
+                  href="{{ item.url }}" 
+                  class="portfolio-rollup__card-link {% if item.data.useDarkTitle === true %} portfolio-rollup__card-link--dark{% endif %}"
+                >
                   {% if item.data.rollupImage %}
                     {% image item.data.rollupImage, "hi", null, "lazy", "(min-width: 36rem) 100vw", ['400', '450', '500'] %}
                   {% endif %}
-                  <h3 class="portfolio-rollup__link {% if item.data.useDarkTitle === true %} portfolio-rollup__link--dark{% endif %}">
+                  <h3>
                     {{ item.data.client }}
                   </h3>
                 </a>
