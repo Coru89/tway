@@ -50,5 +50,8 @@ fields:
   config:
     min: 
     max: 
+- name: useDarkTitle
+  type: boolean
+  label: Use Dark Title
 pages:
 - src/content/pages/work/solar-advantage.md
