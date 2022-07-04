@@ -3,7 +3,7 @@
    font-style: normal;
    font-weight: 400;
    src: local('Heebo'),
-     url('/fonts/Heebo-Regular.woff2') format('woff2'), url('/fonts/Heebo-Regular.woff') format('woff');
+     url('/fonts/Heebo-Regular.woff2') format('woff2');
    font-display: swap;
  }
 
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 300;
   src: local('Heebo Light'),
-    url('/fonts/Heebo-Light.woff2') format('woff2'), url('/fonts/Heebo-Light.woff') format('woff');
+    url('/fonts/Heebo-Light.woff2') format('woff2');
   font-display: swap;
 }
 
@@ -22,7 +22,7 @@
    font-weight: 500;
 
    src: local('Heebo Medium'), local('Heebo-Medium'),
-     url('/fonts/Heebo-Medium.woff2') format('woff2'), url('/fonts/Heebo-Medium.woff') format('woff');;
+     url('/fonts/Heebo-Medium.woff2') format('woff2');
    font-display: swap;
  }
 
@@ -32,7 +32,7 @@
    font-weight: 700;
    font-weight: 700;
    src: local('Heebo Bold'), local('Heebo-Bold'),
-     url('/fonts/Heebo-Bold.woff2') format('woff2'), url('/fonts/Heebo-Bold.woff') format('woff');
+     url('/fonts/Heebo-Bold.woff2') format('woff2');
   font-display: swap;
  }
 
@@ -40,7 +40,8 @@
    font-family: 'Oxygen';
    font-style: normal;
    font-weight: 400;
-   src: local('Oxygen'), local('Oxygen Regular'), local('Oxygen-Regular'), url('/fonts/Oxygen-Regular.woff') format('woff');
+   src: local('Oxygen'), local('Oxygen Regular'), local('Oxygen-Regular'),
+     url('/fonts/Oxygen-Regular.woff2') format('woff2');
    font-display: swap;
  }
 
@@ -49,7 +50,7 @@
    font-style: normal;
    font-weight: 300;
    src: local('Oxygen Light'), local('Oxygen-Light'),
-     url('/fonts/Oxygen-Light.woff2') format('woff2'), url('/fonts/Oxygen-Light.woff') format('woff');
+     url('/fonts/Oxygen-Light.woff2') format('woff2');
    font-display: swap;
  }
 
@@ -58,7 +59,7 @@
    font-style: normal;
    font-weight: 700;
    src: local('Oxygen Bold'), local('Oxygen-Bold'),
-     url('/fonts/Oxygen-Bold.woff2') format('woff2'), url('/fonts/Oxygen-Bold.woff') format('woff');
+     url('/fonts/Oxygen-Bold.woff2') format('woff2');
    font-display: swap;
  }
 
