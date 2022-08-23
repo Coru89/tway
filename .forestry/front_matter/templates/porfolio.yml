@@ -43,6 +43,12 @@ fields:
   config:
     required: false
     color_format: Hex
+- name: rollupCardOverlayBackgroundColor
+  type: color
+  label: Rollup Card Overlay Background Color
+  config:
+    required: false
+    color_format: Hex
 - name: page_sections_portfolio
   type: blocks
   label: Page Sections
