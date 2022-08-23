@@ -14,5 +14,6 @@ rollupBackgroundImage: images/sa-bg-image-2.png
 rollupCardBackgroundColor: ''
 page_sections_portfolio: []
 useDarkTitle: true
+rollupCardOverlayBackgroundColor: "#FAB22B"
 
 ---
