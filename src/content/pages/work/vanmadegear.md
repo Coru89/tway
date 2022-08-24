@@ -51,5 +51,6 @@ page_sections_portfolio:
   buttonPath: "/contact"
 rollupCardBackgroundColor: "#222222"
 rollupImage: images/vmglogo.png
+rollupCardDescription: A van-life brand's shopify solution.
 
 ---
