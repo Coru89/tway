@@ -9,6 +9,9 @@ layout: layouts/portfolio.njk
 permalink: "/portfolio/armstrong-hearing/index.html"
 rollupCardBackgroundColor: "#148948"
 client: Armstrong Hearing
+rollupImage: images/armstrong.svg
+category: []
+year: "2022"
 
 ---
 <p>In 2022, Tway carried out a complete re-design and relaunch of Armstrong Hearing's company website. The focus was creating a modern brochure site to bolster marketing efforts during a time of opportunity in the local hearing-aid market.
