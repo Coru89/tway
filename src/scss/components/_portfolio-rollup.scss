@@ -20,6 +20,7 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 720px;
+    padding: 5rem 4rem 4rem 4rem;
     position: relative;
 
     &-link {
@@ -28,35 +29,78 @@
       flex-direction: column;
       height: 100%;
       text-decoration: none;
-
-      &--dark {
-        color: var(--color-black);
-      }
     }
 
     picture {
       margin: auto;
+
+      img {
+        max-height: 450px;
+        width: auto;
+      }
     }
 
-    h3 {
-      font-family: get-font(base);
-      font-size: get-font-size(600);
-      font-weight: 600;
-      line-height: 1.2;
-      padding: 0 0 3rem 3rem;
+    svg {
+      fill: var(--color-white);
+    }
 
+    &--dark,
+    &--dark > * {
+      color: var(--color-black);
+      fill: var(--color-black);
+    }
+
+    &--dark svg {
+      fill: var(--color-black);
+    }
+
+    &:hover {
+      .portfolio-rollup__overlay {
+        transform: translateY(0);
+        height: 100%;
+        padding: 5rem 4rem 4rem 4rem;
+        transition: height .3s ease-in-out;
+      }
     }
   }
 
   &__overlay {
-    background-color: white;
     bottom: 0;
-    display: none;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 0;
     left: 0;
+    overflow: hidden;
     position: absolute;
     right: 0;
-    top: 0;
+    transform: translateY(100%);
     width: 100%;
+
+    &-description {
+      padding-bottom: 1rem;
+      font-size: 20px;
+    }
+
+    &-category {
+      padding-bottom: 1rem;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    &-client {
+      font-weight: 700;
+      padding-bottom: 1rem;
+    }
+
+    &-cta {
+      font-size: 1.75rem;
+      margin-top: auto;
+
+      svg {
+        margin-left: 0.5rem;
+        position: relative;
+        top: 3px;
+      }
+    }
   }
 }

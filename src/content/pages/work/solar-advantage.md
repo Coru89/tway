@@ -7,7 +7,7 @@ layout: layouts/portfolio.njk
 permalink: "/portfolio/solar-advantage/index.html"
 client: Solar Advantage
 year: "2022"
-category: []
+category: Ecommerce
 expertise: []
 rollupImage: images/sa-rollup.png
 rollupBackgroundImage: images/sa-bg-image-2.png

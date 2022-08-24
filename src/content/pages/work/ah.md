@@ -10,7 +10,7 @@ permalink: "/portfolio/armstrong-hearing/index.html"
 rollupCardBackgroundColor: "#F3FCF6"
 client: Armstrong Hearing
 rollupImage: images/armstrong.svg
-category: []
+category: Website
 year: "2022"
 rollupCardOverlayBackgroundColor: "#148948"
 rollupCardDescription: A hearing solutions company. Hear better. Live better.
