@@ -27,6 +27,15 @@ fields:
   type: tag_list
   default: []
   label: Expertise
+- name: rollupCardDescription
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Rollup Description
 - name: rollupImage
   type: file
   config:
@@ -59,14 +68,5 @@ fields:
   config:
     min: 
     max: 
-- name: rollupCardDescription
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Rollup Description
 pages:
 - src/content/pages/work/solar-advantage.md
