@@ -8,12 +8,12 @@ fields:
   config:
     required: false
   label: Client
-- name: useDarkTitle
-  type: boolean
-  label: Use Dark Title
 - type: text
   name: title
   label: Title
+- name: useDarkTitle
+  type: boolean
+  label: Use Dark Title
 - name: year
   type: text
   config:
