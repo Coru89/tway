@@ -14,7 +14,7 @@
     <section class="page{% if leftNavFilter.length %} page--left-nav{% endif %}">
       <header class="page__header">
         <h2 class="page__header-title">{{ title }}</h2>
-        <div class="page__header-summary">{{ headerSummary }}</div>
+        <div class="page__header-summary">{{ headerSummary | safe }}</div>
       </header>
       <div class="page__body">
         {{ content | safe }}
