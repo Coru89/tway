@@ -39,6 +39,18 @@ page_sections:
   imageAlt: placeholder
   buttonText: ''
   buttonPath: ''
+- template: image-text-panel
+  backgroundColor: white
+  title: Outsource
+  imagePosition: right
+  summary: |-
+    Need a developer to land a hand on your project? We can outsource a developer to assist on your project.
+
+    Our developer's are experienced with a variety of web technologies, including ReactJS, Typescript, SASS, SharePoint Development and more. Inquire with us to see how we can help!
+  imageURL: images/placeholder-image.jpg
+  imageAlt: placeholder
+  buttonText: ''
+  buttonPath: ''
 metaDesc: ''
 socialImage: ''
 bannerSummary: ''
