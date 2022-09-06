@@ -39,5 +39,14 @@ fields:
   config:
     min: 
     max: 
+- name: headerSummary
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Header Summary
 pages:
 - src/content/pages/services/deafult.md
