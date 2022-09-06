@@ -8,7 +8,7 @@ page_sections:
   imageURL: images/placeholder-image.jpg
   imagePosition: left
   buttonText: Learn more
-  buttonPath: "/services"
+  buttonPath: "/services/websites"
   title: Websites
   imageAlt: placeholder
   summary: |-
@@ -26,7 +26,7 @@ page_sections:
   imageURL: images/placeholder-image.jpg
   imageAlt: placeholder
   buttonText: Learn more
-  buttonPath: "/ecommerce"
+  buttonPath: "/services/ecommerce"
 - template: image-text-panel
   backgroundColor: grey
   title: Support and Evolve
