@@ -32,8 +32,10 @@ fields:
   - text-area
   - image-text-panel
   - image-with-caption
+  - call-to-action
+  - cards-with-icon
+  - service-panel
   - blockquote
-  - bio-cards
   config:
     min: 
     max: 
