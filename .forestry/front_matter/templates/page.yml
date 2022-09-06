@@ -8,6 +8,9 @@ fields:
     required: false
   label: layout
   hidden: false
+- type: text
+  name: title
+  label: Title
 - name: metaDesc
   type: textarea
   default: ''
@@ -22,18 +25,6 @@ fields:
   config:
     maxSize: 64
   label: SEO Image
-- type: text
-  name: title
-  label: Banner Title
-- name: bannerSummary
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Banner Summary
 - name: page_sections
   type: blocks
   label: Page Sections
@@ -46,10 +37,5 @@ fields:
   config:
     min: 
     max: 
-- name: banner_image
-  type: file
-  config:
-    maxSize: 64
-  label: Banner Image
 pages:
 - src/content/pages/services/deafult.md

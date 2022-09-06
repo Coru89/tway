@@ -11,9 +11,10 @@ page_sections:
   buttonPath: "/services"
   title: Websites
   imageAlt: placeholder
-  summary: We deliver website solutions while keeping the project goal and the user
-    expereince forefront. Picking the right technology stack and creating intuitive
-    interfaces are of the utmost importance to us.
+  summary: |-
+    We deliver website solutions while keeping the project goal and the user expereince forefront. Picking the right technology stack and creating intuitive interfaces are of the utmost importance to us.
+
+    Our development team is expereinced with a wide variety of CMS platforms and take a right-tool-for-the-job approach. Our websites are optimized for page load speed, follow best practices and achieve pefect technical SEO scores in Google Lighthouse.
 metaDesc: ''
 socialImage: ''
 bannerSummary: ''
