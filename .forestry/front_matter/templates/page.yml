@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: layout
-  hidden: true
+  hidden: false
 - name: metaDesc
   type: textarea
   default: ''
