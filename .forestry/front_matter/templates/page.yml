@@ -49,4 +49,4 @@ fields:
       format: markdown
   label: Header Summary
 pages:
-- src/content/pages/services/deafult.md
+- src/content/pages/services/websites.md
