@@ -51,6 +51,10 @@ page_sections:
   imageAlt: placeholder
   buttonText: ''
   buttonPath: ''
+- template: call-to-action
+  text: Interested in working together?
+  buttonText: Get in touch
+  buttonPath: "/contact"
 metaDesc: ''
 socialImage: ''
 bannerSummary: ''
