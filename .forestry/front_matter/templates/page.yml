@@ -18,7 +18,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Header Summary
 - name: metaDesc
   type: textarea
