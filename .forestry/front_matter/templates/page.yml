@@ -51,3 +51,5 @@ fields:
   config:
     maxSize: 64
   label: Banner Image
+pages:
+- src/content/pages/services/deafult.md
