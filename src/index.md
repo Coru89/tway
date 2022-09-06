@@ -49,16 +49,6 @@ page_sections:
     linkPath: "/shopify"
   imagePosition: Left
   imageAlt: ''
-- template: service-panel
-  title: Office 365
-  image: images/office365.png
-  links:
-  - linkText: MS Teams Apps
-    linkPath: "/services/teams"
-  - linkText: SharePoint & Intranets
-    linkPath: "/sharepoints-intranets"
-  imagePosition: Right
-  imageAlt: ''
 - template: work-panel
   imagePosition: left
   title: Colonia Treuhand
