@@ -1,5 +1,5 @@
 ---
-title: Services test
+title: Services
 permalink: "/services/index.html"
 layout: layouts/page.njk
 page_sections:
