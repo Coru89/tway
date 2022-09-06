@@ -2,11 +2,25 @@
 label: Image Text Panel
 hide_body: true
 fields:
-- name: imageAlt
+- name: title
   type: text
   config:
     required: false
-  label: imageAlt
+  label: title
+- name: summary
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: summary
+- name: imageURL
+  type: file
+  config:
+    maxSize: 5
+  label: imageURL
 - name: imagePosition
   type: select
   default: []
@@ -21,6 +35,11 @@ fields:
       file: 
       path: 
   label: Image Position
+- name: imageAlt
+  type: text
+  config:
+    required: false
+  label: imageAlt
 - name: buttonText
   type: text
   config:
@@ -31,21 +50,6 @@ fields:
   config:
     required: false
   label: buttonPath
-- name: title
-  type: text
-  config:
-    required: false
-  label: title
-- name: summary
-  type: text
-  config:
-    required: false
-  label: summary
-- name: imageURL
-  type: file
-  config:
-    maxSize: 5
-  label: imageURL
 - name: backgroundColor
   type: select
   default: white
