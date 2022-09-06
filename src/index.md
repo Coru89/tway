@@ -13,7 +13,7 @@ heroHeading3: 'Looking for a blazing-fast website, e-commerce or Intranet soluti
 heroHeading4: Look no further.
 heroImage: "/images/night-sky-fancy.png"
 page_sections:
-- template: work-panel
+- template: portfolio-featured-panel
   title: Vanmade Gear
   summary: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
     sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
@@ -49,7 +49,7 @@ page_sections:
     linkPath: "/shopify"
   imagePosition: Left
   imageAlt: ''
-- template: work-panel
+- template: portfolio-featured-panel
   imagePosition: left
   title: Colonia Treuhand
   summary: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
