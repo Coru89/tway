@@ -1,6 +1,17 @@
 .page {
-  &__body {
+  &__header {
     @include panel-container;
+
+    &-title {
+      font-style: 700;
+      margin: 7rem 0 3rem;
+      text-transform: uppercase;
+    }
+
+    &-summary {
+      margin-bottom: 3.5rem;
+      width: 50%;
+    }
   }
 
   &__sections {
@@ -26,7 +37,7 @@
       position: relative;
       transform: translateX(-50%);
       width: calc(100vw - 4rem);
-  }
+    }
   }
 
   &--left-nav {

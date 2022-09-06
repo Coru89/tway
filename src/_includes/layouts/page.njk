@@ -11,8 +11,11 @@
       heroSummary: bannerSummary,
       heroImage: bannerImage
     }) }} #}
-    <h2>{{ title }}</h2>
-    <article class="page{% if leftNavFilter.length %} page--left-nav{% endif %}">
+    <section class="page{% if leftNavFilter.length %} page--left-nav{% endif %}">
+      <header class="page__header">
+        <h2 class="page__header-title">{{ title }}</h2>
+        <div class="page__header-summary">{{ headerSummary }}</div>
+      </header>
       <div class="page__body">
         {{ content | safe }}
         {% include 'partials/components/page-sections.njk' %}
@@ -23,7 +26,7 @@
             }) }}
           {% endif %}
       </div>
-    </article>
+    </section>
   </main>
 {% endblock %}
 
