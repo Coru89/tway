@@ -35,33 +35,43 @@
 
   &__link {
     color: var(--color-black);
+    font-family: get-font(serif);
     font-size: get-font-size(base);
     text-decoration: none;
 
     @include media-query(md) {
-      font-size: get-font-size(500);
+      font-size: get-font-size(base);
     }
 
     &-list {
       margin-bottom: 2rem;
 
+      // make all bull first column uppercase
+      // &:not(:first-of-type) {
+      //   .site-foot__link-list-item {
+      //     text-transform: uppercase;
+      //   }
+      // }
+
       @include media-query(md) {
         margin-bottom: 0;
+        flex: 0 0 33.3333333333%;
+        max-width: 33.33%;
       }
 
       &-item {
         line-height: 1;
-        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
 
         &--header {
-          font-size: 18px;
+          font-size: 14px;
           font-weight: 700;
-          text-decoration: underline;
+
 
           @include media-query(md) {
-            font-size: 22px
+            font-size: 16px
           }
-      
         }
       }
     }
