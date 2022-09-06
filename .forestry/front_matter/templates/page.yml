@@ -11,6 +11,15 @@ fields:
 - type: text
   name: title
   label: Title
+- name: headerSummary
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Header Summary
 - name: metaDesc
   type: textarea
   default: ''
@@ -39,14 +48,5 @@ fields:
   config:
     min: 
     max: 
-- name: headerSummary
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Header Summary
 pages:
 - src/content/pages/services/websites.md
