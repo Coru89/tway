@@ -33,6 +33,29 @@ page_sections:
   backgroundColor: grey
   heading: Why Tway?
   cards:
+  - title: Pride in performance
+    summary: Our web solutions are optimized to provide excellent speed. For our devs,
+      peformance is an obsession. We know the cost of a slow website. Today's user's
+      are unapollegtically impatient and will not wait for a slow page load. A slow
+      site will cost your business.  An slow page load will increase bounce rate and
+      negtively impact your SEO score in google.
+    linkPath: ''
+    icon: ''
+  - title: One size doesn’t fit all
+    summary: Many development agencies take the lazy approach of using the same technologies
+      over and over again just because of their familiarity which is ofen a determint
+      to project result. Before writing a single line of code, we take into consideration
+      budget, time frame, requirements, goals and customers’ level of technical profiency
+      before deciding a CMS or technical approach.
+    linkPath: ''
+    icon: ''
+  - title: Optimized for Google
+    summary: 'What good is a website that is hard to find? All of our websites are
+      optimized to receive a perfect techincal SEO and accessibility score from Google.
+      We use Google’s own lighthouse tool to ensure our solutions are high ranking
+      scores in performance, SEO, best practices and accessibility. '
+    linkPath: ''
+    icon: ''
   - title: An exceptional UX deisgn is not a nice-to-have
     summary: Tway beleives users should not have to think. Provinding an intutive
       and delightful navigation expereince is everything. All tway solutions are designed
