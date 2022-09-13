@@ -1,4 +1,52 @@
 ---
 label: Featured Portfolio Panel Small
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: buttonText
+  type: text
+  config:
+    required: false
+  label: Button Text
+- name: buttonPath
+  type: text
+  config:
+    required: false
+  label: Button Path
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: imageAlt
+  type: text
+  config:
+    required: false
+  label: Image Alt
+- name: imagePosition
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - left
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Image Position
