@@ -12,13 +12,6 @@ headerSummary: "<p>When a website is outdated, poorly designed or otherwise frus
   With the average shelf-life of a website being 3-5 years, it could take as little
   as one to a handful of sales conversions to recoup your costs.</p>"
 page_sections:
-- template: portfolio-featured-panel-small
-  imagePosition: Left
-  title: Colonia Treuhand
-  description: Hello World
-  image: images/ctam-home.png
-  imageAlt: Colonia Treuhand Website
-
 - template: call-to-action
   text: Interested in working together?
   buttonText: Get in touch
