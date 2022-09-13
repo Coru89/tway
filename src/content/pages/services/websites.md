@@ -16,6 +16,14 @@ page_sections:
   text: Interested in working together?
   buttonText: Get in touch
   buttonPath: "/contact"
+- template: featured-portfolio-panel-small
+  title: Colonia Treuhand
+  description: asdfwesdf
+  image: images/ctam-home.png
+  buttonPath: "/portfolio/colonia-treuhand/"
+  buttonText: Read More
+  imageAlt: Colonia Treuhand Website
+  imagePosition: left
 metaDesc: ''
 socialImage: ''
 
