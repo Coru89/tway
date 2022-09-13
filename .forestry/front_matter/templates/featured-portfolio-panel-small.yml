@@ -1,5 +1,5 @@
 ---
-label: Featured Portfolio Panel Small
+label: portfolio-featured-panel-small
 hide_body: true
 fields:
 - name: title

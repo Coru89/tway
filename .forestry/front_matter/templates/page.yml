@@ -45,6 +45,7 @@ fields:
   - cards-with-icon
   - service-panel
   - blockquote
+  - featured-portfolio-panel-small
   config:
     min: 
     max: 
