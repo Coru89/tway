@@ -16,7 +16,10 @@ socialImage: ''
 page_sections:
 - template: portfolio-featured-panel-small
   title: Colonia Treuhand
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt felis enim, sed commodo ante mollis ac. Quisque ornare enim nec urna bibendum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut quis iaculis felis. Phasellus luctus semper velit.
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+    tincidunt felis enim, sed commodo ante mollis ac. Quisque ornare enim nec urna
+    bibendum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+    posuere cubilia curae; Ut quis iaculis felis. Phasellus luctus semper velit.
   image: images/ctam-home.png
   buttonPath: "/portfolio/colonia-treuhand/"
   buttonText: Read More
@@ -26,4 +29,18 @@ page_sections:
   text: Interested in working together?
   buttonText: Get in touch
   buttonPath: "/contact"
+- template: cards-with-icon
+  backgroundColor: grey
+  heading: Why Tway?
+  cards:
+  - title: An exceptional UX deisgn is not a nice-to-have
+    summary: Tway beleives users should not have to think. Provinding an intutive
+      and delightful navigation expereince is everything. All tway solutions are designed
+      to be responsive so that they provide an excellect expereince regardless of
+      device or screen size.
+    linkPath: ''
+    icon: ''
+  buttonText: ''
+  buttonPath: ''
+
 ---
