@@ -11,20 +11,19 @@ headerSummary: "<p>When a website is outdated, poorly designed or otherwise frus
   is a constant sales engine and marketing prescense that provides measurable ROI.
   With the average shelf-life of a website being 3-5 years, it could take as little
   as one to a handful of sales conversions to recoup your costs.</p>"
+metaDesc: ''
+socialImage: ''
 page_sections:
-- template: call-to-action
-  text: Interested in working together?
-  buttonText: Get in touch
-  buttonPath: "/contact"
 - template: portfolio-featured-panel-small
   title: Colonia Treuhand
-  description: asdfwesdf
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt felis enim, sed commodo ante mollis ac. Quisque ornare enim nec urna bibendum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut quis iaculis felis. Phasellus luctus semper velit.
   image: images/ctam-home.png
   buttonPath: "/portfolio/colonia-treuhand/"
   buttonText: Read More
   imageAlt: Colonia Treuhand Website
-  imagePosition: left
-metaDesc: ''
-socialImage: ''
-
+  imagePosition: Left
+- template: call-to-action
+  text: Interested in working together?
+  buttonText: Get in touch
+  buttonPath: "/contact"
 ---

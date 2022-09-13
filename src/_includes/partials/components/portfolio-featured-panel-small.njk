@@ -4,22 +4,20 @@
   {% set imageClass = 'portfolio-featured-panel-small__image portfolio-featured-panel-small__image--reverse' %}
 {% endif %}  
 
-{% if props.links.length %}
-  <section class="portfolio-featured-panel-small">
-    <div class="portfolio-featured-panel-small__inner">
-      <div class="portfolio-featured-panel-small__content">
+<section class="portfolio-featured-panel-small">
+  <div class="portfolio-featured-panel-small__inner">
+    <div class="portfolio-featured-panel-small__content">
+      <h2 class="portfolio-featured-panel-small__heading">{{ props.title }}</h2>
+      <div class="{{imageClass}}">
+        {% image props.image, props.imageAlt, null, "lazy", "(min-width: 36rem) 100vw, 50vw", ['400', '450', '500', '600', '700'] %}
+      </div>
+      <div class="portfolio-featured-panel-small__text">
         <h2 class="portfolio-featured-panel-small__heading">{{ props.title }}</h2>
-        <div class="{{imageClass}}">
-          {% image props.image, props.imageAlt, null, "lazy", "(min-width: 36rem) 100vw, 50vw", ['400', '450', '500', '600', '700'] %}
+        <div class="portfolio-featured-panel-small__description">
+          {{ props.description }}
         </div>
-        <div class="portfolio-featured-panel-small__items">
-          <h2 class="portfolio-featured-panel-small__heading">{{ props.title }}</h2>
-          <div class="portfolio-featured-panel-small__description">
-            {{ props.description }}
-          </div>
-           {{ button_link(props.buttonText, props.buttonPath, true) }}
-        </div>
+          {{ button_link(props.buttonText, props.buttonPath, true) }}
       </div>
     </div>
-  </section>
-{% endif %}
+  </div>
+</section>
