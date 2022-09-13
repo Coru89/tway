@@ -1,30 +1,23 @@
 {% if props.imagePosition === 'Left' %}
-  {% set imageClass = 'service-panel__image' %}
+  {% set imageClass = 'portfolio-featured-panel-small__image' %}
   {% else %}
-  {% set imageClass = 'service-panel__image service-panel__image--reverse' %}
+  {% set imageClass = 'portfolio-featured-panel-small__image portfolio-featured-panel-small__image--reverse' %}
 {% endif %}  
 
-
 {% if props.links.length %}
-  <section class="service-panel">
-    <div class="service-panel__inner">
-      <div class="service-panel__content">
-        <h2 class="service-panel__heading">{{ props.title }}</h2>
+  <section class="portfolio-featured-panel-small">
+    <div class="portfolio-featured-panel-small__inner">
+      <div class="portfolio-featured-panel-small__content">
+        <h2 class="portfolio-featured-panel-small__heading">{{ props.title }}</h2>
         <div class="{{imageClass}}">
           {% image props.image, props.imageAlt, null, "lazy", "(min-width: 36rem) 100vw, 50vw", ['400', '450', '500', '600', '700'] %}
         </div>
-        <div class="service-panel__items">
-          <h2 class="service-panel__heading">{{ props.title }}</h2>
-          <ul class="service-panel__list">
-            {% for item in props.links %}
-              <li class="service-panel__item">
-                <a href="{{ item.linkPath }}" class="service-panel__link" rel="bookmark">
-                  {{ item.linkText }}
-                  {% svg "arrow" %}
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
+        <div class="portfolio-featured-panel-small__items">
+          <h2 class="portfolio-featured-panel-small__heading">{{ props.title }}</h2>
+          <div class="portfolio-featured-panel-small__description">
+            {{ props.description }}
+          </div>
+           {{ button_link(props.buttonText, props.buttonPath, true) }}
         </div>
       </div>
     </div>
