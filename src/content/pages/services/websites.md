@@ -14,21 +14,6 @@ headerSummary: "<p>When a website is outdated, poorly designed or otherwise frus
 metaDesc: ''
 socialImage: ''
 page_sections:
-- template: portfolio-featured-panel-small
-  title: Colonia Treuhand
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-    tincidunt felis enim, sed commodo ante mollis ac. Quisque ornare enim nec urna
-    bibendum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-    posuere cubilia curae; Ut quis iaculis felis. Phasellus luctus semper velit.
-  image: images/ctam-home.png
-  buttonPath: "/portfolio/colonia-treuhand/"
-  buttonText: Read More
-  imageAlt: Colonia Treuhand Website
-  imagePosition: Left
-- template: call-to-action
-  text: Interested in working together?
-  buttonText: Get in touch
-  buttonPath: "/contact"
 - template: cards-with-icon
   backgroundColor: grey
   heading: Why Tway?
@@ -65,5 +50,19 @@ page_sections:
     icon: ''
   buttonText: ''
   buttonPath: ''
-
+- template: portfolio-featured-panel-small
+  title: Colonia Treuhand
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+    tincidunt felis enim, sed commodo ante mollis ac. Quisque ornare enim nec urna
+    bibendum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+    posuere cubilia curae; Ut quis iaculis felis. Phasellus luctus semper velit.
+  image: images/ctam-home.png
+  buttonPath: "/portfolio/colonia-treuhand/"
+  buttonText: Read More
+  imageAlt: Colonia Treuhand Website
+  imagePosition: Left
+- template: call-to-action
+  text: Interested in working together?
+  buttonText: Get in touch
+  buttonPath: "/contact"
 ---
