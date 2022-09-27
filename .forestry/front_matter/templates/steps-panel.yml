@@ -2,7 +2,7 @@
 label: Steps Panel
 hide_body: true
 fields:
-- name: step
+- name: steps
   type: field_group_list
   fields:
   - name: title
@@ -23,4 +23,4 @@ fields:
     min: 
     max: 
     labelField: 
-  label: Step
+  label: Steps
