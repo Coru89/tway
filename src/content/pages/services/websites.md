@@ -73,4 +73,11 @@ page_sections:
   text: Interested in working together?
   buttonText: Get in touch
   buttonPath: "/contact"
+- template: steps-panel
+  heading: Hello Darkness My Old Friend
+  steps:
+  - title: YOYO
+    summary: heyhey
+  backgroundColor: ''
+
 ---
