@@ -2,6 +2,23 @@
 label: Steps Panel
 hide_body: true
 fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: backgroundColor
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Color
 - name: steps
   type: field_group_list
   fields:
@@ -24,8 +41,3 @@ fields:
     max: 
     labelField: 
   label: Steps
-- name: heading
-  type: text
-  config:
-    required: false
-  label: Heading
