@@ -12,7 +12,10 @@ fields:
   default: []
   config:
     required: false
-    options: []
+    options:
+    - white
+    - grey
+    - light green
     source:
       type: simple
       section: 
