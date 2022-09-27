@@ -24,3 +24,8 @@ fields:
     max: 
     labelField: 
   label: Steps
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
