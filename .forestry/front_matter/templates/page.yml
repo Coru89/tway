@@ -46,6 +46,7 @@ fields:
   - service-panel
   - blockquote
   - portfolio-featured-panel-small
+  - steps-panel
   config:
     min: 
     max: 
