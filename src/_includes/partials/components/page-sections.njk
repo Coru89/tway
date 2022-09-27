@@ -72,6 +72,13 @@
             buttonPath: block.buttonPath
         }) }}
 
+    {% elseif block.template === 'steps' %}
+        {{ component('steps', {
+            step: block.step,
+            title: block.title,
+            summary: block.summary
+        }) }}
+
     {% elseif block.template === 'blockquote' %}
         <blockquote>
             <p>

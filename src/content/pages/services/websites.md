@@ -50,6 +50,14 @@ page_sections:
     icon: ''
   buttonText: ''
   buttonPath: ''
+- template: steps
+  step:
+  - title: Hello World
+    summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci
+      sagittis eu volutpat odio. Praesent tristique magna sit amet. Pharetra diam
+      sit amet nisl. Semper feugiat nibh sed pulvinar. Eget dolor morbi non arcu risus.
+      Nullam vehicula ipsum a arcu cursus vitae.
 - template: portfolio-featured-panel-small
   title: Colonia Treuhand
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque

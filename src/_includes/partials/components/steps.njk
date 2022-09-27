@@ -1,0 +1,30 @@
+{% if props.backgroundColor === 'white' %}
+  {% set colorHexPanel = 'var(--color-white)' %}
+{% elseif props.backgroundColor === 'grey' %}
+    {% set colorHexPanel = 'var(--color-grey-light)' %}
+{% elseif props.backgroundColor === 'light green' %}
+  {% set colorHexPanel = 'var(--color-bg-light);' %}
+{% else %}
+    {% set colorHexPanel = 'var(--color-white)' %}
+{% endif %}
+
+{# {% if props.steps.length %} #}
+  <section class="steps" style="background-color: {{colorHexPanel}};">
+    <div class="steps__inner">
+      <h2 class="steps__heading">{{ props.heading }}</h2>
+      <div class="steps__items" reversed>
+        {% for item in props.steps %}
+          <div class="steps__item">
+            <div class="steps__number">{{ item.index }}</div>
+            <div class="steps__item-title">{{ item.title }}</div>
+              <div class="steps__summary">{{ item.summary }}</div>
+          </div>
+        {% endfor %}
+      </div>
+      {% from "macros/macros.njk" import button_link %}
+      {% if props.buttonText and props.buttonPath %}
+        {{ button_link(props.buttonText, props.buttonPath, true) }}
+      {% endif %}
+    </div>
+  </section>
+{# {% endif %} #}
