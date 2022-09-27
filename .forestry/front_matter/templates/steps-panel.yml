@@ -1,0 +1,26 @@
+---
+label: Steps Panel
+hide_body: true
+fields:
+- name: step
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: summary
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Summary
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Step
