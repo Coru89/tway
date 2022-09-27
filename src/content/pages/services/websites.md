@@ -65,5 +65,9 @@ page_sections:
     icon: ''
   buttonText: ''
   buttonPath: ''
+- template: steps-panel
+  step:
+  - title: Hello World
+    summary: Testing
 
 ---
