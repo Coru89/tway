@@ -50,14 +50,22 @@ page_sections:
     icon: ''
   buttonText: ''
   buttonPath: ''
-- template: steps
-  step:
-  - title: Hello World
-    summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci
-      sagittis eu volutpat odio. Praesent tristique magna sit amet. Pharetra diam
-      sit amet nisl. Semper feugiat nibh sed pulvinar. Eget dolor morbi non arcu risus.
-      Nullam vehicula ipsum a arcu cursus vitae.
+- template: steps-panel
+  heading: Our Process
+  backgroundColor: light green
+  steps:
+  - title: Define
+    summary: The starting point is define the projects goals and desired outcomes. We will look to define the project scope and expectations. Taking into cosideration what is defined, our team will plan our approach and choose suitable technologies for the project.
+  - title: Design
+    summary: We’ve got you covered designing an excellect UX and and intuitive UI. Alternativley, if you have your own design assets already, we can skip to step 3.
+  - title: Develop
+    summary: We’ve got the design and the technical approach planned, it’s time for our developer’s to work their magic.
+  - title: Test & Optimize
+    summary: Before release, we do thorough testing to ensure the solution is free of bugs that may frustrate users. We optimize for Google Lighthouse so the website will rank high in preformance, accessibility, best practices and SEO.
+  - title: Go Live
+    summary: It’s time to launch your website. We will deploy your site to the live server and hook up your domain name.
+  - title: Support & Evolve
+    summary: After your site is live, we don't have to say goodbye. Want to make some changes? Need help to review your analytics? Tweak an SEO stratgey? We are here to help!
 - template: portfolio-featured-panel-small
   title: Colonia Treuhand
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
@@ -73,11 +81,6 @@ page_sections:
   text: Interested in working together?
   buttonText: Get in touch
   buttonPath: "/contact"
-- template: steps-panel
-  heading: Hello Darkness My Old Friend
-  steps:
-  - title: YOYO
-    summary: heyhey
-  backgroundColor: ''
+
 
 ---

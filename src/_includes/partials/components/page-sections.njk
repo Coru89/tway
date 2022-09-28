@@ -72,9 +72,11 @@
             buttonPath: block.buttonPath
         }) }}
 
-    {% elseif block.template === 'steps' %}
+    {% elseif block.template === 'steps-panel' %}
         {{ component('steps', {
-            step: block.step,
+            heading: block.heading,
+            backgroundColor: block.backgroundColor,
+            steps: block.steps,
             title: block.title,
             summary: block.summary
         }) }}

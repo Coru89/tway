@@ -1,4 +1,4 @@
-.cards-icon-roll-up {
+.steps {
     padding: 3.25rem 0;
 
     &__inner {
@@ -27,20 +27,15 @@
         }
 
         @include media-query(lg) {
-            gap: 3rem;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 
     &__item {
+        background-color: var(--color-white);
         padding: 1rem;
         text-align: left;
         transition: all .1s ease-in-out;
-
-        // &:hover {
-        //     border-bottom: 3px solid var(--color-theme-primary);
-        //     transform: translateY(-3px);
-        // }
 
         * {
             color: var(--color-text);

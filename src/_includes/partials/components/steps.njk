@@ -15,16 +15,12 @@
       <div class="steps__items" reversed>
         {% for item in props.steps %}
           <div class="steps__item">
-            <div class="steps__number">{{ item.index }}</div>
+            <div class="steps__number">{{ loop.index }}</div>
             <div class="steps__item-title">{{ item.title }}</div>
               <div class="steps__summary">{{ item.summary }}</div>
           </div>
         {% endfor %}
       </div>
-      {% from "macros/macros.njk" import button_link %}
-      {% if props.buttonText and props.buttonPath %}
-        {{ button_link(props.buttonText, props.buttonPath, true) }}
-      {% endif %}
     </div>
   </section>
 {# {% endif %} #}
