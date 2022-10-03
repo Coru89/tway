@@ -6,15 +6,17 @@
 
 {% block content %}
   <main id="main-content" tabindex="-1">
-    {# {{ component('hero', {
-      heroHeading: title,
-      heroSummary: bannerSummary,
-      heroImage: bannerImage
-    }) }} #}
     <section class="page{% if leftNavFilter.length %} page--left-nav{% endif %}">
       <header class="page__header">
-        <h2 class="page__header-title">{{ title }}</h2>
-        <div class="page__header-summary">{{ headerSummary | safe }}</div>
+        <div class="page__header-column">
+          <h2 class="page__header-title">{{ title }}</h2>
+          <div class="page__header-summary">{{ headerSummary | safe }}</div>
+        </div>
+        <div class="page__header-column">
+          {% if props.imageURL.length %}
+            {% image props.headerImageURL, props.headerImageAlt, "page__header-photo", "lazy", "100vw", ['300', '400', '576', '600', '730'] %}
+          {% endif %}
+        </div>
       </header>
       <div class="page__body">
         {{ content | safe }}

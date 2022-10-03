@@ -19,10 +19,10 @@
               {% if item.icon %}
                 {% svg item.icon %}
               {% endif %}
-              <div class="cards-icon-roll-up__item-title">
+              <h3 class="cards-icon-roll-up__item-title">
                 {{ item.title }}
-              </div>
-                <div class="cards-icon-roll-up__summary">{{ item.summary }}</div>
+              </h3>
+                <div class="cards-icon-roll-up__item-summary">{{ item.summary }}</div>
             </div>
           </a>
         {% endfor %}

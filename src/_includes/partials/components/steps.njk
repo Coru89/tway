@@ -8,19 +8,19 @@
     {% set colorHexPanel = 'var(--color-white)' %}
 {% endif %}
 
-{# {% if props.steps.length %} #}
+{% if props.steps.length %}
   <section class="steps" style="background-color: {{colorHexPanel}};">
     <div class="steps__inner">
       <h2 class="steps__heading">{{ props.heading }}</h2>
       <div class="steps__items" reversed>
         {% for item in props.steps %}
           <div class="steps__item">
-            <div class="steps__number">{{ loop.index }}</div>
-            <div class="steps__item-title">{{ item.title }}</div>
-              <div class="steps__summary">{{ item.summary }}</div>
+            <div class="steps__item-number">0{{ loop.index }}</div>
+            <h3 class="steps__item-title">{{ item.title }}</h3>
+              <div class="steps__item-summary">{{ item.summary }}</div>
           </div>
         {% endfor %}
       </div>
     </div>
   </section>
-{# {% endif %} #}
+{% endif %}

@@ -15,7 +15,6 @@
 
     &__heading,
     &__list {
-        font-weight: 500;
         padding-bottom: 3rem;
     }
 
@@ -27,36 +26,34 @@
         }
 
         @include media-query(lg) {
-            gap: 3rem;
+            gap: 4rem 8rem;
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
     &__item {
-        padding: 1rem;
         text-align: left;
-        transition: all .1s ease-in-out;
 
-        // &:hover {
-        //     border-bottom: 3px solid var(--color-theme-primary);
-        //     transform: translateY(-3px);
-        // }
 
         * {
             color: var(--color-text);
         }
 
         &-title {
-            font-size: 1.125rem;
+            font-family: get-font(serif);
+            font-size: 24px;
             font-weight: 700;
             padding: 1.25rem 0 1.5rem;
+        }
+
+        &__summary {
+            max-width: 30rem;
         }
     }
 
     &__link {
         display: grid;
         grid-auto-rows: 1fr;
-        padding-bottom: 3rem;
         text-decoration: none;
     }
 }
