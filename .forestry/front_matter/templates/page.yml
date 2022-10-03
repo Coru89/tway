@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: layout
-  hidden: false
+  hidden: true
 - type: text
   name: title
   label: Title
@@ -20,6 +20,11 @@ fields:
     schema:
       format: html-blocks
   label: Header Summary
+- name: headerImageURL
+  type: file
+  config:
+    maxSize: 64
+  label: Header Image
 - name: metaDesc
   type: textarea
   default: ''
@@ -50,5 +55,10 @@ fields:
   config:
     min: 
     max: 
+- name: headerImageAlt
+  type: text
+  config:
+    required: false
+  label: Header Image Alt
 pages:
 - src/content/pages/services/websites.md
