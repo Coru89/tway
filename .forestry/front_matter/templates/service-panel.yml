@@ -31,7 +31,7 @@ fields:
       file: 
       path: 
   label: Image Position
-- name: serviceCard
+- name: serviceCards
   type: field_group_list
   fields:
   - name: serviceItems
