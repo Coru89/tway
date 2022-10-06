@@ -31,10 +31,10 @@ fields:
       file: 
       path: 
   label: Image Position
-- name: links
+- name: serviceCard
   type: field_group_list
   fields:
-  - name: serviceCard
+  - name: serviceItems
     type: field_group_list
     fields:
     - name: serviceItem
@@ -46,19 +46,24 @@ fields:
       min: 
       max: 
       labelField: 
-    label: Service Card
-  - name: linkText
+    label: Service Items
+  - name: cardTitle
     type: text
     config:
       required: false
-    label: Link Text
-  - name: linkPath
+    label: Card Title
+  - name: cardLinkText
     type: text
     config:
       required: false
-    label: path
+    label: Card Link Text
+  - name: cardLinkPath
+    type: text
+    config:
+      required: false
+    label: Card Link Path
   config:
     min: 
     max: 
     labelField: 
-  label: Links
+  label: Service Cards
