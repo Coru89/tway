@@ -20,11 +20,26 @@ fields:
     schema:
       format: html-blocks
   label: Header Summary
+- name: headerButtonText
+  type: text
+  config:
+    required: false
+  label: Header Button Text
+- name: headerButtonURL
+  type: text
+  config:
+    required: false
+  label: Header Button Path
 - name: headerImageURL
   type: file
   config:
     maxSize: 64
   label: Header Image
+- name: headerImageAlt
+  type: text
+  config:
+    required: false
+  label: Header Image Alt
 - name: metaDesc
   type: textarea
   default: ''
@@ -55,10 +70,5 @@ fields:
   config:
     min: 
     max: 
-- name: headerImageAlt
-  type: text
-  config:
-    required: false
-  label: Header Image Alt
 pages:
 - src/content/pages/services/websites.md
