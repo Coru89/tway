@@ -87,7 +87,7 @@ page_sections:
   buttonPath: "/portfolio/colonia-treuhand/"
   buttonText: Read More
   imageAlt: Colonia Treuhand Website
-  imagePosition: Left
+  imagePosition: ''
 - template: call-to-action
   text: Interested in working together?
   buttonText: Get in touch
