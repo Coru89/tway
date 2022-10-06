@@ -11,14 +11,14 @@ headerSummary: "<p>When a website is outdated, poorly designed or otherwise frus
   is a constant sales engine and marketing prescense that provides measurable ROI.
   With the average shelf-life of a website being 3-5 years, it could take as little
   as one to a handful of sales conversions to recoup your costs.</p>"
-metaDesc: ''
+metaDesc: Websites
 socialImage: ''
 page_sections:
 - template: cards-with-icon
   backgroundColor: grey
   heading: Why Tway?
   cards:
-  - title: Pride in performance 🚀
+  - title: "Pride in performance \U0001F680"
     summary: Our web solutions are optimized to provide excellent speed. For our devs,
       peformance is an obsession. We know the cost of a slow website. Today's user's
       are unapollegtically impatient and will not wait for a slow page load. A slow
@@ -26,7 +26,7 @@ page_sections:
       negtively impact your SEO score in google.
     linkPath: ''
     icon: ''
-  - title: One size doesn’t fit all 📏
+  - title: "One size doesn’t fit all \U0001F4CF"
     summary: Many development agencies take the lazy approach of using the same technologies
       over and over again just because of their familiarity which is ofen a determint
       to project result. Before writing a single line of code, we take into consideration
@@ -34,14 +34,14 @@ page_sections:
       before deciding a CMS or technical approach.
     linkPath: ''
     icon: ''
-  - title: Optimized for Google 🔧
+  - title: "Optimized for Google \U0001F527"
     summary: 'What good is a website that is hard to find? All of our websites are
       optimized to receive a perfect techincal SEO and accessibility score from Google.
       We use Google’s own lighthouse tool to ensure our solutions are high ranking
       scores in performance, SEO, best practices and accessibility. '
     linkPath: ''
     icon: ''
-  - title: An exceptional UX deisgn is not a nice-to-have 📲
+  - title: "An exceptional UX deisgn is not a nice-to-have \U0001F4F2"
     summary: Tway beleives users should not have to think. Provinding an intutive
       and delightful navigation expereince is everything. All tway solutions are designed
       to be responsive so that they provide an excellect expereince regardless of
@@ -93,6 +93,8 @@ page_sections:
   buttonText: Get in touch
   buttonPath: "/contact"
 headerImageURL: images/ecommerce.png
-headerImageAlt: Webasite Offering
+headerImageAlt: Website Offerings
+headerButtonText: Let's Talk
+headerButtonURL: "/contact"
 
 ---
