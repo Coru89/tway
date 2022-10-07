@@ -39,6 +39,19 @@ page_sections:
     cardTitle: Websites
     cardLinkText: Learn More
     cardLinkPath: "/services/websites"
+    image: ''
+    imagePosition: ''
+    imageAlt: ''
+  - serviceItems:
+    - serviceItem: Shopify
+    - serviceItem: WooCommerce
+    - serviceItem: CraftCommerce
+    cardTitle: E-commerce
+    image: ''
+    imageAlt: ''
+    cardLinkText: ''
+    cardLinkPath: ''
+    imagePosition: ''
 - template: portfolio-featured-panel
   imagePosition: left
   title: Colonia Treuhand
