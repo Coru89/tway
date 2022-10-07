@@ -13,6 +13,15 @@ heroHeading3: 'Looking for a blazing-fast website, e-commerce or Intranet soluti
 heroHeading4: Look no further.
 heroImage: "/images/night-sky-fancy.png"
 page_sections:
+- template: work-panel
+  imagePosition: []
+  title: ''
+  summary: ''
+  buttonText: ''
+  buttonPath: ''
+  imageURL: ''
+  imageAlt: ''
+  backgroundColor: ''
 - template: service-panel
   title: Websites
   links:
@@ -25,6 +34,7 @@ page_sections:
   image: images/websites.png
   imagePosition: Right
   imageAlt: ''
+  serviceCards: []
 - template: service-panel
   title: E-commerce
   image: images/ecommerce.png
@@ -37,6 +47,16 @@ page_sections:
     linkPath: "/shopify"
   imagePosition: Left
   imageAlt: ''
+  serviceCards: []
+- template: work-panel
+  imagePosition: []
+  title: ''
+  summary: ''
+  buttonText: ''
+  buttonPath: ''
+  imageURL: ''
+  imageAlt: ''
+  backgroundColor: ''
 - template: call-to-action
   text: Interested in working together?
   buttonPath: "/contact"
