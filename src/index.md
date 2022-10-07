@@ -39,19 +39,39 @@ page_sections:
     cardTitle: Websites
     cardLinkText: Learn More
     cardLinkPath: "/services/websites"
-    image: ''
-    imagePosition: ''
-    imageAlt: ''
+    image: images/websites.png
+    imagePosition: Left
+    imageAlt: Websites
   - serviceItems:
     - serviceItem: Shopify
     - serviceItem: WooCommerce
     - serviceItem: CraftCommerce
     cardTitle: E-commerce
+    image: images/ecommerce.png
+    imageAlt: E-commerce
+    cardLinkText: Learn More
+    cardLinkPath: "/services/e-commerce"
+    imagePosition: Left
+  - cardTitle: Support & Evolve
+    image: images/office365.png
+    imagePosition: Left
+    imageAlt: ''
+    cardLinkText: Learn More
+    cardLinkPath: "/services/support-evolve"
+    serviceItems:
+    - serviceItem: Google Analytics
+    - serviceItem: Google Ads
+    - serviceItem: SEO
+  - cardTitle: Other expertise
     image: ''
     imageAlt: ''
     cardLinkText: ''
     cardLinkPath: ''
-    imagePosition: ''
+    serviceItems:
+    - serviceItem: React JS
+    - serviceItem: Progressive Web Apps
+    - serviceItem: UX Design
+    imagePosition: Left
 - template: portfolio-featured-panel
   imagePosition: left
   title: Colonia Treuhand
