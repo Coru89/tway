@@ -13,18 +13,6 @@ heroHeading3: 'Looking for a blazing-fast website, e-commerce or Intranet soluti
 heroHeading4: Look no further.
 heroImage: "/images/night-sky-fancy.png"
 page_sections:
-- template: portfolio-featured-panel
-  title: Vanmade Gear
-  summary: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-    Neque porro quisquam est, qui dolorem.
-  buttonText: Read More
-  buttonPath: "/portfolio/vanmadegear"
-  imageURL: images/vmg-home-full.png
-  imageAlt: Vanmade Gear
-  imagePosition: right
-  backgroundColor: "#EE964B"
-  isBottom: false
 - template: service-panel
   title: Websites
   links:
@@ -49,18 +37,6 @@ page_sections:
     linkPath: "/shopify"
   imagePosition: Left
   imageAlt: ''
-- template: portfolio-featured-panel
-  imagePosition: left
-  title: Colonia Treuhand
-  summary: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-    Neque porro quisquam est, qui dolorem.
-  buttonText: Read More
-  buttonPath: "/portfolio/colonia-truehand"
-  imageURL: images/ctam-home-full.png
-  imageAlt: Colonia Treuhand
-  backgroundColor: "#AA6373"
-  isBottom: true
 - template: call-to-action
   text: Interested in working together?
   buttonPath: "/contact"
