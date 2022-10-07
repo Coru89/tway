@@ -12,6 +12,7 @@ heroHeading2: "& Intranet Agency. "
 heroHeading3: 'Looking for a blazing-fast website, e-commerce or Intranet solution? '
 heroHeading4: Look no further.
 heroImage: "/images/night-sky-fancy.png"
+page_sections:
 - template: call-to-action
   text: Interested in working together?
   buttonPath: "/contact"
