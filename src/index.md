@@ -13,10 +13,34 @@ heroHeading3: 'Looking for a blazing-fast website, e-commerce or Intranet soluti
 heroHeading4: Look no further.
 heroImage: "/images/night-sky-fancy.png"
 page_sections:
+- template: service-panel
+  imagePosition: Right
+  title: ''
+  image: ''
+  imageAlt: ''
+  serviceCards: []
+- template: work-panel
+  imagePosition: []
+  title: ''
+  summary: ''
+  buttonText: ''
+  buttonPath: ''
+  imageURL: ''
+  imageAlt: ''
+  backgroundColor: ''
 - template: call-to-action
   text: Interested in working together?
   buttonPath: "/contact"
   buttonText: Get in touch
+- template: work-panel
+  imagePosition: []
+  title: ''
+  summary: ''
+  buttonText: ''
+  buttonPath: ''
+  imageURL: ''
+  imageAlt: ''
+  backgroundColor: ''
 bannerSummary: ''
 bannerimage: ''
 heroServices:
