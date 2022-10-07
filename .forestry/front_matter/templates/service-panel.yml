@@ -10,19 +10,6 @@ fields:
 - name: serviceCards
   type: field_group_list
   fields:
-  - name: serviceItems
-    type: field_group_list
-    fields:
-    - name: serviceItem
-      type: text
-      config:
-        required: false
-      label: Service Item
-    config:
-      min: 
-      max: 
-      labelField: 
-    label: Service Items
   - name: cardTitle
     type: text
     config:
@@ -62,6 +49,19 @@ fields:
     config:
       required: false
     label: Card Link Path
+  - name: serviceItems
+    type: field_group_list
+    fields:
+    - name: serviceItem
+      type: text
+      config:
+        required: false
+      label: Service Item
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Service Items
   config:
     min: 
     max: 
