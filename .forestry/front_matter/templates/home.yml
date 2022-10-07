@@ -6,13 +6,13 @@ fields:
   type: blocks
   label: Page Sections
   template_types:
-  - portfolio-featured-panel
   - image-text-panel
   - cards-with-icon
   - text-area
   - image-with-caption
   - call-to-action
   - service-panel
+  - work-panel
   config:
     min: 
     max: 
