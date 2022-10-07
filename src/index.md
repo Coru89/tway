@@ -27,10 +27,18 @@ page_sections:
   isBottom: false
 - template: service-panel
   imagePosition: Right
-  title: ''
+  title: Services
   image: ''
   imageAlt: ''
-  serviceCards: []
+  serviceCards:
+  - serviceItems:
+    - serviceItem: Craft CMS
+    - serviceItem: WordPress
+    - serviceItem: Static Sites Generators (Gatsby, 11ty etc.)
+    - serviceItem: Headless CMS (Forestry, TInaCMS)
+    cardTitle: Websites
+    cardLinkText: Learn More
+    cardLinkPath: "/services/websites"
 - template: portfolio-featured-panel
   imagePosition: left
   title: Colonia Treuhand
