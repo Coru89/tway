@@ -13,6 +13,7 @@ fields:
   - call-to-action
   - service-panel
   - work-panel
+  - work-panel
   config:
     min: 
     max: 
