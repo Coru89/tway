@@ -35,6 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
+  line-height: 1.5;
   min-height: 100vh;
   scroll-behavior: smooth;
 }
@@ -55,11 +56,11 @@ ul:not([class]) {
 a:not([class]) {
   text-decoration: underline;
   text-decoration-skip-ink: auto;
-  cursor: pointer
+  cursor: pointer;
 }
 
 input::-webkit-input-placeholder,select::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
-  line-height: normal
+  line-height: normal;
 }
 
  @media(prefers-reduced-motion:reduce) {

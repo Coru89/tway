@@ -6,7 +6,7 @@ fields:
   type: blocks
   label: Page Sections
   template_types:
-  - work-panel
+  - portfolio-featured-panel
   - image-text-panel
   - cards-with-icon
   - text-area

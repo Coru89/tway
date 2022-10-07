@@ -1,16 +1,29 @@
 .page {
   &__header {
+    margin: 7rem 0;
+
     @include panel-container;
+
+    @include media-query(lg) {
+      display: flex;
+    }
+
+    &-column {
+      max-width: 50%;
+
+      &:first-of-type {
+        margin-right: 2rem;
+      }
+    }
 
     &-title {
       font-style: 700;
-      margin: 7rem 0 3rem;
+      margin-bottom: 3rem;
       text-transform: uppercase;
     }
 
     &-summary {
       margin-bottom: 3.5rem;
-      width: 50%;
 
       p {
         margin-bottom: 2rem;

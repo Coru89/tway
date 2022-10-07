@@ -4,29 +4,36 @@
   {% set imageClass = 'service-panel__image service-panel__image--reverse' %}
 {% endif %}  
 
-
-{% if props.links.length %}
+<script>console.log(serviceCards);</script>
+<div>hello world</div>
+{% if props.serviceCards.length %}
   <section class="service-panel">
-    <div class="service-panel__inner">
-      <div class="service-panel__content">
-        <h2 class="service-panel__heading">{{ props.title }}</h2>
-        <div class="{{imageClass}}">
-          {% image props.image, props.imageAlt, null, "lazy", "(min-width: 36rem) 100vw, 50vw", ['400', '450', '500', '600', '700'] %}
-        </div>
-        <div class="service-panel__items">
-          <h2 class="service-panel__heading">{{ props.title }}</h2>
-          <ul class="service-panel__list">
-            {% for item in props.links %}
-              <li class="service-panel__item">
-                <a href="{{ item.linkPath }}" class="service-panel__link" rel="bookmark">
-                  {{ item.linkText }}
-                  {% svg "arrow" %}
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
+    <h2 class="service-panel__heading">{{ card.cardTitle }}</h2>
+    {% for card in props.serviceCards %}
+      <script>console.log(card);</script>
+      <div class="service-panel__card">
+        <div class="service-panel__inner">
+          <div class="service-panel__content">
+            <h2 class="service-panel__heading">{{ card.cardTitle }}</h2>
+            <div class="{{imageClass}}">
+              {% image props.image, props.imageAlt, null, "lazy", "(min-width: 36rem) 100vw, 50vw", ['400', '450', '500', '600', '700'] %}
+            </div>
+            <div class="service-panel__items">
+              <h2 class="service-panel__heading">{{ props.title }}</h2>
+              <ul class="service-panel__list">
+                {% for item in props.links %}
+                  <li class="service-panel__item">
+                    <a href="{{ item.linkPath }}" class="service-panel__link" rel="bookmark">
+                      {{ item.linkText }}
+                      {% svg "arrow" %}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    {% endfor %}
   </section>
 {% endif %}
