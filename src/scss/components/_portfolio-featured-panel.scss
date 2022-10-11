@@ -27,6 +27,11 @@
   
   }
 
+  &__heading {
+    margin-bottom: 3.5rem;
+    text-transform: uppercase;
+  }
+
   &__image {
     flex-basis: 0;
     flex-grow: 1;
@@ -101,6 +106,7 @@
     }
 
     &-title {
+      font-weight: 500;
       padding-bottom: 2rem;
     }
 

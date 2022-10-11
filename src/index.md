@@ -63,7 +63,7 @@ page_sections:
     - serviceItem: Google Ads
     - serviceItem: SEO
   - cardTitle: Other expertise
-    image: ''
+    image: images/office365.png
     imageAlt: ''
     cardLinkText: ''
     cardLinkPath: ''

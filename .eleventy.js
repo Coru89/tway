@@ -62,7 +62,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
   eleventyConfig.addFilter("sortByOrder", sortByOrder);
   eleventyConfig.addFilter("subNav", subNav);
-
+  eleventyConfig.addFilter('log', value => {
+    console.log(value)
+})
   // Layout aliases
   eleventyConfig.addLayoutAlias('home', 'layouts/home.njk');
 
