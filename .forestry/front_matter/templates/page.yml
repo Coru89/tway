@@ -67,6 +67,7 @@ fields:
   - blockquote
   - portfolio-featured-panel-small
   - steps-panel
+  - technologies-panel
   config:
     min: 
     max: 
