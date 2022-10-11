@@ -89,8 +89,12 @@ page_sections:
   imageAlt: Colonia Treuhand Website
   imagePosition: ''
 - template: technologies-panel
-  panelHeading: ''
-  technologies: []
+  panelHeading: Technologies we ❤️
+  technologies:
+  - imagePath: images/craft.png
+    imageAlt: Craft CMS
+    description: Craft CMS offers an intuitive content authoring expereince. Craft
+      is a great option for bespoke design and custom develpment work.
 - template: call-to-action
   text: Interested in working together?
   buttonText: Get in touch
