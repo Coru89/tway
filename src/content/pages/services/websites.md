@@ -88,6 +88,9 @@ page_sections:
   buttonText: Read More
   imageAlt: Colonia Treuhand Website
   imagePosition: ''
+- template: technologies-panel
+  panelHeading: ''
+  technologies: []
 - template: call-to-action
   text: Interested in working together?
   buttonText: Get in touch
