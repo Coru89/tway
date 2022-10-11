@@ -91,10 +91,30 @@ page_sections:
 - template: technologies-panel
   panelHeading: Technologies we ❤️
   technologies:
+  - imagePath: images/wordpress.png
+    imageAlt: WordPress
+    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+      aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+      nesciunt.
+  - imagePath: images/tina.png
+    imageAlt: Tina
+    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+      aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+      nesciunt.
+  - imagePath: images/netlify.png
+    imageAlt: Netlify
+    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+      aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+      nesciunt.
   - imagePath: images/craft.png
     imageAlt: Craft CMS
     description: Craft CMS offers an intuitive content authoring expereince. Craft
       is a great option for bespoke design and custom develpment work.
+  - imagePath: images/jamstack.png
+    imageAlt: Jamstack
+    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+      aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+      nesciunt.
 - template: call-to-action
   text: Interested in working together?
   buttonText: Get in touch
