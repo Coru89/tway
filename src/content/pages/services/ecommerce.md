@@ -8,6 +8,9 @@ headerSummary: "<p>E-commerce is booming like never before and it's more importa
   your digital prescense and help boost sales.</p>"
 metaDesc: E-commerce solutions
 page_sections:
+- template: technologies-panel
+  panelHeading: Technologies we ❤️
+  technologies: []
 - template: portfolio-featured-panel-small
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
     tincidunt felis enim, sed commodo ante mollis ac. Quisque ornare enim nec urna
@@ -23,10 +26,10 @@ page_sections:
   text: Interested in working together?
   buttonText: Get in touch
   buttonPath: "/contact"
-headerButtonText: ''
-headerButtonURL: ''
-headerImageURL: ''
-headerImageAlt: ''
+headerButtonText: Let's Talk
+headerButtonURL: "/contact"
+headerImageURL: images/ecommerce.png
+headerImageAlt: E-commerce
 socialImage: ''
 
 ---
