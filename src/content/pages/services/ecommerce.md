@@ -10,7 +10,16 @@ metaDesc: E-commerce solutions
 page_sections:
 - template: technologies-panel
   panelHeading: Technologies we ❤️
-  technologies: []
+  technologies:
+  - imagePath: images/woocommerce.png
+    imageAlt: WooCommerce
+    description: It's aight
+  - imagePath: images/craft-commerce-logo.png
+    imageAlt: Craft Commerce
+    description: HEya
+  - imagePath: images/shopify.png
+    imageAlt: Shopify
+    description: Hello world
 - template: portfolio-featured-panel-small
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
     tincidunt felis enim, sed commodo ante mollis ac. Quisque ornare enim nec urna
