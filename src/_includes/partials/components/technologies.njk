@@ -1,0 +1,35 @@
+{% if props.backgroundColor === 'white' %}
+  {% set colorHexPanel = 'var(--color-white)' %}
+{% elseif props.backgroundColor === 'grey' %}
+    {% set colorHexPanel = 'var(--color-grey-light)' %}
+{% elseif props.backgroundColor === 'light green' %}
+  {% set colorHexPanel = 'var(--color-bg-light);' %}
+{% else %}
+    {% set colorHexPanel = 'var(--color-white)' %}
+{% endif %}
+
+{{ props.technologies | log }}
+
+{% if props.technologies.length %}
+  <section class="technologies" style="background-color: {{colorHexPanel}};">
+    <div class="technologies__inner">
+      <h2 class="technologies__heading">{{ props.panelHeading }}</h2>
+      <div class="technologies__items" reversed>
+        {% for item in props.technologies %}
+          <div class="technologies__item">
+              {% if item.imagePath %}
+                <div class="technologies__image">
+                  {% image item.imagePath, item.imageAlt, null, "lazy", "(min-width: 36rem) 100vw, 50vw", ['150', '250'] %}
+                </div>
+              {% endif %}
+              <div class="technologies__item-summary">{{ item.description }}</div>
+          </div>
+        {% endfor %}
+      </div>
+      {% from "macros/macros.njk" import button_link %}
+      {% if props.buttonText and props.buttonPath %}
+        {{ button_link(props.buttonText, props.buttonPath, true) }}
+      {% endif %}
+    </div>
+  </section>
+{% endif %}

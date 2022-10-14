@@ -7,14 +7,10 @@
 
   &__inner {
     @include panel-container;
-    max-width: 1088px;
   }
 
   &__heading {
-    @include media-query(md) {
-      position: relative;
-      top: -3.5rem;
-    }
+    margin: 2rem 0;
   }
 
   &__content {

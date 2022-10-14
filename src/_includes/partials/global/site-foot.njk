@@ -1,7 +1,9 @@
 <footer role="contentinfo" class="site-foot">
   <div class="site-foot__wrapper">
     <div class="site-foot__row">
-      {# {% svg "logo" %} #}
+      <div class="site-foot__logo-container">
+        {% svg "logo" %}
+      </div>
       {% if footer.items %}
         {% for item in footer.items %}
           <ul class="site-foot__link-list">

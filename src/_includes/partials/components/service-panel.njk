@@ -9,11 +9,11 @@
           {{ card | log }}
           <div class="service-panel__card">
             {% if card.image.length %}
-                {% if card.imagePosition === 'Left' %}
-                  {% set imageClass = 'service-panel__card-image' %}
-                    {% else %}
-                  {% set imageClass = 'service-panel__card-image service-panel__card-image--reverse' %}
-                {% endif %} 
+              {% if card.imagePosition === 'Left' %}
+                {% set imageClass = 'service-panel__card-image' %}
+                  {% else %}
+                {% set imageClass = 'service-panel__card-image service-panel__card-image--reverse' %}
+              {% endif %} 
               <div class="{{imageClass}}">
                 {% image card.image, card.imageAlt, null, "lazy", "(min-width: 36rem) 100vw, 50vw", ['400', '450', '500', '600', '700'] %}
               </div>

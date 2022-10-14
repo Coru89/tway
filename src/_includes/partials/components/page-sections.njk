@@ -48,14 +48,7 @@
     {% elseif block.template === 'service-panel' %}
         {{ component('service-panel', {
             title: block.title,
-            links: block.links,
-            image: block.image,
-            imageAlt: block.imageAlt,
-            imagePosition: block.imagePosition,
-            serviceCards: block.serviceCards,
-            serviceItems: block.serviceItems,
-            cardTitle: block.cardTitle,
-            cardLinkText: block.cardLinkText
+            serviceCards: block.serviceCards
         }) }}
 
     {% elseif block.template === 'portfolio-featured-panel-small' %}
@@ -83,6 +76,12 @@
             steps: block.steps,
             title: block.title,
             summary: block.summary
+        }) }}
+
+    {% elseif block.template === 'technologies-panel' %}
+        {{ component('technologies', {
+            panelHeading: block.panelHeading,
+            technologies: block.technologies
         }) }}
 
     {% elseif block.template === 'blockquote' %}

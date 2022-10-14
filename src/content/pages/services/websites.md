@@ -77,21 +77,10 @@ page_sections:
     summary: After your site is live, we don't have to say goodbye. Want to make some
       changes? Need help to review your analytics? Tweak an SEO stratgey? We are here
       to help!
-- template: portfolio-featured-panel-small
-  title: Colonia Treuhand
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-    tincidunt felis enim, sed commodo ante mollis ac. Quisque ornare enim nec urna
-    bibendum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-    posuere cubilia curae; Ut quis iaculis felis. Phasellus luctus semper velit.
-  image: images/ctam-home.png
-  buttonPath: "/portfolio/colonia-treuhand/"
-  buttonText: Read More
-  imageAlt: Colonia Treuhand Website
-  imagePosition: ''
 - template: technologies-panel
   panelHeading: Technologies we ❤️
   technologies:
-  - imagePath: images/wordpress.png
+  - imagePath: images/wordpress-logotype-standard.png
     imageAlt: WordPress
     description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
       aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
@@ -115,6 +104,17 @@ page_sections:
     description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
       aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
       nesciunt.
+- template: portfolio-featured-panel-small
+  title: Colonia Treuhand
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+    tincidunt felis enim, sed commodo ante mollis ac. Quisque ornare enim nec urna
+    bibendum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+    posuere cubilia curae; Ut quis iaculis felis. Phasellus luctus semper velit.
+  image: images/ctam-home.png
+  buttonPath: "/portfolio/colonia-treuhand/"
+  buttonText: Read More
+  imageAlt: Colonia Treuhand Website
+  imagePosition: ''
 - template: call-to-action
   text: Interested in working together?
   buttonText: Get in touch
