@@ -72,5 +72,6 @@ fields:
     min: 
     max: 
 pages:
+- src/content/pages/services/default.md
 - src/content/pages/services/ecommerce.md
 - src/content/pages/services/websites.md
