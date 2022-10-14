@@ -65,9 +65,9 @@
     @include media-query(md) {
       box-shadow: none;
       display: flex;
-      margin-left: 2rem;
       padding: 0;
       position: static;
+      justify-content: space-between;
     }
   }
 
@@ -75,8 +75,6 @@
     @include media-query(sm) {
       align-items: center;
       display: flex;
-      justify-content: space-between;
-      margin-left: auto;
     }
   }
 
@@ -184,6 +182,7 @@
     &-link {
       color: currentColor;
       display: block;
+      font-family: get-font(base);
       font-weight: 500;
       padding: 2rem 0;
       position: relative;
