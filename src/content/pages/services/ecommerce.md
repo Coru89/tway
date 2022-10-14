@@ -23,7 +23,7 @@ page_sections:
     imageAlt: Craft Commerce
     description: Craft Commerce excels at building completley bespoke eCommerce websites.
       Craft Commerce is an excellent choice for content heavy site that need a more
-      robust content management system CMS.
+      robust content management system CMS or for existing Craft Commerce sites.
   - imagePath: images/woocommerce.png
     imageAlt: WooCommerce
     description: WooCommerce strength is that it offers great flexability and customization
