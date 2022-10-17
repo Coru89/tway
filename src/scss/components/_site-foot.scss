@@ -35,7 +35,7 @@
 
   &__link {
     color: var(--color-black);
-    font-family: get-font(serif);
+    font-family: get-font(base);
     font-size: get-font-size(base);
     text-decoration: none;
 
@@ -46,17 +46,8 @@
     &-list {
       margin-bottom: 2rem;
 
-      // make all bull first column uppercase
-      // &:not(:first-of-type) {
-      //   .site-foot__link-list-item {
-      //     text-transform: uppercase;
-      //   }
-      // }
-
       @include media-query(md) {
-        margin-bottom: 0;
-        flex: 0 0 33.3333333333%;
-        max-width: 33.33%;
+        min-width: 140px;
       }
 
       &-item {
@@ -88,12 +79,17 @@
   &__logo {
     height: auto;
     margin-bottom: 3rem;
-    width: 200px;
+    max-width: 200px;
 
     @include media-query(md) {
-      height: initial;
       margin-bottom: 0;
-      width: initial;
+      max-width: 323px;
+    }
+
+    &-container {
+      @include media-query(md) {
+        width: 25%;
+      }
     }
   }
 }
