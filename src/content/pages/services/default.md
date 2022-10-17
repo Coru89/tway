@@ -56,10 +56,15 @@ page_sections:
     Our developer's are experienced with a variety of web technologies, including ReactJS, Typescript, SASS, SharePoint Development and more. Inquire with us to see how we can help!
   imageURL: images/placeholder-image.jpg
   imageAlt: placeholder
-  buttonText: ''
-  buttonPath: ''
+  buttonText: Let's chat
+  buttonPath: "/contact"
 - template: call-to-action
   text: Interested in working together?
   buttonText: Get in touch
   buttonPath: "/contact"
+headerButtonText: ''
+headerButtonURL: ''
+headerImageURL: ''
+headerImageAlt: ''
+
 ---
